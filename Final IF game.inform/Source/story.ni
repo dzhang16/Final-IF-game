@@ -15,6 +15,14 @@ Use serial comma.
 
 When play begins: say "You go out with your friends to watch the latest horror movie called ‘Madman Mercer.’  In the movie you see Madman Mercer chasing people through Chinatown in the middle of the night with a machete.  As you are watching you suddenly fall asleep.  When you wake up you are on the cold damp ground of Chinatown.  You can hear the high speed swings of a machete.  In your mind you think ‘Oh no’. "
 
+[Disable take all from tonic]
+Rule for deciding whether all includes something: it does not.
+
+Rule for printing a parser error when the latest parser error is the nothing to do error:
+	say "Hey maybe you should actually TRY and play the game, you little cheater. K, thanks." instead
+	
+use no scoring. 
+
 [Rooms]
 Cultural Plaza is a room.  The description is "The outside of all the stores around you."
 
@@ -57,7 +65,10 @@ Instead of eating char-siu bau:
 	move wooden key to player.;
 	remove char-siu bau from play.
 	
-
+Instead of attacking Madman Mercer:
+	say "Madman Mercer is unphased by your weak punch, and BOOM counters with a nice little uppercut knocking you down.  You lose conciousness as you see Madman Mercer walking toward you.";
+	end the game in death.
+	
 
 [after staments]
 
@@ -108,18 +119,98 @@ the wad of hair is a thing in the hair salon.  It is a closed openable container
 the char-siu bau is a thing in the restaurant.  it is a closed openable container.  It is locked and lockable.  The description of the char-siu bau is "an amazing delicacy that make you mouth drool.  You really want to eat it."
 
 [Madman Mercer]
-Madman Mercer is a male man.  Madman Mercer is in the Cultural Plaza.  The description of Madman Mercer is "A white guy about 5 foot 3 inches with curly brown hair wearing a hockey mask.  He is holding a machete."
+Madman Mercer is a male man.  Madman Mercer is in the Cultural Plaza.  The description of Madman Mercer is "A white guy about 5 foot 7 inches with curly brown hair wearing a hockey mask.  He is holding a machete."
 
 [Mr.Kiang's get the cat code: Madman Mercer]
-Every turn:
-	if Madman Mercer is not visible;
-		if Madman Mercer is in a room (called the current space) for 3 turns begin;
+[Every turn:
+	if Madman Mercer is not visible begin;
 			move Madman Mercer to the location of the player;
 			say "Madman Mercer is running wildly at you, swinging his machete, and cursing at you.";
-		end if.
+	end if.]
+	
+Every turn: if Madman Mercer is in a room (called the current space) begin;
+let next space be a random room;
+if Madman Mercer is visible for 3 turns, say "Madman mercer knocks you out, and everything goes black.";
+if Madman Mercer is visible, say "Madman Mercer walks to another room.";
+move Madman Mercer to next space [try to make Madman move after 3 turns];
+end if.
+
+
+
+Every turn:
+	if Madman Mercer is visible for 3 turns, end the game in death
 	
 
 
+[The combining action from TONIC]
+Understand "combine [something] with [something]" as combining it with.
+Combining it with is an action applying to two things.
+
+[The line below tells Inform7 that combining produces something.]
+The combining it with action has an object called the Contraption.
+
+Setting action variables for combining something with something: 
+	let X be a list of objects;
+	add the noun to X;
+	add the second noun to X;
+	sort X; 
+	repeat through the Table of Projector Parts: 
+		let Y be the parts list entry; 
+		sort Y; 
+		if X is Y: 
+			now the Contraption is the results entry.
+
+[if there is no match for the combination of things, there is no result for the combining, so STOP the action]
+Check combining it with:
+	if Contraption is nothing:
+		say "You can't combine [the noun] and [the second noun] into anything useful.[line break]Try another combination of things.";
+		stop the action.
+
+[If action is not stopped, continue to…]
+Carry out combining it with: 
+	say "You fuse together [the noun] and [the second noun].";
+	remove the noun from play;
+	remove the second noun from play;
+	move the Contraption to the player.
+
+Report combining it with:
+	say "You now have a [a Contraption]."
+
+
+Table of Projector Parts
+Parts List	Results
+{light source, reflector}	Light Reflecting Thingy
+{light source, condenser lense}	Light Condenser Thingy
+{light source, Douser}	Light Dousing Thingy
+{light source, Film Gate}	Light Gate Thingy
+{light source, Shutter}	Light Shutter Thingy
+{light source, Imaging Lens}	Light Imaging Lens Thingy
+{light source, Aperture Plate}	Light Aperture Plate Thingy
+{light source, Viewing Screen}	Light Viewing Screen Thingy
+{light source, Film Gate Pressure Plate}	Light Gate Pressure Thingy
+
+Light Reflecting Thingy is an object.
+Light Condenser Thingy is an object.
+Light Dousing Thingy is an object.
+Light Gate Thingy is an object.
+Light Shutter Thingy is an object.
+Light Imaging Lens Thingy is an object.
+Light Aperture Plate Thingy is an object.
+Light Viewing Screen Thingy is an object.
+Light Gate Pressure Thingy is an object.
+
+[10 film projector parts]
+
+[1]Light Source is a thing in the hair salon.  
+[2]Reflector is a thing in the restaurant.
+[3]Condenser Lense is a thing in the convenience store.
+[4]Douser is a thing in the Fish Market.
+[5]Film Gate is a thing in the Downtown.
+[6]Shutter is a thing in the Fruit Stands .
+[7]Imaging Lens is a thing in the Bathroom.
+[8]Aperture Plate is a thing in the furniture store.
+[9]Viewing Screen is a thing in the video store.
+[10]Film Gate Pressure Plate is a thing in the stage.
 
 
 
