@@ -4296,7 +4296,7 @@ Global lightflag = false;
 ];
 
 
-Constant REQUISITION_STACK_SIZE = 3*57;
+Constant REQUISITION_STACK_SIZE = 3*67;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -9293,12 +9293,12 @@ Constant IK1_First = I88_cultural_plaza;
 Constant IK2_First = selfobj;
 Constant IK3_First = I46_north;
 Constant IK4_First = nothing;
-Constant IK5_First = I107_fancy_safe;
+Constant IK5_First = I113_fancy_safe;
 Constant IK6_First = nothing;
 Constant IK7_First = nothing;
 Constant IK8_First = selfobj;
 Constant IK9_First = nothing;
-Constant IK10_First = I116_madman_mercer;
+Constant IK10_First = I122_madman_mercer;
 Constant IK11_First = nothing;
 Constant IK12_First = nothing;
 Constant IK13_First = nothing;
@@ -9692,9 +9692,9 @@ Object selfobj ""
     with cap_short_name "Yourself"
     has mark_as_thing
     with IK2_Count 0
-    with IK2_Link I116_madman_mercer
+    with IK2_Link I122_madman_mercer
     with IK8_Count 0
-    with IK8_Link I116_madman_mercer
+    with IK8_Link I122_madman_mercer
     with KD_Count 8
     with name 'yourself' 
     with action_bitmap 0 0 0 0 0 0 
@@ -9716,7 +9716,7 @@ Object I88_cultural_plaza ""
     with name 'cultural' 'plaza' 
 ;
 
-Object -> I116_madman_mercer ""
+Object -> I122_madman_mercer ""
     class K10_man
     with short_name "Madman Mercer"
     with description SC_6
@@ -9726,8 +9726,8 @@ Object -> I116_madman_mercer ""
     with list_together 0
     with cap_short_name "Madman Mercer"
     has mark_as_thing
-    with IK2_Count 18
-    with IK2_Link I107_fancy_safe
+    with IK2_Count 24
+    with IK2_Link I113_fancy_safe
     with IK8_Count 1
     with IK8_Link nothing
     with IK10_Count 0
@@ -9753,11 +9753,11 @@ Object I89_stage ""
     with name 'stage' 
 ;
 
-Object -> I107_fancy_safe ""
+Object -> I113_fancy_safe ""
     class K5_container
     with short_name "fancy safe"
     with description SC_8
-    with with_key I108_fancy_key
+    with with_key I114_fancy_key
     has static
     has scenery
     has ~open
@@ -9767,16 +9767,16 @@ Object -> I107_fancy_safe ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 9
-    with IK2_Link I108_fancy_key
+    with IK2_Count 15
+    with IK2_Link I114_fancy_key
     with IK5_Count 4
-    with IK5_Link I103_titanium_safe
+    with IK5_Link I109_titanium_safe
     with KD_Count 5
     with name 'fancy' 'safe' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I108_fancy_key ""
+Object -> I114_fancy_key ""
     class K2_thing
     with short_name "fancy key"
     with description SC_9
@@ -9785,25 +9785,10 @@ Object -> I108_fancy_key ""
     with list_together 0
     with cap_short_name "Fancy key"
     has mark_as_thing
-    with IK2_Count 10
-    with IK2_Link I131_film_gate_pressure_plat
+    with IK2_Count 16
+    with IK2_Link I102_reflector
     with KD_Count 2
     with name 'fancy' 'key' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I131_film_gate_pressure_plat ""
-    class K2_thing
-    with short_name "Film Gate Pressure Plate"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Film Gate Pressure Plate"
-    has mark_as_thing
-    with IK2_Count 33
-    with IK2_Link I103_titanium_safe
-    with KD_Count 2
-    with name 'film' 'gate' 'pressure' 'plate' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
@@ -9823,11 +9808,26 @@ Object I90_restaurant ""
     with name 'restaurant' 
 ;
 
-Object -> I103_titanium_safe ""
+Object -> I102_reflector ""
+    class K2_thing
+    with short_name "Reflector"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Reflector"
+    has mark_as_thing
+    with IK2_Count 4
+    with IK2_Link I109_titanium_safe
+    with KD_Count 2
+    with name 'reflector' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object -> I109_titanium_safe ""
     class K5_container
     with short_name "titanium safe"
     with description SC_11
-    with with_key I104_titanium_key
+    with with_key I110_titanium_key
     has static
     has scenery
     has ~open
@@ -9837,16 +9837,16 @@ Object -> I103_titanium_safe ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 5
-    with IK2_Link I113_char_siu_bau
+    with IK2_Count 11
+    with IK2_Link I119_char_siu_bau
     with IK5_Count 2
-    with IK5_Link I113_char_siu_bau
+    with IK5_Link I119_char_siu_bau
     with KD_Count 5
     with name 'titanium' 'safe' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I113_char_siu_bau ""
+Object -> I119_char_siu_bau ""
     class K5_container
     with short_name "char-siu bau"
     with description SC_12
@@ -9857,16 +9857,16 @@ Object -> I113_char_siu_bau ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 15
-    with IK2_Link I110_wooden_key
+    with IK2_Count 21
+    with IK2_Link I116_wooden_key
     with IK5_Count 7
-    with IK5_Link I109_wooden_safe
+    with IK5_Link I115_wooden_safe
     with KD_Count 5
     with name 'char-siu' 'bau' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I110_wooden_key ""
+Object -> -> I116_wooden_key ""
     class K2_thing
     with short_name "wooden key"
     with description SC_13
@@ -9875,25 +9875,10 @@ Object -> -> I110_wooden_key ""
     with list_together 0
     with cap_short_name "Wooden key"
     has mark_as_thing
-    with IK2_Count 12
-    with IK2_Link I127_reflector
+    with IK2_Count 18
+    with IK2_Link I106_viewing_screen
     with KD_Count 2
     with name 'wooden' 'key' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I127_reflector ""
-    class K2_thing
-    with short_name "Reflector"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Reflector"
-    has mark_as_thing
-    with IK2_Count 29
-    with IK2_Link I104_titanium_key
-    with KD_Count 2
-    with name 'reflector' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
@@ -9913,7 +9898,22 @@ Object I91_video_store ""
     with name 'video' 'store' 
 ;
 
-Object -> I104_titanium_key ""
+Object -> I106_viewing_screen ""
+    class K2_thing
+    with short_name "Viewing Screen"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Viewing Screen"
+    has mark_as_thing
+    with IK2_Count 8
+    with IK2_Link I110_titanium_key
+    with KD_Count 2
+    with name 'viewing' 'screen' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object -> I110_titanium_key ""
     class K2_thing
     with short_name "titanium key"
     with description SC_15
@@ -9922,18 +9922,18 @@ Object -> I104_titanium_key ""
     with list_together 0
     with cap_short_name "Titanium key"
     has mark_as_thing
-    with IK2_Count 6
-    with IK2_Link I109_wooden_safe
+    with IK2_Count 12
+    with IK2_Link I115_wooden_safe
     with KD_Count 2
     with name 'titanium' 'key' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I109_wooden_safe ""
+Object -> I115_wooden_safe ""
     class K5_container
     with short_name "wooden safe"
     with description SC_16
-    with with_key I110_wooden_key
+    with with_key I116_wooden_key
     has static
     has scenery
     has ~open
@@ -9943,27 +9943,12 @@ Object -> I109_wooden_safe ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 11
-    with IK2_Link I124_light_viewing_screen_th
+    with IK2_Count 17
+    with IK2_Link I101_light_source
     with IK5_Count 5
-    with IK5_Link I101_beautiful_safe
+    with IK5_Link I107_beautiful_safe
     with KD_Count 5
     with name 'wooden' 'safe' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I124_light_viewing_screen_th ""
-    class K2_thing
-    with short_name "Light Viewing Screen Thingy"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Light Viewing Screen Thingy"
-    has mark_as_thing
-    with IK2_Count 26
-    with IK2_Link I101_beautiful_safe
-    with KD_Count 2
-    with name 'light' 'viewing' 'screen' 'thingy' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
@@ -9983,11 +9968,26 @@ Object I92_hair_salon ""
     with name 'hair' 'salon' 
 ;
 
-Object -> I101_beautiful_safe ""
+Object -> I101_light_source ""
+    class K2_thing
+    with short_name "Light Source"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Light Source"
+    has mark_as_thing
+    with IK2_Count 3
+    with IK2_Link I107_beautiful_safe
+    with KD_Count 2
+    with name 'light' 'source' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object -> I107_beautiful_safe ""
     class K5_container
     with short_name "beautiful safe"
     with description SC_18
-    with with_key I102_beautiful_key
+    with with_key I108_beautiful_key
     has static
     has scenery
     has ~open
@@ -9997,20 +9997,20 @@ Object -> I101_beautiful_safe ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 3
-    with IK2_Link I114_wad_of_hair
+    with IK2_Count 9
+    with IK2_Link I120_wad_of_hair
     with IK5_Count 1
-    with IK5_Link I114_wad_of_hair
+    with IK5_Link I120_wad_of_hair
     with KD_Count 5
     with name 'beautiful' 'safe' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I114_wad_of_hair ""
+Object -> I120_wad_of_hair ""
     class K5_container
     with short_name "wad of hair"
     with description SC_19
-    with with_key I115_scissor
+    with with_key I121_scissor
     has ~open
     has openable
     has lockable
@@ -10018,16 +10018,16 @@ Object -> I114_wad_of_hair ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 16
-    with IK2_Link I112_smelly_key
+    with IK2_Count 22
+    with IK2_Link I118_smelly_key
     with IK5_Count 8
-    with IK5_Link I105_green_safe
+    with IK5_Link I111_green_safe
     with KD_Count 5
     with name 'wad' 'of' 'hair' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I112_smelly_key ""
+Object -> -> I118_smelly_key ""
     class K2_thing
     with short_name "smelly key"
     with description SC_20
@@ -10036,39 +10036,24 @@ Object -> -> I112_smelly_key ""
     with list_together 0
     with cap_short_name "Smelly key"
     has mark_as_thing
-    with IK2_Count 14
-    with IK2_Link I115_scissor
+    with IK2_Count 20
+    with IK2_Link I121_scissor
     with KD_Count 2
     with name 'smelly' 'key' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I115_scissor ""
+Object -> I121_scissor ""
     class K2_thing
     with short_name "scissor"
     with description SC_21
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 17
-    with IK2_Link I126_light_source
+    with IK2_Count 23
+    with IK2_Link I105_shutter
     with KD_Count 2
     with name 'scissor' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I126_light_source ""
-    class K2_thing
-    with short_name "Light Source"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Light Source"
-    has mark_as_thing
-    with IK2_Count 28
-    with IK2_Link I106_green_key
-    with KD_Count 2
-    with name 'light' 'source' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
@@ -10088,7 +10073,22 @@ Object I93_furniture_store ""
     with name 'furniture' 'store' 
 ;
 
-Object -> I106_green_key ""
+Object -> I105_shutter ""
+    class K2_thing
+    with short_name "shutter"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Shutter"
+    has mark_as_thing
+    with IK2_Count 7
+    with IK2_Link I112_green_key
+    with KD_Count 2
+    with name 'shutter' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object -> I112_green_key ""
     class K2_thing
     with short_name "green key"
     with description SC_23
@@ -10097,25 +10097,10 @@ Object -> I106_green_key ""
     with list_together 0
     with cap_short_name "Green key"
     has mark_as_thing
-    with IK2_Count 8
-    with IK2_Link I123_light_aperture_plate_th
+    with IK2_Count 14
+    with IK2_Link I103_condenser_lense
     with KD_Count 2
     with name 'green' 'key' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I123_light_aperture_plate_th ""
-    class K2_thing
-    with short_name "Light Aperture Plate Thingy"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Light Aperture Plate Thingy"
-    has mark_as_thing
-    with IK2_Count 25
-    with IK2_Link I105_green_safe
-    with KD_Count 2
-    with name 'light' 'aperture' 'plate' 'thingy' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
@@ -10136,11 +10121,26 @@ Object I94_convenience_store ""
     with name 'convenience' 'store' 
 ;
 
-Object -> I105_green_safe ""
+Object -> I103_condenser_lense ""
+    class K2_thing
+    with short_name "Condenser Lense"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Condenser Lense"
+    has mark_as_thing
+    with IK2_Count 5
+    with IK2_Link I111_green_safe
+    with KD_Count 2
+    with name 'condenser' 'lense' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object -> I111_green_safe ""
     class K5_container
     with short_name "green safe"
     with description SC_25
-    with with_key I106_green_key
+    with with_key I112_green_key
     has static
     has scenery
     has ~open
@@ -10150,27 +10150,12 @@ Object -> I105_green_safe ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 7
-    with IK2_Link I128_condenser_lense
+    with IK2_Count 13
+    with IK2_Link I104_imaging_lens
     with IK5_Count 3
-    with IK5_Link I111_smelly_safe
+    with IK5_Link I117_smelly_safe
     with KD_Count 5
     with name 'green' 'safe' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I128_condenser_lense ""
-    class K2_thing
-    with short_name "Condenser Lense"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Condenser Lense"
-    has mark_as_thing
-    with IK2_Count 30
-    with IK2_Link I102_beautiful_key
-    with KD_Count 2
-    with name 'condenser' 'lense' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
@@ -10190,7 +10175,22 @@ Object I95_bathroom ""
     with name 'bathroom' 
 ;
 
-Object -> I102_beautiful_key ""
+Object -> I104_imaging_lens ""
+    class K2_thing
+    with short_name "Imaging Lens"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Imaging Lens"
+    has mark_as_thing
+    with IK2_Count 6
+    with IK2_Link I108_beautiful_key
+    with KD_Count 2
+    with name 'imaging' 'lens' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object -> I108_beautiful_key ""
     class K2_thing
     with short_name "beautiful key"
     with description SC_27
@@ -10199,18 +10199,18 @@ Object -> I102_beautiful_key ""
     with list_together 0
     with cap_short_name "Beautiful key"
     has mark_as_thing
-    with IK2_Count 4
-    with IK2_Link I111_smelly_safe
+    with IK2_Count 10
+    with IK2_Link I117_smelly_safe
     with KD_Count 2
     with name 'beautiful' 'key' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I111_smelly_safe ""
+Object -> I117_smelly_safe ""
     class K5_container
     with short_name "smelly safe"
     with description SC_28
-    with with_key I112_smelly_key
+    with with_key I118_smelly_key
     has static
     has scenery
     has ~open
@@ -10220,27 +10220,12 @@ Object -> I111_smelly_safe ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 13
-    with IK2_Link I122_light_imaging_lens_thin
+    with IK2_Count 19
+    with IK2_Link I100_basket_of_fruit
     with IK5_Count 6
     with IK5_Link I100_basket_of_fruit
     with KD_Count 5
     with name 'smelly' 'safe' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I122_light_imaging_lens_thin ""
-    class K2_thing
-    with short_name "Light Imaging Lens Thingy"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Light Imaging Lens Thingy"
-    has mark_as_thing
-    with IK2_Count 24
-    with IK2_Link I130_film_gate
-    with KD_Count 2
-    with name 'light' 'imaging' 'lens' 'thingy' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
@@ -10260,21 +10245,6 @@ Object I96_downtown ""
     with name 'downtown' 
 ;
 
-Object -> I130_film_gate ""
-    class K2_thing
-    with short_name "Film Gate"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Film Gate"
-    has mark_as_thing
-    with IK2_Count 32
-    with IK2_Link I129_douser
-    with KD_Count 2
-    with name 'film' 'gate' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
 Object I97_fish_market ""
     class K1_room
     with short_name "Fish Market"
@@ -10289,21 +10259,6 @@ Object I97_fish_market ""
     with IK1_Link I98_fruit_stands
     with KD_Count 1
     with name 'fish' 'market' 
-;
-
-Object -> I129_douser ""
-    class K2_thing
-    with short_name "Douser"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Douser"
-    has mark_as_thing
-    with IK2_Count 31
-    with IK2_Link I100_basket_of_fruit
-    with KD_Count 2
-    with name 'douser' 
-    with action_bitmap 0 0 0 0 0 0 
 ;
 
 Object I98_fruit_stands ""
@@ -10351,28 +10306,13 @@ Object -> -> I99_flashlight ""
     with cap_short_name "Flashlight"
     has mark_as_thing
     with IK2_Count 1
-    with IK2_Link I121_light_shutter_thingy
+    with IK2_Link I123_light_reflecting_thingy
     with KD_Count 2
     with name 'flashlight' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I121_light_shutter_thingy ""
-    class K2_thing
-    with short_name "Light Shutter Thingy"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Light Shutter Thingy"
-    has mark_as_thing
-    with IK2_Count 23
-    with IK2_Link I117_light_reflecting_thingy
-    with KD_Count 2
-    with name 'light' 'shutter' 'thingy' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object I117_light_reflecting_thingy ""
+Object I123_light_reflecting_thingy ""
     class K2_thing
     with short_name "Light Reflecting Thingy"
     has proper
@@ -10380,14 +10320,14 @@ Object I117_light_reflecting_thingy ""
     with list_together 0
     with cap_short_name "Light Reflecting Thingy"
     has mark_as_thing
-    with IK2_Count 19
-    with IK2_Link I118_light_condenser_thingy
+    with IK2_Count 25
+    with IK2_Link I124_light_condenser_thingy
     with KD_Count 2
     with name 'light' 'reflecting' 'thingy' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I118_light_condenser_thingy ""
+Object I124_light_condenser_thingy ""
     class K2_thing
     with short_name "Light Condenser Thingy"
     has proper
@@ -10395,55 +10335,265 @@ Object I118_light_condenser_thingy ""
     with list_together 0
     with cap_short_name "Light Condenser Thingy"
     has mark_as_thing
-    with IK2_Count 20
-    with IK2_Link I119_light_dousing_thingy
+    with IK2_Count 26
+    with IK2_Link I125_light_shutter_thingy
     with KD_Count 2
     with name 'light' 'condenser' 'thingy' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I119_light_dousing_thingy ""
+Object I125_light_shutter_thingy ""
     class K2_thing
-    with short_name "Light Dousing Thingy"
+    with short_name "Light Shutter Thingy"
     has proper
     with vector 0
     with list_together 0
-    with cap_short_name "Light Dousing Thingy"
-    has mark_as_thing
-    with IK2_Count 21
-    with IK2_Link I120_light_gate_thingy
-    with KD_Count 2
-    with name 'light' 'dousing' 'thingy' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object I120_light_gate_thingy ""
-    class K2_thing
-    with short_name "Light Gate Thingy"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Light Gate Thingy"
-    has mark_as_thing
-    with IK2_Count 22
-    with IK2_Link I125_light_gate_pressure_thi
-    with KD_Count 2
-    with name 'light' 'gate' 'thingy' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object I125_light_gate_pressure_thi ""
-    class K2_thing
-    with short_name "Light Gate Pressure Thingy"
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Light Gate Pressure Thingy"
+    with cap_short_name "Light Shutter Thingy"
     has mark_as_thing
     with IK2_Count 27
+    with IK2_Link I126_light_imaging_lens_thin
+    with KD_Count 2
+    with name 'light' 'shutter' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I126_light_imaging_lens_thin ""
+    class K2_thing
+    with short_name "Light Imaging Lens Thingy"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Light Imaging Lens Thingy"
+    has mark_as_thing
+    with IK2_Count 28
+    with IK2_Link I127_light_viewing_screen_th
+    with KD_Count 2
+    with name 'light' 'imaging' 'lens' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I127_light_viewing_screen_th ""
+    class K2_thing
+    with short_name "Light Viewing Screen Thingy"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Light Viewing Screen Thingy"
+    has mark_as_thing
+    with IK2_Count 29
+    with IK2_Link I128_reflector_condenser_len
+    with KD_Count 2
+    with name 'light' 'viewing' 'screen' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I128_reflector_condenser_len ""
+    class K2_thing
+    with short_name "Reflector condenser lens Thingy"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Reflector condenser lens Thingy"
+    has mark_as_thing
+    with IK2_Count 30
+    with IK2_Link I129_reflector_shutter_thing
+    with KD_Count 2
+    with name 'reflector' 'condenser' 'lens' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I129_reflector_shutter_thing ""
+    class K2_thing
+    with short_name "Reflector Shutter Thingy"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Reflector Shutter Thingy"
+    has mark_as_thing
+    with IK2_Count 31
+    with IK2_Link I130_reflector_imaging_lens_
+    with KD_Count 2
+    with name 'reflector' 'shutter' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I130_reflector_imaging_lens_ ""
+    class K2_thing
+    with short_name "Reflector Imaging Lens Thingy"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Reflector Imaging Lens Thingy"
+    has mark_as_thing
+    with IK2_Count 32
+    with IK2_Link I131_reflector_viewing_scree
+    with KD_Count 2
+    with name 'reflector' 'imaging' 'lens' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I131_reflector_viewing_scree ""
+    class K2_thing
+    with short_name "Reflector Viewing Screen Thingy"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Reflector Viewing Screen Thingy"
+    has mark_as_thing
+    with IK2_Count 33
+    with IK2_Link I132_condensing_shutter_lens
+    with KD_Count 2
+    with name 'reflector' 'viewing' 'screen' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I132_condensing_shutter_lens ""
+    class K2_thing
+    with short_name "Condensing Shutter Lens Thingy"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Condensing Shutter Lens Thingy"
+    has mark_as_thing
+    with IK2_Count 34
+    with IK2_Link I133_condensing_imaging_lens
+    with KD_Count 2
+    with name 'condensing' 'shutter' 'lens' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I133_condensing_imaging_lens ""
+    class K2_thing
+    with short_name "Condensing Imaging Lens Thingy"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Condensing Imaging Lens Thingy"
+    has mark_as_thing
+    with IK2_Count 35
+    with IK2_Link I134_condensing_viewing_scre
+    with KD_Count 2
+    with name 'condensing' 'imaging' 'lens' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I134_condensing_viewing_scre ""
+    class K2_thing
+    with short_name "Condensing Viewing Screen Thingy"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Condensing Viewing Screen Thingy"
+    has mark_as_thing
+    with IK2_Count 36
+    with IK2_Link I135_imaging_shutter_lens_th
+    with KD_Count 2
+    with name 'condensing' 'viewing' 'screen' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I135_imaging_shutter_lens_th ""
+    class K2_thing
+    with short_name "Imaging Shutter Lens Thingy"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Imaging Shutter Lens Thingy"
+    has mark_as_thing
+    with IK2_Count 37
+    with IK2_Link I136_imaging_viewing_screen_
+    with KD_Count 2
+    with name 'imaging' 'shutter' 'lens' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I136_imaging_viewing_screen_ ""
+    class K2_thing
+    with short_name "Imaging Viewing Screen Thingy"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Imaging Viewing Screen Thingy"
+    has mark_as_thing
+    with IK2_Count 38
+    with IK2_Link I137_viewing_shutter_screen_
+    with KD_Count 2
+    with name 'imaging' 'viewing' 'screen' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I137_viewing_shutter_screen_ ""
+    class K2_thing
+    with short_name "Viewing Shutter Screen Thingy"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Viewing Shutter Screen Thingy"
+    has mark_as_thing
+    with IK2_Count 39
+    with IK2_Link I138_light_reflecting_conden
+    with KD_Count 2
+    with name 'viewing' 'shutter' 'screen' 'thingy' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I138_light_reflecting_conden ""
+    class K2_thing
+    with short_name "Light reflecting condenser"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Light reflecting condenser"
+    has mark_as_thing
+    with IK2_Count 40
+    with IK2_Link I139_light_reflecting_shutte
+    with KD_Count 2
+    with name 'light' 'reflecting' 'condenser' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I139_light_reflecting_shutte ""
+    class K2_thing
+    with short_name "Light reflecting shutter"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Light reflecting shutter"
+    has mark_as_thing
+    with IK2_Count 41
+    with IK2_Link I140_light_reflecting___imag
+    with KD_Count 2
+    with name 'light' 'reflecting' 'shutter' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I140_light_reflecting___imag ""
+    class K2_thing
+    with short_name "Light reflecting + Imaging Lens Thing"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Light reflecting + Imaging Lens Thing"
+    has mark_as_thing
+    with IK2_Count 42
+    with IK2_Link I141_light_reflecting_viewin
+    with KD_Count 2
+    with name 'light' 'reflecting' '+//' 'imaging' 'lens' 'thing' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I141_light_reflecting_viewin ""
+    class K2_thing
+    with short_name "Light reflecting viewing screen"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Light reflecting viewing screen"
+    has mark_as_thing
+    with IK2_Count 43
     with IK2_Link nothing
     with KD_Count 2
-    with name 'light' 'gate' 'pressure' 'thingy' 
+    with name 'light' 'reflecting' 'viewing' 'screen' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
@@ -10490,11 +10640,11 @@ Array tab_0_2 table $2066 2  (Consult_Grammar_96)  (Consult_Grammar_97)  (Consul
 Array tab_0_3 table $0067 3  (IMMEDIATELY_RESTART_VM_R)  (IMMEDIATELY_RESTORE_SAVED_R)  TABLE_NOVALUE (IMMEDIATELY_QUIT_R)  (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4  TABLE_NOVALUE TABLE_NOVALUE (V26_amusing_a_victorious_pla)  TABLE_NOVALUE TABLE_NOVALUE;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array T2_projector_parts table  tab_2_0 tab_2_1;
-Array tab_2_0 table $066b 10  (LIST_CONST_1211)  (LIST_CONST_1220)  (LIST_CONST_1230)  (LIST_CONST_1239)  (LIST_CONST_1249)  (LIST_CONST_1258)  (LIST_CONST_1269)  (LIST_CONST_1280)  (LIST_CONST_1291) ;
-Array tab_2_1 table $086c NULL  (I117_light_reflecting_thingy)  (I118_light_condenser_thingy)  (I119_light_dousing_thingy)  (I120_light_gate_thingy)  (I121_light_shutter_thingy)  (I122_light_imaging_lens_thin)  (I123_light_aperture_plate_th)  (I124_light_viewing_screen_th)  (I125_light_gate_pressure_thi) ;
+Array tab_2_0 table $066b 11  (LIST_CONST_1268)  (LIST_CONST_1277)  (LIST_CONST_1287)  (LIST_CONST_1296)  (LIST_CONST_1307)  (LIST_CONST_1318)  (LIST_CONST_1329)  (LIST_CONST_1339)  (LIST_CONST_1353)  (LIST_CONST_1365)  (LIST_CONST_1375)  (LIST_CONST_1383)  (LIST_CONST_1393)  (LIST_CONST_1403)  (LIST_CONST_1413)  (LIST_CONST_1424)  (LIST_CONST_1435)  (LIST_CONST_1445)  (LIST_CONST_1456) ;
+Array tab_2_1 table $086c NULL  (I123_light_reflecting_thingy)  (I124_light_condenser_thingy)  (I125_light_shutter_thingy)  (I126_light_imaging_lens_thin)  (I127_light_viewing_screen_th)  (I138_light_reflecting_conden)  (I139_light_reflecting_shutte)  (I140_light_reflecting___imag)  (I141_light_reflecting_viewin)  (I128_reflector_condenser_len)  (I129_reflector_shutter_thing)  (I130_reflector_imaging_lens_)  (I131_reflector_viewing_scree)  (I132_condensing_shutter_lens)  (I133_condensing_imaging_lens)  (I134_condensing_viewing_scre)  (I135_imaging_shutter_lens_th)  (I136_imaging_viewing_screen_)  (I137_viewing_shutter_screen_) ;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -10504,10 +10654,10 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $ff $ff $ff $ff $07  ! Column 1
+  $ff $ff $ff $ff $ff $1f  ! Column 1
   
   ! For table T2_projector_parts
-  $00 $00  ! Column 0
+  $00 $00 $00  ! Column 0
   
   ! End of table
   NULL NULL;
@@ -11109,7 +11259,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ;
       ! phrase 1
       ! [1: if madman mercer is in a room ( called the current space ) begin]
-       if (((ContainerOf(I116_madman_mercer) ofclass K1_room) && (t_0=(ContainerOf(I116_madman_mercer)), true)))  {
+       if (((ContainerOf(I122_madman_mercer) ofclass K1_room) && (t_0=(ContainerOf(I122_madman_mercer)), true)))  {
          ! phrase 2
          ! [2: let next space be a random room]
           t_1 =  (Prop_0()) ; 
@@ -11118,10 +11268,10 @@ Array ActionHappened --> 0 0 0 0 0 0;
           if (TestSinglePastState(0, 0, false, 2) == 3 ) { say__p=1;ParaContent();  print (PrintText) SC_41;  new_line; .L_Say3; .L_SayX3;  }
          ! phrase 4
          ! [4: if madman mercer is visible , say ~Madman Mercer walks to another room.~]
-          if ((((Adj_3_t1_v9(I116_madman_mercer))))) { say__p=1;ParaContent();  print (PrintText) SC_42;  new_line; .L_Say4; .L_SayX4;  }
+          if ((((Adj_3_t1_v9(I122_madman_mercer))))) { say__p=1;ParaContent();  print (PrintText) SC_42;  new_line; .L_Say4; .L_SayX4;  }
          ! phrase 5
          ! [5: move madman mercer to next space]
-          MoveObject(I116_madman_mercer, t_1, 0, false); 
+          MoveObject(I122_madman_mercer, t_1, 0, false); 
          ! phrase 6
          ! [6: end if]
          }
@@ -11586,7 +11736,7 @@ self = noun;
 ! No specific request
 ! Instead of eating char-siu bau:
 [ R_746 ;
-   if ((action ==##Eat) &&  (actor==player) && ((noun == I113_char_siu_bau) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Eat) &&  (actor==player) && ((noun == I119_char_siu_bau) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_746, 746);
       ! phrase 1
@@ -11594,10 +11744,10 @@ self = noun;
       say__p=1;ParaContent();  print (PrintText) SC_45;  new_line; .L_Say7; .L_SayX7;
       ! phrase 2
       ! [2: move wooden key to player]
-       MoveObject(I110_wooden_key, player, 0, false); 
+       MoveObject(I116_wooden_key, player, 0, false); 
       ! phrase 3
       ! [3: remove char-siu bau from play]
-       RemoveFromPlay(I113_char_siu_bau); 
+       RemoveFromPlay(I119_char_siu_bau); 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_746, 746, true);
@@ -11606,7 +11756,7 @@ self = noun;
 ! No specific request
 ! Instead of attacking Madman Mercer:
 [ R_747 ;
-   if ((action ==##Attack) &&  (actor==player) && ((noun == I116_madman_mercer) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Attack) &&  (actor==player) && ((noun == I122_madman_mercer) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_747, 747);
       ! phrase 1
@@ -22946,7 +23096,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ];
 #ENDIF;
 
-Constant MAX_ROUTE_LENGTH = 57 + 32;
+Constant MAX_ROUTE_LENGTH = 67 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -26602,15 +26752,25 @@ Verb meta 'tree'
 
 [ LITTLE_USED_DO_NOTHING_R; rfalse; ];
 
-Array LIST_CONST_1211 --> 0 9 2 (I126_light_source) (I127_reflector) ;
-Array LIST_CONST_1220 --> 0 9 2 (I126_light_source) (I128_condenser_lense) ;
-Array LIST_CONST_1230 --> 0 9 2 (I126_light_source) (I129_douser) ;
-Array LIST_CONST_1239 --> 0 9 2 (I126_light_source) (I130_film_gate) ;
-Array LIST_CONST_1249 --> 0 9 2 (I126_light_source) (I121_light_shutter_thingy) ;
-Array LIST_CONST_1258 --> 0 9 2 (I126_light_source) (I122_light_imaging_lens_thin) ;
-Array LIST_CONST_1269 --> 0 9 2 (I126_light_source) (I123_light_aperture_plate_th) ;
-Array LIST_CONST_1280 --> 0 9 2 (I126_light_source) (I124_light_viewing_screen_th) ;
-Array LIST_CONST_1291 --> 0 9 2 (I126_light_source) (I131_film_gate_pressure_plat) ;
+Array LIST_CONST_1268 --> 0 9 2 (I101_light_source) (I102_reflector) ;
+Array LIST_CONST_1277 --> 0 9 2 (I101_light_source) (I128_reflector_condenser_len) ;
+Array LIST_CONST_1287 --> 0 9 2 (I101_light_source) (I105_shutter) ;
+Array LIST_CONST_1296 --> 0 9 2 (I101_light_source) (I104_imaging_lens) ;
+Array LIST_CONST_1307 --> 0 9 2 (I101_light_source) (I106_viewing_screen) ;
+Array LIST_CONST_1318 --> 0 9 2 (I123_light_reflecting_thingy) (I128_reflector_condenser_len) ;
+Array LIST_CONST_1329 --> 0 9 2 (I123_light_reflecting_thingy) (I105_shutter) ;
+Array LIST_CONST_1339 --> 0 9 2 (I123_light_reflecting_thingy) (I104_imaging_lens) ;
+Array LIST_CONST_1353 --> 0 9 2 (I123_light_reflecting_thingy) (I106_viewing_screen) ;
+Array LIST_CONST_1365 --> 0 9 2 (I102_reflector) (I103_condenser_lense) ;
+Array LIST_CONST_1375 --> 0 9 2 (I102_reflector) (I105_shutter) ;
+Array LIST_CONST_1383 --> 0 9 2 (I102_reflector) (I104_imaging_lens) ;
+Array LIST_CONST_1393 --> 0 9 2 (I102_reflector) (I106_viewing_screen) ;
+Array LIST_CONST_1403 --> 0 9 2 (I103_condenser_lense) (I105_shutter) ;
+Array LIST_CONST_1413 --> 0 9 2 (I103_condenser_lense) (I104_imaging_lens) ;
+Array LIST_CONST_1424 --> 0 9 2 (I103_condenser_lense) (I106_viewing_screen) ;
+Array LIST_CONST_1435 --> 0 9 2 (I104_imaging_lens) (I105_shutter) ;
+Array LIST_CONST_1445 --> 0 9 2 (I104_imaging_lens) (I106_viewing_screen) ;
+Array LIST_CONST_1456 --> 0 9 2 (I105_shutter) (I106_viewing_screen) ;
 
 
 
@@ -26814,8 +26974,8 @@ Constant NO_PAST_TENSE_ACTIONS 0;
 I7BASPL = blockv_sp;
 blockv_sp = blockv_sp + 16;
 switch(pt) {
-    0: new = ((((Adj_3_t1_v9(I116_madman_mercer)))));
-    1: new = ((((Adj_3_t1_v9(I116_madman_mercer)))));
+    0: new = ((((Adj_3_t1_v9(I122_madman_mercer)))));
+    1: new = ((((Adj_3_t1_v9(I122_madman_mercer)))));
     default: print "*** No such past tense condition ***^"; new = false;
 }
 blockv_sp = blockv_sp - 16;
@@ -28493,7 +28653,7 @@ ArgumentTypeFailed(filename, line);
 
 
 Array ConstantListPointers --> 
-LIST_CONST_1211 LIST_CONST_1220 LIST_CONST_1230 LIST_CONST_1239 LIST_CONST_1249 LIST_CONST_1258 LIST_CONST_1269 LIST_CONST_1280 LIST_CONST_1291  0 0;
+LIST_CONST_1268 LIST_CONST_1277 LIST_CONST_1287 LIST_CONST_1296 LIST_CONST_1307 LIST_CONST_1318 LIST_CONST_1329 LIST_CONST_1339 LIST_CONST_1353 LIST_CONST_1365 LIST_CONST_1375 LIST_CONST_1383 LIST_CONST_1393 LIST_CONST_1403 LIST_CONST_1413 LIST_CONST_1424 LIST_CONST_1435 LIST_CONST_1445 LIST_CONST_1456  0 0;
 
 Constant SC_48 = " ";
 Constant SC_67 = " and ";
@@ -28665,9 +28825,9 @@ Array Runtime_Quotations_Displayed --> 1;
 [ DistributeBlockConstants obj pv;
 ];
 #ifdef TARGET_ZCODE;
-Constant MEMORY_HEAP_SIZE = 8192;
+Constant MEMORY_HEAP_SIZE = 16384;
 #ifnot;
-Constant MEMORY_HEAP_SIZE = 32768;
+Constant MEMORY_HEAP_SIZE = 65536;
 #endif;
 
 

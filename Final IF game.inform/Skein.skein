@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x9227040" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x168f3d40" />
+  <activeNode nodeId="node-0x14355310" />
   <item nodeId="node-0x9227040">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -21,7 +21,7 @@ You can see Madman Mercer here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="569">NO</temporary>
+    <temporary score="673">NO</temporary>
     <children>
       <child nodeId="node-0x92d8530" />
       <child nodeId="node-0x132a5bb0" />
@@ -102,14 +102,14 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
   </item>
   <item nodeId="node-0x1c7317f0">
     <command xml:space="preserve">x madman</command>
-    <result xml:space="preserve">A white guy about 5 foot 3 inches with curly brown hair wearing a hockey mask.  He is holding a machete.
+    <result xml:space="preserve">A white guy about 5 foot 7 inches with curly brown hair wearing a hockey mask.  He is holding a machete.
 
 Madman Mercer walks to another room.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="569">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
     <children>
       <child nodeId="node-0x168f3d40" />
     </children>
@@ -121,7 +121,220 @@ Madman Mercer walks to another room.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="568">YES</temporary>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x132932c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x132932c0">
+    <command xml:space="preserve">go s</command>
+    <result xml:space="preserve">
+Downtown
+A street lighted with street light.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x143ba410" />
+    </children>
+  </item>
+  <item nodeId="node-0x143ba410">
+    <command xml:space="preserve">go n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The outside of all the stores around you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x100930a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x100930a0">
+    <command xml:space="preserve">go ne</command>
+    <result xml:space="preserve">
+Furniture Store
+Lots of furniture clutter the store.
+
+You can see shutter and green key here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x1434e310" />
+    </children>
+  </item>
+  <item nodeId="node-0x1434e310">
+    <command xml:space="preserve">go sw</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The outside of all the stores around you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x168b4480" />
+    </children>
+  </item>
+  <item nodeId="node-0x168b4480">
+    <command xml:space="preserve">go s</command>
+    <result xml:space="preserve">
+Downtown
+A street lighted with street light.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c716470" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c716470">
+    <command xml:space="preserve">go n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The outside of all the stores around you.
+
+You can see Madman Mercer here.
+
+Madman Mercer walks to another room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x143aabf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x143aabf0">
+    <command xml:space="preserve">go e</command>
+    <result xml:space="preserve">
+Video Store
+A rental video shop, with stands and stands of videos.
+
+You can see Viewing Screen and titanium key here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x1aca14c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1aca14c0">
+    <command xml:space="preserve">take viewing screen</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x168d0d60" />
+    </children>
+  </item>
+  <item nodeId="node-0x168d0d60">
+    <command xml:space="preserve">go w</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The outside of all the stores around you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ac25870" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ac25870">
+    <command xml:space="preserve">go nw</command>
+    <result xml:space="preserve">
+Hair Salon
+A hair salon with little pieces of hair on the floor everywhere.
+
+You can see Light Source, a wad of hair (closed), and a scissor here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x13261c60" />
+    </children>
+  </item>
+  <item nodeId="node-0x13261c60">
+    <command xml:space="preserve">take light source</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c77b3e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c77b3e0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Light Source
+  Viewing Screen
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x100f2c80" />
+    </children>
+  </item>
+  <item nodeId="node-0x100f2c80">
+    <command xml:space="preserve">combine light source with viewing screen</command>
+    <result xml:space="preserve">You fuse together Light Source and Viewing Screen.
+
+You now have a Light Viewing Screen Thingy.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c753ee0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c753ee0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Light Viewing Screen Thingy
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="673">YES</temporary>
+    <children>
+      <child nodeId="node-0x14355310" />
+    </children>
+  </item>
+  <item nodeId="node-0x14355310">
+    <command xml:space="preserve">go s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="672">YES</temporary>
   </item>
   <item nodeId="node-0x13279ce0">
     <command xml:space="preserve">x madman mercer</command>

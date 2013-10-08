@@ -6,7 +6,7 @@ Inform called as: /Users/dzhang16/Desktop/Dylan/Inform.app/Contents/Resources/Co
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 1650 words long.
+I've now read your source text, which is 1761 words long.
 
 
 -----------------------------------------------------
@@ -146,7 +146,7 @@ Phase XII ... Code generation
 
 ==== Phase XII.18 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 8192, given requirement of 8192
+Providing for a total heap of 16384, given requirement of 9728
 
 
 -----------------------------------------------------

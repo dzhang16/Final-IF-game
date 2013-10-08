@@ -53,6 +53,14 @@ Flashlight is a thing.  Flashlight is lit.  The flashlight is in the basket of f
 
 basket of fruit is an open openable container in the fruit stands.  The description is "A glowing basket containing many glowing apples."
 
+[10 film projector parts]
+
+[1]Light Source is a thing in the hair salon.  
+[2]Reflector is a thing in the restaurant.
+[3]Condenser Lense is a thing in the convenience store.
+[4]Imaging Lens is a thing in the Bathroom.
+[5]shutter is a thing in the furniture store.
+[6]Viewing Screen is a thing in the video store. 
 
 [instead statements]
 
@@ -138,9 +146,11 @@ end if.
 
 
 Every turn:
-	if Madman Mercer is visible for 3 turns, end the game in death
+	if Madman Mercer is visible for 3 turns, end the game in death [make it so that it is 3 turns in a row]
 	
 
+[Every turn:
+	if Madman Mercer and player are in the current space for 3 turns, end the game in death.]
 
 [The combining action from TONIC]
 Understand "combine [something] with [something]" as combining it with.
@@ -179,38 +189,50 @@ Report combining it with:
 
 Table of Projector Parts
 Parts List	Results
-{light source, reflector}	Light Reflecting Thingy
-{light source, condenser lense}	Light Condenser Thingy
-{light source, Douser}	Light Dousing Thingy
-{light source, Film Gate}	Light Gate Thingy
-{light source, Shutter}	Light Shutter Thingy
-{light source, Imaging Lens}	Light Imaging Lens Thingy
-{light source, Aperture Plate}	Light Aperture Plate Thingy
-{light source, Viewing Screen}	Light Viewing Screen Thingy
-{light source, Film Gate Pressure Plate}	Light Gate Pressure Thingy
+{light source, reflector}	Light Reflecting Thingy[1+1]
+{light source, condenser lens}	Light Condenser Thingy[1+1]
+{light source, Shutter}	Light Shutter Thingy[1+1]
+{light source, Imaging Lens}	Light Imaging Lens Thingy[1+1]
+{light source, Viewing Screen}	Light Viewing Screen Thingy[1+1]
+{Light Reflecting Thingy, condenser lens}	Light Reflecting Condenser [2+1]
+{Light Reflecting Thingy, Shutter}	Light Reflecting Shutter[2+1]
+{Light Reflecting Thingy, Imaging Lens}	Light Reflecting + Imaging Lens Thing [2+1]
+{Light Reflecting Thingy, Viewing Screen}	Light Reflecting Viewing Screen [2+1]
+{reflector, condenser lense}	Reflector condenser lens Thingy[1+1]
+{reflector, Shutter}	Reflector Shutter Thingy[1+1]
+{reflector, Imaging Lens}	Reflector Imaging Lens Thingy[1+1]
+{reflector, Viewing Screen}	Reflector Viewing Screen Thingy[1+1]
+{condenser lense, shutter}	Condensing Shutter Lens Thingy[1+1]
+{condenser lense, Imaging Lens}	Condensing Imaging Lens Thingy[1+1]
+{condenser lense, Viewing Screen}	Condensing Viewing Screen Thingy[1+1]
+{Imaging Lens, Shutter}	Imaging Shutter Lens Thingy[1+1]
+{Imaging Lens, Viewing Screen}	Imaging Viewing Screen Thingy[1+1]
+{Shutter, Viewing Screen}	Viewing Shutter Screen Thingy[1+1]
 
+[1+1]
 Light Reflecting Thingy is an object.
 Light Condenser Thingy is an object.
-Light Dousing Thingy is an object.
-Light Gate Thingy is an object.
 Light Shutter Thingy is an object.
 Light Imaging Lens Thingy is an object.
-Light Aperture Plate Thingy is an object.
-Light Viewing Screen Thingy is an object.
-Light Gate Pressure Thingy is an object.
+Light Viewing Screen Thingy is an object.  
+Reflector condenser lens Thingy is an object.
+Reflector Shutter Thingy is an object.
+Reflector Imaging Lens Thingy is an object.
+Reflector Viewing Screen Thingy is an object. 
+Condensing Shutter Lens Thingy is an object.
+Condensing Imaging Lens Thingy is an object.
+Condensing Viewing Screen Thingy is an object.
+Imaging Shutter Lens Thingy is an object.
+Imaging Viewing Screen Thingy is an object.
+Viewing Shutter Screen Thingy is an object.
 
-[10 film projector parts]
+[2+1]
+Light reflecting condenser is an object.
+Light reflecting shutter is an object.
+Light reflecting + Imaging Lens Thing is an object.
+Light reflecting viewing screen is an object.
 
-[1]Light Source is a thing in the hair salon.  
-[2]Reflector is a thing in the restaurant.
-[3]Condenser Lense is a thing in the convenience store.
-[4]Douser is a thing in the Fish Market.
-[5]Film Gate is a thing in the Downtown.
-[6]Shutter is a thing in the Fruit Stands .
-[7]Imaging Lens is a thing in the Bathroom.
-[8]Aperture Plate is a thing in the furniture store.
-[9]Viewing Screen is a thing in the video store.
-[10]Film Gate Pressure Plate is a thing in the stage.
+
 
 
 
