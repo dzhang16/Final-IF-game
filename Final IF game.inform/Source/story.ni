@@ -57,10 +57,32 @@ basket of fruit is an open openable container in the fruit stands.  The descript
 
 [1]Light Source is a thing in the hair salon.  
 [2]Reflector is a thing in the restaurant.
-[3]Condenser Lense is a thing in the convenience store.
+[3]Condenser Lens is a thing in the convenience store.
 [4]Imaging Lens is a thing in the Bathroom.
 [5]shutter is a thing in the furniture store.
 [6]Viewing Screen is a thing in the video store. 
+
+The Instruction Manual is an object. The Instruction Manual is in the Downtown. The Instruction Manual is undescribed. The description of the Instruction Manual is "How to Build a Film Projector for Dummies:
+
+Steps: 
+
+*note: must combine in this order 
+
+1. Combine Light Source with Reflector
+
+2. Combine Light Source + Reflector Thing with Condenser Lens
+
+3. Combine Light Source + Reflector + Condenser Lens Thing with Imaging Lens
+
+4. Combine Light Source + Reflector + Condenser Lens + Imaging Lens Thing with Shutter
+
+5. Combine Light Source + Reflector + Condenser Lens + Imaging Lens + Shutter Thing with Viewing Screen
+
+6. After combining you should have a Film Projector
+
+7. Find Film"
+
+
 
 [instead statements]
 
@@ -152,6 +174,9 @@ Every turn:
 [Every turn:
 	if Madman Mercer and player are in the current space for 3 turns, end the game in death.]
 
+
+
+
 [The combining action from TONIC]
 Understand "combine [something] with [something]" as combining it with.
 Combining it with is an action applying to two things.
@@ -189,7 +214,12 @@ Report combining it with:
 
 Table of Projector Parts
 Parts List	Results
-{light source, reflector}	Light Reflecting Thingy[1+1]
+{Light Source, Reflector}	Light Source Reflector Thing
+{Light Source Reflector Thing, Condenser Lens}	Light Source Reflector Condenser Lens Thing
+{Light Source Reflector Condenser Lens Thing, Imaging Lens}	Light Source Reflector Condenser Lens Imaging Lens Thing
+{Light Source Reflector Condenser Lens Imaging Lens Thing, Shutter}	Light Source Reflector Condenser Lens Imaging Lens Shutter Thing
+{Light Source Reflector Condenser Lens Imaging Lens Shutter Thing, Viewing Screen}	Film Projector
+[{light source, reflector}	Light Reflecting Thingy[1+1]
 {light source, condenser lens}	Light Condenser Thingy[1+1]
 {light source, Shutter}	Light Shutter Thingy[1+1]
 {light source, Imaging Lens}	Light Imaging Lens Thingy[1+1]
@@ -198,6 +228,12 @@ Parts List	Results
 {Light Reflecting Thingy, Shutter}	Light Reflecting Shutter[2+1]
 {Light Reflecting Thingy, Imaging Lens}	Light Reflecting + Imaging Lens Thing [2+1]
 {Light Reflecting Thingy, Viewing Screen}	Light Reflecting Viewing Screen [2+1]
+{Light Condenser Thingy, reflector}	Light Condenser Reflector [2+1]
+{Light Condenser Thingy, Shutter}	Light condenser Shutter [2+1]
+{Light Condenser Thingy, Imaging Lens}	Light Condenser + Imaging Lens Thing [2+1]
+{Light Condenser Thingy, Viewing Screen}	Light Condenser + Viewing Screen Thing [2+1]
+{Light Shutter Thingy, reflector}	Light Shutter + reflector [2+1]
+{Light Shutter Thingy, condenser lens}	Light Shutter + condenser lens [2+1]
 {reflector, condenser lense}	Reflector condenser lens Thingy[1+1]
 {reflector, Shutter}	Reflector Shutter Thingy[1+1]
 {reflector, Imaging Lens}	Reflector Imaging Lens Thingy[1+1]
@@ -207,10 +243,10 @@ Parts List	Results
 {condenser lense, Viewing Screen}	Condensing Viewing Screen Thingy[1+1]
 {Imaging Lens, Shutter}	Imaging Shutter Lens Thingy[1+1]
 {Imaging Lens, Viewing Screen}	Imaging Viewing Screen Thingy[1+1]
-{Shutter, Viewing Screen}	Viewing Shutter Screen Thingy[1+1]
+{Shutter, Viewing Screen}	Viewing Shutter Screen Thingy[1+1]]
 
 [1+1]
-Light Reflecting Thingy is an object.
+[Light Reflecting Thingy is an object.
 Light Condenser Thingy is an object.
 Light Shutter Thingy is an object.
 Light Imaging Lens Thingy is an object.
@@ -224,18 +260,41 @@ Condensing Imaging Lens Thingy is an object.
 Condensing Viewing Screen Thingy is an object.
 Imaging Shutter Lens Thingy is an object.
 Imaging Viewing Screen Thingy is an object.
-Viewing Shutter Screen Thingy is an object.
+Viewing Shutter Screen Thingy is an object.]
 
 [2+1]
-Light reflecting condenser is an object.
+[Light reflecting condenser is an object.
 Light reflecting shutter is an object.
 Light reflecting + Imaging Lens Thing is an object.
 Light reflecting viewing screen is an object.
+Light condenser reflector is an object.
+Light condenser shutter is an object.
+Light Condenser + Imaging Lens Thing
+Light Condenser + Viewing Screen Thing]
+
+[combined objects]
+[1]Light Source Reflector Thing is an object.
+[2]Light Source Reflector Condenser Lens Thing is an object.
+[3]Light Source Reflector Condenser Lens Imaging Lens Thing is an object.
+[4]Light Source Reflector Condenser Lens Imaging Lens Shutter Thing is an object.
+[5]Film Projector is an object.
 
 
 
-
-
+[secret door]
+[Include Secret Doors by Andrew Owen.]
+The Small Windowless Room is a room. "It smells dusty in here, as if the secret door hasn't been
+opened in ages."
+[The oak door is north of the stage and south of the Small Windowless Room. The oak door is
+a secret door. ]
+The oak wall paneling is scenery in the stage. The description is "Richly carved oak paneling
+covers the north wall[if the oak door is open]. One of the panels has been opened; it’s actually a
+door[otherwise if the oak door is revealed]. One of the panels has an unusually wide seam around
+it[end if]." Understand "carved" and "panel" as the paneling.
+After examining the oak wall paneling for the first time:
+now the oak door is revealed;
+say "One of the panels has an unusually wide seam around it. On closer inspection, the panel
+57proves to be a door!"
 
 
 
