@@ -53,8 +53,15 @@ Flashlight is a thing.  Flashlight is lit.  The flashlight is in the basket of f
 
 basket of fruit is an open openable container in the fruit stands.  The description is "A glowing basket containing many glowing apples."
 
-[10 film projector parts]
+[ripped papers]
+small ripped paper is a thing.
+cold ripped paper is a thing.
+paint splattered ripped paper is a thing.
+perfume scented ripped paper is a thing.
+dirty ripped paper is a thing.
+pee-stained ripped paper is a thing.
 
+[10 film projector parts]
 [1]Light Source is a thing in the hair salon.  
 [2]Reflector is a thing in the restaurant.
 [3]Condenser Lens is a thing in the convenience store.
@@ -62,7 +69,7 @@ basket of fruit is an open openable container in the fruit stands.  The descript
 [5]shutter is a thing in the furniture store.
 [6]Viewing Screen is a thing in the video store. 
 
-The Instruction Manual is an object. The Instruction Manual is in the Downtown. The Instruction Manual is undescribed. The description of the Instruction Manual is "How to Build a Film Projector for Dummies:
+The Instruction Manual is an object. The Instruction Manual is in the Downtown. The description of the Instruction Manual is "How to Build a Film Projector for Dummies:
 
 Steps: 
 
@@ -84,6 +91,9 @@ Steps:
 
 
 
+[Understand Statements]
+Understand "read [something]" as examining.
+
 [instead statements]
 
 instead of taking flashlight:
@@ -98,6 +108,30 @@ Instead of eating char-siu bau:
 Instead of attacking Madman Mercer:
 	say "Madman Mercer is unphased by your weak punch, and BOOM counters with a nice little uppercut knocking you down.  You lose conciousness as you see Madman Mercer walking toward you.";
 	end the game in death.
+	
+Instead of opening beautiful safe:
+	say "you see a small ripped paper.";
+	move small ripped paper to beautiful safe.
+	
+Instead of opening titanium safe:
+	say "you see a cold ripped paper.";
+	move cold ripped paper to titanium safe.
+	
+Instead of opening green safe:
+	say "you see a paint splattered ripped paper.";
+	move paint splattered ripped paper to green safe.
+	
+Instead of opening fancy safe:
+	say "you see a perfume scented ripped paper.";
+	move perfume scented ripped paper to fancy safe.
+	
+Instead of opening wooden safe:
+	say "you see a dirty ripped paper.";
+	move dirty ripped paper to wooden safe.
+	
+Instead of opening smelly safe:
+	say "you see a pee-stained ripped paper.";
+	move pee-stained ripped paper to smelly safe.
 	
 
 [after staments]
@@ -282,11 +316,11 @@ Light Condenser + Viewing Screen Thing]
 
 
 [secret door]
-[Include Secret Doors by Andrew Owen.]
+[Include Secret Doors by Andrew Owen.
 The Small Windowless Room is a room. "It smells dusty in here, as if the secret door hasn't been
 opened in ages."
-[The oak door is north of the stage and south of the Small Windowless Room. The oak door is
-a secret door. ]
+The oak door is north of the stage and south of the Small Windowless Room. The oak door is
+a secret door. 
 The oak wall paneling is scenery in the stage. The description is "Richly carved oak paneling
 covers the north wall[if the oak door is open]. One of the panels has been opened; it’s actually a
 door[otherwise if the oak door is revealed]. One of the panels has an unusually wide seam around
@@ -294,8 +328,15 @@ it[end if]." Understand "carved" and "panel" as the paneling.
 After examining the oak wall paneling for the first time:
 now the oak door is revealed;
 say "One of the panels has an unusually wide seam around it. On closer inspection, the panel
-57proves to be a door!"
+57proves to be a door!"]
 
+
+The Vault is a room.  It is south of the Downtown. "Snug yet paranoid, this represents the state of the art in cheerless security." The lock is here. "A mammoth safe, with a dial which can spin to any number, has pride of place. It must weigh about the same as a small car, so don't get any ideas." Instead of opening the lock, say "The safe opens only when turned to the correct combination."
+In the lock is a silver florin. The lock is closed and fixed in place. Understand "dial" as the lock.
+Spinning it to is an action applying to one thing and one number. Check spinning it to: if the noun is not the lock, say "[The noun] does not spin." instead. Report spinning it to: say "Click! and nothing else happens."
+Understand "spin [something] to [a number]" as spinning it to.
+After spinning the closed lock to 1384: now the lock is open; say "Clonk! and the safe door swings slowly open, revealing [a list of things in the lock]."
+Test me with "open safe / spin safe to 1131 / open safe / spin safe to 1384 / x safe / get florin".
 
 
 

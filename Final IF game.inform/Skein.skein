@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x9227040" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1ac10830" />
+  <activeNode nodeId="node-0x16849c80" />
   <item nodeId="node-0x9227040">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -11,7 +11,7 @@
 You go out with your friends to watch the latest horror movie called &quot;Madman Mercer.&quot;  In the movie you see Madman Mercer chasing people through Chinatown in the middle of the night with a machete.  As you are watching you suddenly fall asleep.  When you wake up you are on the cold damp ground of Chinatown.  You can hear the high speed swings of a machete.  In your mind you think &quot;Oh no&quot;. 
 Escape the Movie
 An Interactive Fiction by Dylan Zhang
-Release 1 / Serial number 131008 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 131009 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Cultural Plaza
 The outside of all the stores around you.
@@ -21,7 +21,7 @@ You can see Madman Mercer here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">NO</temporary>
+    <temporary score="875">NO</temporary>
     <children>
       <child nodeId="node-0x92d8530" />
       <child nodeId="node-0x132a5bb0" />
@@ -109,7 +109,7 @@ Madman Mercer walks to another room.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x168f3d40" />
     </children>
@@ -121,7 +121,7 @@ Madman Mercer walks to another room.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x132932c0" />
     </children>
@@ -134,8 +134,8 @@ A street lighted with street light.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="791">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x143ba410" />
     </children>
@@ -149,7 +149,7 @@ The outside of all the stores around you.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x100930a0" />
     </children>
@@ -165,7 +165,7 @@ You can see shutter and green key here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x1434e310" />
     </children>
@@ -178,8 +178,8 @@ The outside of all the stores around you.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="791">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x168b4480" />
     </children>
@@ -193,7 +193,7 @@ A street lighted with street light.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x1c716470" />
     </children>
@@ -206,8 +206,8 @@ The outside of all the stores around you.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="791">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x143aabf0" />
     </children>
@@ -223,7 +223,7 @@ You can see Viewing Screen and titanium key here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x1aca14c0" />
     </children>
@@ -234,8 +234,8 @@ You can see Viewing Screen and titanium key here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="791">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x168d0d60" />
     </children>
@@ -249,7 +249,7 @@ The outside of all the stores around you.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x1ac25870" />
     </children>
@@ -260,14 +260,12 @@ The outside of all the stores around you.
 Hair Salon
 A hair salon with little pieces of hair on the floor everywhere.
 
-You can see Madman Mercer, Light Source, a wad of hair (closed), and a scissor here.
-
-Madman Mercer walks to another room.
+You can see Light Source, a wad of hair (closed), and a scissor here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="791">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x13261c60" />
     </children>
@@ -279,7 +277,7 @@ Madman Mercer walks to another room.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x1c77b3e0" />
     </children>
@@ -293,7 +291,7 @@ Madman Mercer walks to another room.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x100f2c80" />
     </children>
@@ -303,12 +301,10 @@ Madman Mercer walks to another room.
     <result xml:space="preserve">You can&apos;t combine Light Source and Viewing Screen into anything useful.
 Try another combination of things.
 
-Madman Mercer walks to another room.
-
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="791">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x1c753ee0" />
     </children>
@@ -321,8 +317,8 @@ Madman Mercer walks to another room.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="791">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x14355310" />
     </children>
@@ -334,7 +330,7 @@ Madman Mercer walks to another room.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x1ac4f870" />
     </children>
@@ -343,10 +339,12 @@ Madman Mercer walks to another room.
     <command xml:space="preserve">go s</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
+Madman Mercer walks to another room.
+
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x168d9530" />
     </children>
@@ -360,7 +358,7 @@ The outside of all the stores around you.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x13264ea0" />
     </children>
@@ -375,8 +373,8 @@ You can see Reflector and a char-siu bau (closed) here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="791">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x1c745690" />
     </children>
@@ -388,7 +386,7 @@ You can see Reflector and a char-siu bau (closed) here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="791">YES</temporary>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x1ac5fbd0" />
     </children>
@@ -402,8 +400,8 @@ You can see Reflector and a char-siu bau (closed) here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="791">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x16848e90" />
     </children>
@@ -414,8 +412,8 @@ You can see Reflector and a char-siu bau (closed) here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="791">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="865">YES</temporary>
     <children>
       <child nodeId="node-0x1ac10830" />
     </children>
@@ -426,8 +424,27 @@ You can see Reflector and a char-siu bau (closed) here.
 
 &gt;</result>
     <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="865">YES</temporary>
+    <children>
+      <child nodeId="node-0x14356d90" />
+    </children>
+  </item>
+  <item nodeId="node-0x14356d90">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">Are you sure you want to restart? </result>
+    <played>YES</played>
     <changed>YES</changed>
-    <temporary score="790">YES</temporary>
+    <temporary score="865">YES</temporary>
+    <children>
+      <child nodeId="node-0x1acf2200" />
+    </children>
+  </item>
+  <item nodeId="node-0x1acf2200">
+    <command xml:space="preserve">yes</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="864">YES</temporary>
   </item>
   <item nodeId="node-0x13279ce0">
     <command xml:space="preserve">x madman mercer</command>
@@ -573,15 +590,115 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 Downtown
 A street lighted with street light.
 
+You can see an Instruction Manual here.
+
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="561">YES</temporary>
+    <temporary score="875">YES</temporary>
     <children>
-      <child nodeId="node-0x1322dc80" />
       <child nodeId="node-0x1682cc00" />
       <child nodeId="node-0x100c9ed0" />
+      <child nodeId="node-0x21467d30" />
+      <child nodeId="node-0x1322dc80" />
     </children>
+  </item>
+  <item nodeId="node-0x1322dc80">
+    <command xml:space="preserve">restart</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="479">YES</temporary>
+  </item>
+  <item nodeId="node-0x21467d30">
+    <command xml:space="preserve">x manual</command>
+    <result xml:space="preserve">How to Build a Film Projector for Dummies:
+
+Steps:
+
+*note: must combine in this order
+
+1. Combine Light Source with Reflector
+
+2. Combine Light Source + Reflector Thing with Condenser Lens
+
+3. Combine Light Source + Reflector + Condenser Lens Thing with Imaging Lens
+
+4. Combine Light Source + Reflector + Condenser Lens + Imaging Lens Thing with Shutter
+
+5. Combine Light Source + Reflector + Condenser Lens + Imaging Lens + Shutter Thing with Viewing Screen
+
+6. After combining you should have a Film Projector
+
+7. Find Film
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="875">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ace28e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ace28e0">
+    <command xml:space="preserve">go s</command>
+    <result xml:space="preserve">
+Vault
+Snug yet paranoid, this represents the state of the art in cheerless security.
+
+A mammoth safe, with a dial which can spin to any number, has pride of place. It must weigh about the same as a small car, so don&apos;t get any ideas.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="875">YES</temporary>
+    <children>
+      <child nodeId="node-0x1f6665e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1f6665e0">
+    <command xml:space="preserve">spin dial to 1131</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="875">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b1fc80" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b1fc80">
+    <command xml:space="preserve">spin safe to 1131</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="875">YES</temporary>
+    <children>
+      <child nodeId="node-0x14349890" />
+    </children>
+  </item>
+  <item nodeId="node-0x14349890">
+    <command xml:space="preserve">open safe</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="875">YES</temporary>
+    <children>
+      <child nodeId="node-0x16849c80" />
+    </children>
+  </item>
+  <item nodeId="node-0x16849c80">
+    <command xml:space="preserve">spin dial</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="874">YES</temporary>
   </item>
   <item nodeId="node-0x100c9ed0">
     <command xml:space="preserve">go e</command>
@@ -1656,11 +1773,5 @@ You can see beautiful key here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="560">YES</temporary>
-  </item>
-  <item nodeId="node-0x1322dc80">
-    <command xml:space="preserve">restart</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="479">YES</temporary>
   </item>
 </Skein>
