@@ -6,7 +6,7 @@ Inform called as: /Users/dzhang16/Desktop/Dylan/Inform.app/Contents/Resources/Co
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 2070 words long.
+I've now read your source text, which is 2207 words long.
 
 
 -----------------------------------------------------
@@ -153,7 +153,7 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 106 files written as streams.
+Total of 108 files written as streams.
 
 That concludes the debugging log from this run of Inform.
 Its contents were as follows, and can be changed by placing

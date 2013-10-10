@@ -53,16 +53,18 @@ Flashlight is a thing.  Flashlight is lit.  The flashlight is in the basket of f
 
 basket of fruit is an open openable container in the fruit stands.  The description is "A glowing basket containing many glowing apples."
 
+Film is a thing.  The description is "a wheel of film that is for film projectors that is titled ‘Movie Theater’"
+
 [ripped papers]
-small ripped paper is a thing.
-cold ripped paper is a thing.
-paint splattered ripped paper is a thing.
-perfume scented ripped paper is a thing.
-dirty ripped paper is a thing.
-pee-stained ripped paper is a thing.
+small ripped paper is a thing.  The description of the small ripped paper is "A  C  H  D".
+cold ripped paper is a thing.  The description of the cold ripped paper is "いちいいichi  san  hachi  yon".
+paint splattered ripped paper is a thing.  The description of the paint splattered ripped paper is "hint".
+perfume scented ripped paper is a thing.  The description of the perfume scented ripped paper is "hint".
+dirty ripped paper is a thing.  The description of the dirty ripped paper is "hint".
+pee-stained ripped paper is a thing.  The description of the pee-stained ripped paper is "hint".
 
 [10 film projector parts]
-[1]Light Source is a thing in the hair salon.  
+[1][Light Source is a thing in the hair salon.  ]
 [2]Reflector is a thing in the restaurant.
 [3]Condenser Lens is a thing in the convenience store.
 [4]Imaging Lens is a thing in the Bathroom.
@@ -75,15 +77,15 @@ Steps:
 
 *note: must combine in this order 
 
-1. Combine Light Source with Reflector
+1. Combine flashlight with Reflector
 
-2. Combine Light Source + Reflector Thing with Condenser Lens
+2. Combine flashlight + Reflector Thing with Condenser Lens
 
-3. Combine Light Source + Reflector + Condenser Lens Thing with Imaging Lens
+3. Combine flashlight + Reflector + Condenser Lens Thing with Imaging Lens
 
-4. Combine Light Source + Reflector + Condenser Lens + Imaging Lens Thing with Shutter
+4. Combine flashlight + Reflector + Condenser Lens + Imaging Lens Thing with Shutter
 
-5. Combine Light Source + Reflector + Condenser Lens + Imaging Lens + Shutter Thing with Viewing Screen
+5. Combine flashlight + Reflector + Condenser Lens + Imaging Lens + Shutter Thing with Viewing Screen
 
 6. After combining you should have a Film Projector
 
@@ -133,6 +135,7 @@ Instead of opening smelly safe:
 	say "you see a pee-stained ripped paper.";
 	move pee-stained ripped paper to smelly safe.
 	
+	
 
 [after staments]
 
@@ -181,6 +184,22 @@ the wad of hair is a thing in the hair salon.  It is a closed openable container
 
 [wooden key hiding place]
 the char-siu bau is a thing in the restaurant.  it is a closed openable container.  It is locked and lockable.  The description of the char-siu bau is "an amazing delicacy that make you mouth drool.  You really want to eat it."
+
+[beautiful key hiding place]
+the toilet is a fixed in place thing.  The toilet is in the bathroom.  it is a open openable container. 
+
+After going to the bathroom for the first time:
+	say "you have the urge to POOP";
+	move player to the bathroom.
+	
+[instead of pooping in toilet:
+	say "Plop! brown things come from your butt into the toilet"]
+	
+After pooping in toilet for the first time:
+	say "Plop! brown things come from your butt into the toilet"
+	
+After flushing toilet for the first time:
+	say "the toilet clogs and you see a key appear!"
 
 [Madman Mercer]
 Madman Mercer is a male man.  Madman Mercer is in the Cultural Plaza.  The description of Madman Mercer is "A white guy about 5 foot 7 inches with curly brown hair wearing a hockey mask.  He is holding a machete."
@@ -248,11 +267,11 @@ Report combining it with:
 
 Table of Projector Parts
 Parts List	Results
-{Light Source, Reflector}	Light Source Reflector Thing
-{Light Source Reflector Thing, Condenser Lens}	Light Source Reflector Condenser Lens Thing
-{Light Source Reflector Condenser Lens Thing, Imaging Lens}	Light Source Reflector Condenser Lens Imaging Lens Thing
-{Light Source Reflector Condenser Lens Imaging Lens Thing, Shutter}	Light Source Reflector Condenser Lens Imaging Lens Shutter Thing
-{Light Source Reflector Condenser Lens Imaging Lens Shutter Thing, Viewing Screen}	Film Projector
+{flashlight, Reflector}	flashlight Reflector Thing
+{flashlight Reflector Thing, Condenser Lens}	flashlight Reflector Condenser Lens Thing
+{flashlight Reflector Condenser Lens Thing, Imaging Lens}	flashlight Reflector Condenser Lens Imaging Lens Thing
+{flashlight Reflector Condenser Lens Imaging Lens Thing, Shutter}	flashlight Reflector Condenser Lens Imaging Lens Shutter Thing
+{flashlight Reflector Condenser Lens Imaging Lens Shutter Thing, Viewing Screen}	Film Projector
 [{light source, reflector}	Light Reflecting Thingy[1+1]
 {light source, condenser lens}	Light Condenser Thingy[1+1]
 {light source, Shutter}	Light Shutter Thingy[1+1]
@@ -307,10 +326,10 @@ Light Condenser + Imaging Lens Thing
 Light Condenser + Viewing Screen Thing]
 
 [combined objects]
-[1]Light Source Reflector Thing is an object.
-[2]Light Source Reflector Condenser Lens Thing is an object.
-[3]Light Source Reflector Condenser Lens Imaging Lens Thing is an object.
-[4]Light Source Reflector Condenser Lens Imaging Lens Shutter Thing is an object.
+[1]flashlight Reflector Thing is an object.
+[2]flashlight Reflector Condenser Lens Thing is an object.
+[3]flashlight Reflector Condenser Lens Imaging Lens Thing is an object.
+[4]flashlight Reflector Condenser Lens Imaging Lens Shutter Thing is an object.
 [5]Film Projector is an object.
 
 
@@ -331,12 +350,17 @@ say "One of the panels has an unusually wide seam around it. On closer inspectio
 57proves to be a door!"]
 
 
-The Vault is a room.  It is south of the Downtown. "Snug yet paranoid, this represents the state of the art in cheerless security." The lock is here. "A mammoth safe, with a dial which can spin to any number, has pride of place. It must weigh about the same as a small car, so don't get any ideas." Instead of opening the lock, say "The safe opens only when turned to the correct combination."
-In the lock is a silver florin. The lock is closed and fixed in place. Understand "dial" as the lock.
-Spinning it to is an action applying to one thing and one number. Check spinning it to: if the noun is not the lock, say "[The noun] does not spin." instead. Report spinning it to: say "Click! and nothing else happens."
+[code for a combo lock]
+The Vault is a room.  It is north of the stage. "Snug yet eery room that gives you the heeby jeebies." The metal box is here. "A mammoth metal box, with a dial which can spin to any number.  It looks as hard as diamond, so don't get any ideas." Instead of opening the metal box, say "The box opens only when turned to the correct combination."
+In the metal box is film. The metal box is closed and fixed in place. Understand "dial" as the metal box.
+Spinning it to is an action applying to one thing and one number. Check spinning it to: if the noun is not the metal box, say "[The noun] does not spin." instead. Report spinning it to: say "Click! and nothing else happens."
 Understand "spin [something] to [a number]" as spinning it to.
-After spinning the closed lock to 1384: now the lock is open; say "Clonk! and the safe door swings slowly open, revealing [a list of things in the lock]."
-Test me with "open safe / spin safe to 1131 / open safe / spin safe to 1384 / x safe / get florin".
+After spinning the closed metal box to 1384: now the metal box is open; say "Clonk! and the metal door swings slowly open, revealing [a list of things in the metal box]."
+
+
+[definitions]
+Pooping is an action applying to one thing.  Understand "poop in [something]" as pooping.
+Flushing is an action applying to one thing.  Understand "flush [something]" as flushing.
 
 
 
