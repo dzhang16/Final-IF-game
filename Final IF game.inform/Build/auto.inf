@@ -29,7 +29,7 @@ Array UUID_ARRAY string "UUID://47A45AD4-0344-476F-A247-827011B588AE//";
 Constant Story "Escape the Movie";
 Constant Headline "An Interactive Fiction";
 Constant Story_Author SC_2;
-Serial "131009";
+Serial "131011";
 
 Default Story 0;
 Default Headline 0;
@@ -563,7 +563,7 @@ Property short_name_indef 0; ! not used by I7, but an interesting hook in the li
 
 Constant life = NULL;
 
-Constant ActionCount = 84;
+Constant ActionCount = 85;
 
 Fake_Action ListMiscellany;
 Fake_Action Miscellany;
@@ -4296,7 +4296,7 @@ Global lightflag = false;
 ];
 
 
-Constant REQUISITION_STACK_SIZE = 3*63;
+Constant REQUISITION_STACK_SIZE = 3*64;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -8926,7 +8926,7 @@ Array valued_property_offsets --> valued_property_offsets_SIZE;
 ];
 
 
-Constant NUMBER_RULEBOOKS_CREATED = 377;
+Constant NUMBER_RULEBOOKS_CREATED = 380;
 Constant V0_printing_the_name_of_some = 0;
 Constant V1_printing_the_plural_name_ = 1;
 Constant V2_printing_a_number_of_some = 2;
@@ -9293,7 +9293,7 @@ Constant IK1_First = I88_cultural_plaza;
 Constant IK2_First = selfobj;
 Constant IK3_First = I46_north;
 Constant IK4_First = nothing;
-Constant IK5_First = I120_fancy_safe;
+Constant IK5_First = I119_fancy_safe;
 Constant IK6_First = nothing;
 Constant IK7_First = nothing;
 Constant IK8_First = selfobj;
@@ -9728,11 +9728,11 @@ Object -> I130_madman_mercer ""
     with cap_short_name "Madman Mercer"
     has mark_as_thing
     with IK2_Count 32
-    with IK2_Link I120_fancy_safe
+    with IK2_Link I119_fancy_safe
     with IK8_Count 1
-    with IK8_Link nothing
+    with IK8_Link I138_store_clerk
     with IK10_Count 0
-    with IK10_Link nothing
+    with IK10_Link I138_store_clerk
     with KD_Count 10
     with name 'madman' 'mercer' 
     with action_bitmap 0 0 0 0 0 0 
@@ -9754,11 +9754,11 @@ Object I89_stage ""
     with name 'stage' 
 ;
 
-Object -> I120_fancy_safe ""
+Object -> I119_fancy_safe ""
     class K5_container
     with short_name "fancy safe"
     with description SC_8
-    with with_key I121_fancy_key
+    with with_key I120_fancy_key
     has static
     has scenery
     has ~open
@@ -9768,16 +9768,16 @@ Object -> I120_fancy_safe ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 22
-    with IK2_Link I121_fancy_key
-    with IK5_Count 4
-    with IK5_Link I116_titanium_safe
+    with IK2_Count 21
+    with IK2_Link I120_fancy_key
+    with IK5_Count 3
+    with IK5_Link I125_char_siu_bau
     with KD_Count 5
     with name 'fancy' 'safe' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I121_fancy_key ""
+Object -> I120_fancy_key ""
     class K2_thing
     with short_name "fancy key"
     with description SC_9
@@ -9786,8 +9786,8 @@ Object -> I121_fancy_key ""
     with list_together 0
     with cap_short_name "Fancy key"
     has mark_as_thing
-    with IK2_Count 23
-    with IK2_Link I108_reflector
+    with IK2_Count 22
+    with IK2_Link I109_reflector
     with KD_Count 2
     with name 'fancy' 'key' 
     with action_bitmap 0 0 0 0 0 0 
@@ -9809,7 +9809,7 @@ Object I90_restaurant ""
     with name 'restaurant' 
 ;
 
-Object -> I108_reflector ""
+Object -> I109_reflector ""
     class K2_thing
     with short_name "Reflector"
     has proper
@@ -9817,40 +9817,17 @@ Object -> I108_reflector ""
     with list_together 0
     with cap_short_name "Reflector"
     has mark_as_thing
-    with IK2_Count 10
-    with IK2_Link I116_titanium_safe
+    with IK2_Count 11
+    with IK2_Link I125_char_siu_bau
     with KD_Count 2
     with name 'reflector' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I116_titanium_safe ""
-    class K5_container
-    with short_name "titanium safe"
-    with description SC_11
-    with with_key I117_titanium_key
-    has static
-    has scenery
-    has ~open
-    has openable
-    has lockable
-    has locked
-    with vector 0
-    with list_together 0
-    has mark_as_thing
-    with IK2_Count 18
-    with IK2_Link I126_char_siu_bau
-    with IK5_Count 2
-    with IK5_Link I126_char_siu_bau
-    with KD_Count 5
-    with name 'titanium' 'safe' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I126_char_siu_bau ""
+Object -> I125_char_siu_bau ""
     class K5_container
     with short_name "char-siu bau"
-    with description SC_12
+    with description SC_11
     has ~open
     has openable
     has lockable
@@ -9858,26 +9835,26 @@ Object -> I126_char_siu_bau ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 28
-    with IK2_Link I123_wooden_key
-    with IK5_Count 7
-    with IK5_Link I122_wooden_safe
+    with IK2_Count 27
+    with IK2_Link I122_wooden_key
+    with IK5_Count 6
+    with IK5_Link I121_wooden_safe
     with KD_Count 5
     with name 'char-siu' 'bau' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I123_wooden_key ""
+Object -> -> I122_wooden_key ""
     class K2_thing
     with short_name "wooden key"
-    with description SC_13
+    with description SC_12
     has proper
     with vector 0
     with list_together 0
     with cap_short_name "Wooden key"
     has mark_as_thing
-    with IK2_Count 25
-    with IK2_Link I112_viewing_screen
+    with IK2_Count 24
+    with IK2_Link I113_viewing_screen
     with KD_Count 2
     with name 'wooden' 'key' 
     with action_bitmap 0 0 0 0 0 0 
@@ -9886,7 +9863,7 @@ Object -> -> I123_wooden_key ""
 Object I91_video_store ""
     class K1_room
     with short_name "Video Store"
-    with description SC_14
+    with description SC_13
     has proper
     with vector 0
     with room_index -1
@@ -9899,7 +9876,7 @@ Object I91_video_store ""
     with name 'video' 'store' 
 ;
 
-Object -> I112_viewing_screen ""
+Object -> I113_viewing_screen ""
     class K2_thing
     with short_name "Viewing Screen"
     has proper
@@ -9907,34 +9884,18 @@ Object -> I112_viewing_screen ""
     with list_together 0
     with cap_short_name "Viewing Screen"
     has mark_as_thing
-    with IK2_Count 14
-    with IK2_Link I117_titanium_key
+    with IK2_Count 15
+    with IK2_Link I121_wooden_safe
     with KD_Count 2
     with name 'viewing' 'screen' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I117_titanium_key ""
-    class K2_thing
-    with short_name "titanium key"
-    with description SC_15
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Titanium key"
-    has mark_as_thing
-    with IK2_Count 19
-    with IK2_Link I122_wooden_safe
-    with KD_Count 2
-    with name 'titanium' 'key' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I122_wooden_safe ""
+Object -> I121_wooden_safe ""
     class K5_container
     with short_name "wooden safe"
-    with description SC_16
-    with with_key I123_wooden_key
+    with description SC_14
+    with with_key I122_wooden_key
     has static
     has scenery
     has ~open
@@ -9944,10 +9905,10 @@ Object -> I122_wooden_safe ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 24
-    with IK2_Link I114_beautiful_safe
-    with IK5_Count 5
-    with IK5_Link I114_beautiful_safe
+    with IK2_Count 23
+    with IK2_Link I115_beautiful_safe
+    with IK5_Count 4
+    with IK5_Link I115_beautiful_safe
     with KD_Count 5
     with name 'wooden' 'safe' 
     with action_bitmap 0 0 0 0 0 0 
@@ -9956,7 +9917,7 @@ Object -> I122_wooden_safe ""
 Object I92_hair_salon ""
     class K1_room
     with short_name "Hair Salon"
-    with description SC_17
+    with description SC_15
     has proper
     with vector 0
     with room_index -1
@@ -9969,11 +9930,11 @@ Object I92_hair_salon ""
     with name 'hair' 'salon' 
 ;
 
-Object -> I114_beautiful_safe ""
+Object -> I115_beautiful_safe ""
     class K5_container
     with short_name "beautiful safe"
-    with description SC_18
-    with with_key I115_beautiful_key
+    with description SC_16
+    with with_key I116_beautiful_key
     has static
     has scenery
     has ~open
@@ -9983,8 +9944,8 @@ Object -> I114_beautiful_safe ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 16
-    with IK2_Link I127_wad_of_hair
+    with IK2_Count 17
+    with IK2_Link I126_scissor
     with IK5_Count 1
     with IK5_Link I127_wad_of_hair
     with KD_Count 5
@@ -9992,11 +9953,25 @@ Object -> I114_beautiful_safe ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
+Object -> I126_scissor ""
+    class K2_thing
+    with short_name "scissor"
+    with description SC_17
+    with vector 0
+    with list_together 0
+    has mark_as_thing
+    with IK2_Count 28
+    with IK2_Link I127_wad_of_hair
+    with KD_Count 2
+    with name 'scissor' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
 Object -> I127_wad_of_hair ""
     class K5_container
     with short_name "wad of hair"
-    with description SC_19
-    with with_key I128_scissor
+    with description SC_18
+    with with_key I126_scissor
     has ~open
     has openable
     has lockable
@@ -10005,48 +9980,18 @@ Object -> I127_wad_of_hair ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 29
-    with IK2_Link I125_smelly_key
-    with IK5_Count 8
-    with IK5_Link I118_green_safe
+    with IK2_Link I112_shutter
+    with IK5_Count 7
+    with IK5_Link I117_green_safe
     with KD_Count 5
     with name 'wad' 'of' 'hair' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> -> I125_smelly_key ""
-    class K2_thing
-    with short_name "smelly key"
-    with description SC_20
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Smelly key"
-    has mark_as_thing
-    with IK2_Count 27
-    with IK2_Link I128_scissor
-    with KD_Count 2
-    with name 'smelly' 'key' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I128_scissor ""
-    class K2_thing
-    with short_name "scissor"
-    with description SC_21
-    with vector 0
-    with list_together 0
-    has mark_as_thing
-    with IK2_Count 30
-    with IK2_Link I111_shutter
-    with KD_Count 2
-    with name 'scissor' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
 Object I93_furniture_store ""
     class K1_room
     with short_name "Furniture Store"
-    with description SC_22
+    with description SC_19
     has proper
     with vector 0
     with room_index -1
@@ -10059,7 +10004,7 @@ Object I93_furniture_store ""
     with name 'furniture' 'store' 
 ;
 
-Object -> I111_shutter ""
+Object -> I112_shutter ""
     class K2_thing
     with short_name "shutter"
     has proper
@@ -10067,24 +10012,24 @@ Object -> I111_shutter ""
     with list_together 0
     with cap_short_name "Shutter"
     has mark_as_thing
-    with IK2_Count 13
-    with IK2_Link I119_green_key
+    with IK2_Count 14
+    with IK2_Link I118_green_key
     with KD_Count 2
     with name 'shutter' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I119_green_key ""
+Object -> I118_green_key ""
     class K2_thing
     with short_name "green key"
-    with description SC_23
+    with description SC_20
     has proper
     with vector 0
     with list_together 0
     with cap_short_name "Green key"
     has mark_as_thing
-    with IK2_Count 21
-    with IK2_Link I109_condenser_lens
+    with IK2_Count 20
+    with IK2_Link I110_condenser_lens
     with KD_Count 2
     with name 'green' 'key' 
     with action_bitmap 0 0 0 0 0 0 
@@ -10093,7 +10038,7 @@ Object -> I119_green_key ""
 Object I94_convenience_store ""
     class K1_room
     with short_name "Convenience Store"
-    with description SC_24
+    with description SC_21
     has proper
     has ~light
     with vector 0
@@ -10107,7 +10052,7 @@ Object I94_convenience_store ""
     with name 'convenience' 'store' 
 ;
 
-Object -> I109_condenser_lens ""
+Object -> I110_condenser_lens ""
     class K2_thing
     with short_name "Condenser Lens"
     has proper
@@ -10115,18 +10060,18 @@ Object -> I109_condenser_lens ""
     with list_together 0
     with cap_short_name "Condenser Lens"
     has mark_as_thing
-    with IK2_Count 11
-    with IK2_Link I118_green_safe
+    with IK2_Count 12
+    with IK2_Link I117_green_safe
     with KD_Count 2
     with name 'condenser' 'lens' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I118_green_safe ""
+Object -> I117_green_safe ""
     class K5_container
     with short_name "green safe"
-    with description SC_25
-    with with_key I119_green_key
+    with description SC_22
+    with with_key I118_green_key
     has static
     has scenery
     has ~open
@@ -10136,19 +10081,37 @@ Object -> I118_green_safe ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 20
-    with IK2_Link I110_imaging_lens
-    with IK5_Count 3
-    with IK5_Link I124_smelly_safe
+    with IK2_Count 19
+    with IK2_Link I138_store_clerk
+    with IK5_Count 2
+    with IK5_Link I123_smelly_safe
     with KD_Count 5
     with name 'green' 'safe' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object -> I138_store_clerk ""
+    class K10_man
+    with short_name "Store Clerk"
+    with description SC_23
+    with vector 0
+    with list_together 0
+    has mark_as_thing
+    with IK2_Count 39
+    with IK2_Link I111_imaging_lens
+    with IK8_Count 2
+    with IK8_Link nothing
+    with IK10_Count 1
+    with IK10_Link nothing
+    with KD_Count 10
+    with name 'store' 'clerk' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
 Object I95_bathroom ""
     class K1_room
     with short_name "Bathroom"
-    with description SC_26
+    with description SC_24
     has proper
     with vector 0
     with room_index -1
@@ -10161,7 +10124,7 @@ Object I95_bathroom ""
     with name 'bathroom' 
 ;
 
-Object -> I110_imaging_lens ""
+Object -> I111_imaging_lens ""
     class K2_thing
     with short_name "Imaging Lens"
     has proper
@@ -10169,34 +10132,34 @@ Object -> I110_imaging_lens ""
     with list_together 0
     with cap_short_name "Imaging Lens"
     has mark_as_thing
-    with IK2_Count 12
-    with IK2_Link I115_beautiful_key
+    with IK2_Count 13
+    with IK2_Link I116_beautiful_key
     with KD_Count 2
     with name 'imaging' 'lens' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I115_beautiful_key ""
+Object -> I116_beautiful_key ""
     class K2_thing
     with short_name "beautiful key"
-    with description SC_27
+    with description SC_25
     has proper
     with vector 0
     with list_together 0
     with cap_short_name "Beautiful key"
     has mark_as_thing
-    with IK2_Count 17
-    with IK2_Link I124_smelly_safe
+    with IK2_Count 18
+    with IK2_Link I123_smelly_safe
     with KD_Count 2
     with name 'beautiful' 'key' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I124_smelly_safe ""
+Object -> I123_smelly_safe ""
     class K5_container
     with short_name "smelly safe"
-    with description SC_28
-    with with_key I125_smelly_key
+    with description SC_26
+    with with_key I124_smelly_key
     has static
     has scenery
     has ~open
@@ -10206,16 +10169,16 @@ Object -> I124_smelly_safe ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 26
-    with IK2_Link I129_toilet
-    with IK5_Count 6
-    with IK5_Link I129_toilet
+    with IK2_Count 25
+    with IK2_Link I128_toilet
+    with IK5_Count 5
+    with IK5_Link I128_toilet
     with KD_Count 5
     with name 'smelly' 'safe' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> I129_toilet ""
+Object -> I128_toilet ""
     class K5_container
     with short_name "toilet"
     has static
@@ -10224,19 +10187,35 @@ Object -> I129_toilet ""
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 31
-    with IK2_Link I113_instruction_manual
-    with IK5_Count 9
+    with IK2_Count 30
+    with IK2_Link I129_poop
+    with IK5_Count 8
     with IK5_Link I100_basket_of_fruit
     with KD_Count 5
     with name 'toilet' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
+Object -> -> I129_poop ""
+    class K2_thing
+    with short_name "poop"
+    with description SC_27
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Poop"
+    has mark_as_thing
+    with IK2_Count 31
+    with IK2_Link I114_instruction_manual
+    with KD_Count 2
+    with name 'poop' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
 Object I96_downtown ""
     class K1_room
     with short_name "Downtown"
-    with description SC_29
+    with description SC_28
     has proper
     with vector 0
     with room_index -1
@@ -10249,14 +10228,14 @@ Object I96_downtown ""
     with name 'downtown' 
 ;
 
-Object -> I113_instruction_manual ""
+Object -> I114_instruction_manual ""
     class K2_thing
     with short_name "Instruction Manual"
-    with description SC_30
+    with description SC_29
     with vector 0
     with list_together 0
     has mark_as_thing
-    with IK2_Count 15
+    with IK2_Count 16
     with IK2_Link I100_basket_of_fruit
     with KD_Count 2
     with name 'instruction' 'manual' 
@@ -10266,7 +10245,7 @@ Object -> I113_instruction_manual ""
 Object I97_fish_market ""
     class K1_room
     with short_name "Fish Market"
-    with description SC_31
+    with description SC_30
     has proper
     with vector 0
     with room_index -1
@@ -10282,7 +10261,7 @@ Object I97_fish_market ""
 Object I98_fruit_stands ""
     class K1_room
     with short_name "Fruit Stands"
-    with description SC_32
+    with description SC_31
     has proper
     with vector 0
     with room_index -1
@@ -10298,7 +10277,7 @@ Object I98_fruit_stands ""
 Object -> I100_basket_of_fruit ""
     class K5_container
     with short_name "basket of fruit"
-    with description SC_33
+    with description SC_32
     has open
     has openable
     with vector 0
@@ -10316,7 +10295,7 @@ Object -> I100_basket_of_fruit ""
 Object -> -> I99_flashlight ""
     class K2_thing
     with short_name "Flashlight"
-    with description SC_34
+    with description SC_33
     has proper
     has light
     with vector 0
@@ -10324,13 +10303,29 @@ Object -> -> I99_flashlight ""
     with cap_short_name "Flashlight"
     has mark_as_thing
     with IK2_Count 1
-    with IK2_Link I102_small_ripped_paper
+    with IK2_Link I101_apple
     with KD_Count 2
     with name 'flashlight' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I102_small_ripped_paper ""
+Object -> -> I101_apple ""
+    class K2_thing
+    with short_name "Apple"
+    with description SC_34
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Apple"
+    has mark_as_thing
+    with IK2_Count 3
+    with IK2_Link I103_small_ripped_paper
+    with KD_Count 2
+    with name 'apple' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I103_small_ripped_paper ""
     class K2_thing
     with short_name "small ripped paper"
     with description SC_35
@@ -10339,14 +10334,14 @@ Object I102_small_ripped_paper ""
     with list_together 0
     with cap_short_name "Small ripped paper"
     has mark_as_thing
-    with IK2_Count 4
-    with IK2_Link I103_cold_ripped_paper
+    with IK2_Count 5
+    with IK2_Link I104_cold_ripped_paper
     with KD_Count 2
     with name 'small' 'ripped' 'paper' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I103_cold_ripped_paper ""
+Object I104_cold_ripped_paper ""
     class K2_thing
     with short_name "cold ripped paper"
     with description text_routine_0
@@ -10355,14 +10350,14 @@ Object I103_cold_ripped_paper ""
     with list_together 0
     with cap_short_name "Cold ripped paper"
     has mark_as_thing
-    with IK2_Count 5
-    with IK2_Link I104_paint_splattered_ripped
+    with IK2_Count 6
+    with IK2_Link I105_paint_splattered_ripped
     with KD_Count 2
     with name 'cold' 'ripped' 'paper' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I104_paint_splattered_ripped ""
+Object I105_paint_splattered_ripped ""
     class K2_thing
     with short_name "paint splattered ripped paper"
     with description SC_36
@@ -10371,14 +10366,14 @@ Object I104_paint_splattered_ripped ""
     with list_together 0
     with cap_short_name "Paint splattered ripped paper"
     has mark_as_thing
-    with IK2_Count 6
-    with IK2_Link I105_perfume_scented_ripped_
+    with IK2_Count 7
+    with IK2_Link I106_perfume_scented_ripped_
     with KD_Count 2
     with name 'paint' 'splattered' 'ripped' 'paper' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I105_perfume_scented_ripped_ ""
+Object I106_perfume_scented_ripped_ ""
     class K2_thing
     with short_name "perfume scented ripped paper"
     with description SC_36
@@ -10387,14 +10382,14 @@ Object I105_perfume_scented_ripped_ ""
     with list_together 0
     with cap_short_name "Perfume scented ripped paper"
     has mark_as_thing
-    with IK2_Count 7
-    with IK2_Link I106_dirty_ripped_paper
+    with IK2_Count 8
+    with IK2_Link I107_dirty_ripped_paper
     with KD_Count 2
     with name 'perfume' 'scented' 'ripped' 'paper' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I106_dirty_ripped_paper ""
+Object I107_dirty_ripped_paper ""
     class K2_thing
     with short_name "dirty ripped paper"
     with description SC_36
@@ -10403,26 +10398,41 @@ Object I106_dirty_ripped_paper ""
     with list_together 0
     with cap_short_name "Dirty ripped paper"
     has mark_as_thing
-    with IK2_Count 8
-    with IK2_Link I107_pee_stained_ripped_pape
+    with IK2_Count 9
+    with IK2_Link I108_soggy_scrap_of_paper
     with KD_Count 2
     with name 'dirty' 'ripped' 'paper' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object I107_pee_stained_ripped_pape ""
+Object I108_soggy_scrap_of_paper ""
     class K2_thing
-    with short_name "pee-stained ripped paper"
+    with short_name "soggy scrap of paper"
     with description SC_36
     has proper
     with vector 0
     with list_together 0
-    with cap_short_name "Pee-stained ripped paper"
+    with cap_short_name "Soggy scrap of paper"
     has mark_as_thing
-    with IK2_Count 9
+    with IK2_Count 10
+    with IK2_Link I124_smelly_key
+    with KD_Count 2
+    with name 'soggy' 'scrap' 'of' 'paper' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I124_smelly_key ""
+    class K2_thing
+    with short_name "smelly key"
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Smelly key"
+    has mark_as_thing
+    with IK2_Count 26
     with IK2_Link I131_flashlight_reflector_th
     with KD_Count 2
-    with name 'pee-stained' 'ripped' 'paper' 
+    with name 'smelly' 'key' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
@@ -10525,8 +10535,8 @@ Object -> I137_metal_box ""
     with list_together 0
     has mark_as_thing
     with IK2_Count 38
-    with IK2_Link I101_film
-    with IK5_Count 10
+    with IK2_Link I102_film
+    with IK5_Count 9
     with IK5_Link nothing
     with KD_Count 5
     with name 'metal' 'box' 'dial' 
@@ -10534,7 +10544,7 @@ Object -> I137_metal_box ""
     with action_bitmap 0 0 0 0 0 0 
 ;
 
-Object -> -> I101_film ""
+Object -> -> I102_film ""
     class K2_thing
     with short_name "Film"
     with description SC_39
@@ -10543,7 +10553,7 @@ Object -> -> I101_film ""
     with list_together 0
     with cap_short_name "Film"
     has mark_as_thing
-    with IK2_Count 3
+    with IK2_Count 4
     with IK2_Link nothing
     with KD_Count 2
     with name 'film' 
@@ -10589,14 +10599,14 @@ Array Global_Vars -->
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
 Array tab_0_0 table $0064 0  (SC_41)  (SC_42)  (SC_43)  (SC_44)  (SC_45) ;
 Array tab_0_1 table $0465 1  (0)  (0)  (1)  (0)  (0) ;
-Array tab_0_2 table $2066 2  (Consult_Grammar_100)  (Consult_Grammar_101)  (Consult_Grammar_102)  (Consult_Grammar_103)  (Consult_Grammar_104) ;
+Array tab_0_2 table $2066 2  (Consult_Grammar_102)  (Consult_Grammar_103)  (Consult_Grammar_104)  (Consult_Grammar_105)  (Consult_Grammar_106) ;
 Array tab_0_3 table $0067 3  (IMMEDIATELY_RESTART_VM_R)  (IMMEDIATELY_RESTORE_SAVED_R)  TABLE_NOVALUE (IMMEDIATELY_QUIT_R)  (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4  TABLE_NOVALUE TABLE_NOVALUE (V26_amusing_a_victorious_pla)  TABLE_NOVALUE TABLE_NOVALUE;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array T2_projector_parts table  tab_2_0 tab_2_1;
-Array tab_2_0 table $066b 10  (LIST_CONST_1588)  (LIST_CONST_1596)  (LIST_CONST_1609)  (LIST_CONST_1626)  (LIST_CONST_1645) ;
+Array tab_2_0 table $066b 11  (LIST_CONST_1551)  (LIST_CONST_1559)  (LIST_CONST_1572)  (LIST_CONST_1589)  (LIST_CONST_1608) ;
 Array tab_2_1 table $086c NULL  (I131_flashlight_reflector_th)  (I132_flashlight_reflector_co)  (I133_flashlight_reflector_co)  (I134_flashlight_reflector_co)  (I135_film_projector) ;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
@@ -10607,7 +10617,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $ff $ff $ff $ff $ff  ! Column 1
+  $ff $ff $ff $ff $ff $01  ! Column 1
   
   ! For table T2_projector_parts
   $00  ! Column 0
@@ -10723,8 +10733,9 @@ Array ActionData table
   ##A81_spinning_it_to  $$00011001  OBJECT_TY NUMBER_TY  0 20081
   ##A82_pooping  $$00001001  OBJECT_TY OBJECT_TY  0 20082
   ##A83_flushing  $$00001001  OBJECT_TY OBJECT_TY  0 20083
+  ##A84_talking_to  $$00001000  OBJECT_TY OBJECT_TY  0 20084
 ;
-Constant AD_RECORDS = 84;
+Constant AD_RECORDS = 85;
 [ ANSTVC_7 pos state;
     if (state == 1) {
         MStack-->pos = I88_cultural_plaza; pos++;
@@ -10865,6 +10876,7 @@ Constant AD_RECORDS = 84;
         ##A81_spinning_it_to: print "spinning"; print " "; if (for_say == 2) print "it"; else DA_Name(n); print " "; print "to"; if (for_say ~= 2) { print " "; DA_Number(parsed_number); }
         ##A82_pooping: print "pooping"; if (for_say ~= 2) { print " "; DA_Name(n); }
         ##A83_flushing: print "flushing"; if (for_say ~= 2) { print " "; DA_Name(n); }
+        ##A84_talking_to: print "talking to"; if (for_say ~= 2) { print " "; DA_Name(n); }
     }
 ];
 
@@ -10879,7 +10891,7 @@ Array ActionCoding -->
     ##Mild ##Swing ##Rub ##SetTo ##WaveHands ##Buy ##Sing ##Climb
     ##Sleep ##Quit ##Save ##Restore ##Restart ##Verify ##ScriptOn ##ScriptOff
     ##Version ##Score ##LMode3 ##LMode2 ##LMode1 ##NotifyOn ##NotifyOff ##Pronouns
-    ##A80_combining_it_with ##A81_spinning_it_to ##A82_pooping ##A83_flushing;
+    ##A80_combining_it_with ##A81_spinning_it_to ##A82_pooping ##A83_flushing ##A84_talking_to;
 
 
 Array ActionHappened --> 0 0 0 0 0 0;
@@ -10969,6 +10981,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 [ A81_spinning_it_toSub; return GenericVerbSub(368,369,370); ];
 [ A82_poopingSub; return GenericVerbSub(371,372,373); ];
 [ A83_flushingSub; return GenericVerbSub(374,375,376); ];
+[ A84_talking_toSub; return GenericVerbSub(377,378,379); ];
 
 [ MistakeActionSub;
     switch(understand_as_mistake_number) {
@@ -11215,7 +11228,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Every turn:
-[ R_758 
+[ R_759 
     t_0 ! Local variable e.g. 'current space' = room
     t_1 ! Local variable e.g. '?-1,-1?' = object
     ;
@@ -11242,7 +11255,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ];
 ! No specific request
 ! Every turn:
-[ R_759 ;
+[ R_760 ;
       ! phrase 1
       ! [1: if madman mercer is visible for 3 turns , end the game in death]
        if (TestSinglePastState(0, 1, false, 2) == 3 ) {  deadflag=1; story_complete=false;   }
@@ -11335,7 +11348,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Setting action variables for combining something with something:
-[ R_760 ;blockv_stack-->(blockv_sp+1) = BlkValueCreate(LIST_OF_TY,0,KD3_list_of_things);
+[ R_761 ;blockv_stack-->(blockv_sp+1) = BlkValueCreate(LIST_OF_TY,0,KD3_list_of_things);
     blockv_stack-->(blockv_sp+0) = BlkValueCreate(LIST_OF_TY,0,KD4_list_of_objects);
     blockv_sp = blockv_sp + 2;
     blockv_stack-->(blockv_sp++) = R_SHELL_0(blockv_sp-2);
@@ -11353,7 +11366,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
     ;
    if ((action ==##A80_combining_it_with) && ((noun ofclass K2_thing)) && ((second ofclass K2_thing))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_760, 760);
+   if (debug_rules) DB_Rule(R_761, 761);
       ! phrase 1
       ! [1: let x be a list of objects]
        t_0 = (blockv_stack-->(I7BASPL+0)); 
@@ -11395,7 +11408,7 @@ self = noun;
 @pull ct_1; @pull ct_0;
         if (debug_rules>1) print "  [11: end repeat]^";
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_760, 760, true);
+   else if (debug_rules > 1) DB_Rule(R_761, 761, true);
    rfalse;
 ];
 ! No specific request
@@ -11672,26 +11685,59 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! Rules in rulebook: Instead (B21_instead)
 ! ----------------------------------------------------------------------------------------------------
-! Rule 1/10 ! instead of taking flashlight:
+! Rule 1/11 ! Instead of talking to the Store Clerk for the first time:
+!   >>> I - Number of aspects constrained >>>
+! Rule 2/11 ! Instead of giving apple to the Store Clerk:
+!   >>> III.3.1 - Action/What/Second Thing Acted On >>>
+! Rule 3/11 ! instead of taking flashlight:
 !   === which is equally specific with ===
-! Rule 2/10 ! Instead of eating char-siu bau:
+! Rule 4/11 ! Instead of eating char-siu bau:
 !   === which is equally specific with ===
-! Rule 3/10 ! Instead of attacking Madman Mercer:
+! Rule 5/11 ! Instead of attacking Madman Mercer:
 !   === which is equally specific with ===
-! Rule 4/10 ! Instead of opening beautiful safe:
+! Rule 6/11 ! Instead of opening beautiful safe:
 !   === which is equally specific with ===
-! Rule 5/10 ! Instead of opening titanium safe:
+! Rule 7/11 ! Instead of opening green safe:
 !   === which is equally specific with ===
-! Rule 6/10 ! Instead of opening green safe:
+! Rule 8/11 ! Instead of opening fancy safe:
 !   === which is equally specific with ===
-! Rule 7/10 ! Instead of opening fancy safe:
+! Rule 9/11 ! Instead of opening wooden safe:
 !   === which is equally specific with ===
-! Rule 8/10 ! Instead of opening wooden safe:
+! Rule 10/11 ! instead of taking poop:
 !   === which is equally specific with ===
-! Rule 9/10 ! Instead of opening smelly safe:
-!   === which is equally specific with ===
-! Rule 10/10 ! Instead of opening the metal box:
+! Rule 11/11 ! Instead of opening the metal box:
 ! ----------------------------------------------------------------------------------------------------
+! No specific request
+! Instead of talking to the Store Clerk for the first time:
+[ R_752 ;
+   if ((PAPR_0() && (((TimesActionHasHappened-->0) == 1) && (ActionCurrentlyHappeningFlag->0)))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_752, 752);
+      ! phrase 1
+      ! [1: say ~Man I'm tired, and could really use some lihing mui apples right now, but this convenience store doesn't have fresh apples.~]
+      say__p=1;ParaContent();  print (PrintText) SC_50;  new_line; .L_Say6; .L_SayX6;
+      RulebookFails(); rtrue;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_752, 752, true);
+   rfalse;
+];
+! No specific request
+! Instead of giving apple to the Store Clerk:
+[ R_753 ;
+   if ((action ==##Give) &&  (actor==player) && ((noun == I101_apple) && (true)) && ((second == I138_store_clerk) && (true))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_753, 753);
+      ! phrase 1
+      ! [1: say ~Thanks man you are a life saver.  Here is something as a reward.[line break]You receive a piece of cold ripped paper~]
+      say__p=1;ParaContent();  print (PrintText) SC_51; ParaContent();  new_line; ParaContent();  print (PrintText) SC_52;  .L_Say7; .L_SayX7;
+      ! phrase 2
+      ! [2: move cold ripped paper to player]
+       MoveObject(I104_cold_ripped_paper, player, 0, false); 
+      RulebookFails(); rtrue;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_753, 753, true);
+   rfalse;
+];
 ! No specific request
 ! instead of taking flashlight:
 [ R_745 ;
@@ -11700,7 +11746,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_745, 745);
       ! phrase 1
       ! [1: say ~taken~]
-      say__p=1;ParaContent();  print (PrintText) SC_50;  .L_Say6; .L_SayX6;
+      say__p=1;ParaContent();  print (PrintText) SC_53;  .L_Say8; .L_SayX8;
       ! phrase 2
       ! [2: move flashlight to player]
        MoveObject(I99_flashlight, player, 0, false); 
@@ -11712,18 +11758,18 @@ self = noun;
 ! No specific request
 ! Instead of eating char-siu bau:
 [ R_746 ;
-   if ((action ==##Eat) &&  (actor==player) && ((noun == I126_char_siu_bau) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Eat) &&  (actor==player) && ((noun == I125_char_siu_bau) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_746, 746);
       ! phrase 1
       ! [1: say ~you start eating the char-siu bau, and suddenly you bite something hard.  You see that it is a wooden key.~]
-      say__p=1;ParaContent();  print (PrintText) SC_51;  new_line; .L_Say7; .L_SayX7;
+      say__p=1;ParaContent();  print (PrintText) SC_54;  new_line; .L_Say9; .L_SayX9;
       ! phrase 2
       ! [2: move wooden key to player]
-       MoveObject(I123_wooden_key, player, 0, false); 
+       MoveObject(I122_wooden_key, player, 0, false); 
       ! phrase 3
       ! [3: remove char-siu bau from play]
-       RemoveFromPlay(I126_char_siu_bau); 
+       RemoveFromPlay(I125_char_siu_bau); 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_746, 746, true);
@@ -11737,7 +11783,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_747, 747);
       ! phrase 1
       ! [1: say ~Madman Mercer is unphased by your weak punch, and BOOM counters with a nice little uppercut knocking you down.  You lose conciousness as you see Madman Mercer walking toward you.~]
-      say__p=1;ParaContent();  print (PrintText) SC_52;  new_line; .L_Say8; .L_SayX8;
+      say__p=1;ParaContent();  print (PrintText) SC_55;  new_line; .L_Say10; .L_SayX10;
       ! phrase 2
       ! [2: end the game in death]
        deadflag=1; story_complete=false; 
@@ -11749,117 +11795,97 @@ self = noun;
 ! No specific request
 ! Instead of opening beautiful safe:
 [ R_748 ;
-   if ((action ==##Open) &&  (actor==player) && ((noun == I114_beautiful_safe) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Open) &&  (actor==player) && ((noun == I115_beautiful_safe) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_748, 748);
       ! phrase 1
       ! [1: say ~you see a small ripped paper.~]
-      say__p=1;ParaContent();  print (PrintText) SC_53;  new_line; .L_Say9; .L_SayX9;
+      say__p=1;ParaContent();  print (PrintText) SC_56;  new_line; .L_Say11; .L_SayX11;
       ! phrase 2
       ! [2: move small ripped paper to beautiful safe]
-       MoveObject(I102_small_ripped_paper, I114_beautiful_safe, 0, false); 
+       MoveObject(I103_small_ripped_paper, I115_beautiful_safe, 0, false); 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_748, 748, true);
    rfalse;
 ];
 ! No specific request
-! Instead of opening titanium safe:
+! Instead of opening green safe:
 [ R_749 ;
-   if ((action ==##Open) &&  (actor==player) && ((noun == I116_titanium_safe) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Open) &&  (actor==player) && ((noun == I117_green_safe) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_749, 749);
       ! phrase 1
-      ! [1: say ~you see a cold ripped paper.~]
-      say__p=1;ParaContent();  print (PrintText) SC_54;  new_line; .L_Say10; .L_SayX10;
+      ! [1: say ~you see a paint splattered ripped paper.~]
+      say__p=1;ParaContent();  print (PrintText) SC_57;  new_line; .L_Say12; .L_SayX12;
       ! phrase 2
-      ! [2: move cold ripped paper to titanium safe]
-       MoveObject(I103_cold_ripped_paper, I116_titanium_safe, 0, false); 
+      ! [2: move paint splattered ripped paper to green safe]
+       MoveObject(I105_paint_splattered_ripped, I117_green_safe, 0, false); 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_749, 749, true);
    rfalse;
 ];
 ! No specific request
-! Instead of opening green safe:
+! Instead of opening fancy safe:
 [ R_750 ;
-   if ((action ==##Open) &&  (actor==player) && ((noun == I118_green_safe) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Open) &&  (actor==player) && ((noun == I119_fancy_safe) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_750, 750);
       ! phrase 1
-      ! [1: say ~you see a paint splattered ripped paper.~]
-      say__p=1;ParaContent();  print (PrintText) SC_55;  new_line; .L_Say11; .L_SayX11;
+      ! [1: say ~you see a perfume scented ripped paper.~]
+      say__p=1;ParaContent();  print (PrintText) SC_58;  new_line; .L_Say13; .L_SayX13;
       ! phrase 2
-      ! [2: move paint splattered ripped paper to green safe]
-       MoveObject(I104_paint_splattered_ripped, I118_green_safe, 0, false); 
+      ! [2: move perfume scented ripped paper to fancy safe]
+       MoveObject(I106_perfume_scented_ripped_, I119_fancy_safe, 0, false); 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_750, 750, true);
    rfalse;
 ];
 ! No specific request
-! Instead of opening fancy safe:
+! Instead of opening wooden safe:
 [ R_751 ;
-   if ((action ==##Open) &&  (actor==player) && ((noun == I120_fancy_safe) && (true))) { ! Runs only when pattern matches
+   if ((action ==##Open) &&  (actor==player) && ((noun == I121_wooden_safe) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_751, 751);
       ! phrase 1
-      ! [1: say ~you see a perfume scented ripped paper.~]
-      say__p=1;ParaContent();  print (PrintText) SC_56;  new_line; .L_Say12; .L_SayX12;
+      ! [1: say ~you see a dirty ripped paper.~]
+      say__p=1;ParaContent();  print (PrintText) SC_59;  new_line; .L_Say14; .L_SayX14;
       ! phrase 2
-      ! [2: move perfume scented ripped paper to fancy safe]
-       MoveObject(I105_perfume_scented_ripped_, I120_fancy_safe, 0, false); 
+      ! [2: move dirty ripped paper to wooden safe]
+       MoveObject(I107_dirty_ripped_paper, I121_wooden_safe, 0, false); 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_751, 751, true);
    rfalse;
 ];
 ! No specific request
-! Instead of opening wooden safe:
-[ R_752 ;
-   if ((action ==##Open) &&  (actor==player) && ((noun == I122_wooden_safe) && (true))) { ! Runs only when pattern matches
+! instead of taking poop:
+[ R_755 ;
+   if ((action ==##Take) &&  (actor==player) && ((noun == I129_poop) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_752, 752);
+   if (debug_rules) DB_Rule(R_755, 755);
       ! phrase 1
-      ! [1: say ~you see a dirty ripped paper.~]
-      say__p=1;ParaContent();  print (PrintText) SC_57;  new_line; .L_Say13; .L_SayX13;
-      ! phrase 2
-      ! [2: move dirty ripped paper to wooden safe]
-       MoveObject(I106_dirty_ripped_paper, I122_wooden_safe, 0, false); 
+      ! [1: say ~Poop is not solid enoguh and the brown goo slips through your hands.~]
+      say__p=1;ParaContent();  print (PrintText) SC_60;  new_line; .L_Say15; .L_SayX15;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_752, 752, true);
-   rfalse;
-];
-! No specific request
-! Instead of opening smelly safe:
-[ R_753 ;
-   if ((action ==##Open) &&  (actor==player) && ((noun == I124_smelly_safe) && (true))) { ! Runs only when pattern matches
-self = noun;
-   if (debug_rules) DB_Rule(R_753, 753);
-      ! phrase 1
-      ! [1: say ~you see a pee-stained ripped paper.~]
-      say__p=1;ParaContent();  print (PrintText) SC_58;  new_line; .L_Say14; .L_SayX14;
-      ! phrase 2
-      ! [2: move pee-stained ripped paper to smelly safe]
-       MoveObject(I107_pee_stained_ripped_pape, I124_smelly_safe, 0, false); 
-      RulebookFails(); rtrue;
-   } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_753, 753, true);
+   else if (debug_rules > 1) DB_Rule(R_755, 755, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of opening the metal box:
-[ R_764 ;
+[ R_765 ;
    if ((action ==##Open) &&  (actor==player) && ((noun == I137_metal_box) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_764, 764);
+   if (debug_rules) DB_Rule(R_765, 765);
       ! phrase 1
       ! [1: say ~The box opens only when turned to the correct combination.~]
-      say__p=1;ParaContent();  print (PrintText) SC_59;  new_line; .L_Say15; .L_SayX15;
+      say__p=1;ParaContent();  print (PrintText) SC_61;  new_line; .L_Say16; .L_SayX16;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_764, 764, true);
+   else if (debug_rules > 1) DB_Rule(R_765, 765, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -11867,10 +11893,10 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! Rules in rulebook: After (B24_after)
 ! ----------------------------------------------------------------------------------------------------
-! Rule 1/5 ! After pooping in toilet for the first time:
+! Rule 1/5 ! After going to the bathroom for the first time:
 !   >>> III.2.2 - Action/Where/Room Where Action Takes Place >>>
-! Rule 2/5 ! After going to the bathroom for the first time:
-!   >>> III.2.2 - Action/Where/Room Where Action Takes Place >>>
+! Rule 2/5 ! After pooping toilet for the first time:
+!   === which is equally specific with ===
 ! Rule 3/5 ! After flushing toilet for the first time:
 !   >>> I - Number of aspects constrained >>>
 ! Rule 4/5 ! After spinning the closed metal box to 1384:
@@ -11878,69 +11904,75 @@ self = noun;
 ! Rule 5/5 ! after taking flashlight:
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
-! After pooping in toilet for the first time:
+! After going to the bathroom for the first time:
 [ R_756 ;
-   if ((PAPR_0() && (((TimesActionHasHappened-->0) == 1) && (ActionCurrentlyHappeningFlag->0)))) { ! Runs only when pattern matches
+   if ((PAPR_1() && (((TimesActionHasHappened-->1) == 1) && (ActionCurrentlyHappeningFlag->1)))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_756, 756);
       ! phrase 1
-      ! [1: say ~Plop! brown things come from your butt into the toilet~]
-      say__p=1;ParaContent();  print (PrintText) SC_60;  .L_Say16; .L_SayX16;
+      ! [1: move player to the bathroom]
+       MoveObject(player, I95_bathroom, 0, false); 
+      ! phrase 2
+      ! [2: say ~you have the urge to POOP~]
+      say__p=1;ParaContent();  print (PrintText) SC_62;  .L_Say17; .L_SayX17;
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_756, 756, true);
    rfalse;
 ];
 ! No specific request
-! After going to the bathroom for the first time:
-[ R_755 ;
-   if ((PAPR_1() && (((TimesActionHasHappened-->1) == 1) && (ActionCurrentlyHappeningFlag->1)))) { ! Runs only when pattern matches
-self = noun;
-   if (debug_rules) DB_Rule(R_755, 755);
-      ! phrase 1
-      ! [1: say ~you have the urge to POOP~]
-      say__p=1;ParaContent();  print (PrintText) SC_61;  .L_Say17; .L_SayX17;
-      ! phrase 2
-      ! [2: move player to the bathroom]
-       MoveObject(player, I95_bathroom, 0, false); 
-      RulebookSucceeds(); rtrue;
-   } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_755, 755, true);
-   rfalse;
-];
-! No specific request
-! After flushing toilet for the first time:
+! After pooping toilet for the first time:
 [ R_757 ;
    if ((PAPR_2() && (((TimesActionHasHappened-->2) == 1) && (ActionCurrentlyHappeningFlag->2)))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_757, 757);
       ! phrase 1
-      ! [1: say ~the toilet clogs and you see a key appear!~]
-      say__p=1;ParaContent();  print (PrintText) SC_62;  new_line; .L_Say18; .L_SayX18;
+      ! [1: say ~Plop! brown things come from your butt into the toilet.  I recommend you flush it before it stinks up the place.~]
+      say__p=1;ParaContent();  print (PrintText) SC_63;  new_line; .L_Say18; .L_SayX18;
+      ! phrase 2
+      ! [2: now description of the toilet is ~A toilet filled with an explosion of poop.~]
+       WriteGProperty(9, I128_toilet,description,SC_64); 
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_757, 757, true);
    rfalse;
 ];
 ! No specific request
+! After flushing toilet for the first time:
+[ R_758 ;
+   if ((PAPR_3() && (((TimesActionHasHappened-->3) == 1) && (ActionCurrentlyHappeningFlag->3)))) { ! Runs only when pattern matches
+self = noun;
+   if (debug_rules) DB_Rule(R_758, 758);
+      ! phrase 1
+      ! [1: say ~the toilet clogs and a soggy scrap of paper appears!~]
+      say__p=1;ParaContent();  print (PrintText) SC_65;  new_line; .L_Say19; .L_SayX19;
+      ! phrase 2
+      ! [2: move soggy scrap of paper to toilet]
+       MoveObject(I108_soggy_scrap_of_paper, I128_toilet, 0, false); 
+      RulebookSucceeds(); rtrue;
+   } ! Runs only when pattern matches
+   else if (debug_rules > 1) DB_Rule(R_758, 758, true);
+   rfalse;
+];
+! No specific request
 ! After spinning the closed metal box to 1384:
-[ R_767 ;
+[ R_768 ;
    if ((action ==##A81_spinning_it_to) &&  (actor==player) && ((noun == I137_metal_box) && ((Adj_61_t1_v9(noun)))) && ((parsed_number == 1384) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_767, 767);
+   if (debug_rules) DB_Rule(R_768, 768);
       ! phrase 1
       ! [1: now the metal box is open]
        (Adj_60_t2_v9(I137_metal_box)); 
       ! phrase 2
       ! [2: say ~Clonk! and the metal door swings slowly open, revealing [a list of things in the metal box].~]
-      say__p=1;ParaContent();  print (PrintText) SC_63; ParaContent();  @push subst__v;
+      say__p=1;ParaContent();  print (PrintText) SC_66; ParaContent();  @push subst__v;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && (I137_metal_box == ContainerOf(subst__v))))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_64;  new_line; .L_Say19; .L_SayX19;
+		@pull subst__v; ParaContent();  print (PrintText) SC_67;  new_line; .L_Say20; .L_SayX20;
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_767, 767, true);
+   else if (debug_rules > 1) DB_Rule(R_768, 768, true);
    rfalse;
 ];
 ! No specific request
@@ -11951,7 +11983,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_754, 754);
       ! phrase 1
       ! [1: now description of the basket of fruit is ~A basket of apples.~]
-       WriteGProperty(9, I100_basket_of_fruit,description,SC_65); 
+       WriteGProperty(9, I100_basket_of_fruit,description,SC_68); 
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_754, 754, true);
@@ -12018,7 +12050,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_59, 59);
       ! phrase 1
       ! [1: say the printed plural name of the item]
-      say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(9, self=t_0,plural); @pull self;  .L_Say20; .L_SayX20;
+      say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(9, self=t_0,plural); @pull self;  .L_Say21; .L_SayX21;
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_59, 59, true);
@@ -12041,7 +12073,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_60, 60);
       ! phrase 1
       ! [1: say ~[listing group size in words] ~]
-      say__p=1;ParaContent();  print (number) say__n=(listing_size); ParaContent();  print (PrintText) SC_66;  .L_Say21; .L_SayX21;
+      say__p=1;ParaContent();  print (number) say__n=(listing_size); ParaContent();  print (PrintText) SC_69;  .L_Say22; .L_SayX22;
       ! phrase 2
       ! [2: carry out the printing the plural name activity with the item]
        CarryOutActivity(V1_printing_the_plural_name_, t_0); 
@@ -12155,7 +12187,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_744, 744);
       ! phrase 1
       ! [1: say ~Hey maybe you should actually TRY and play the game, you little cheater. K, thanks.~ instead]
-      say__p=1;ParaContent();  print (PrintText) SC_67;  new_line; rtrue; .L_Say22; .L_SayX22; rtrue;
+      say__p=1;ParaContent();  print (PrintText) SC_70;  new_line; rtrue; .L_Say23; .L_SayX23; rtrue;
       RulebookSucceeds(); rtrue;
    } ! Runs only while condition holds
    else if (debug_rules > 1) DB_Rule(R_744, 744, true);
@@ -12290,7 +12322,7 @@ self = noun;
        if (((t_0 < 1))) {  if (ProcessRulebook(IMMEDIATELY_QUIT_R)) rtrue;   }
       ! phrase 10
       ! [10: say ~Would you like to ~]
-      say__p=1;ParaContent();  print (PrintText) SC_68;  .L_Say23; .L_SayX23;
+      say__p=1;ParaContent();  print (PrintText) SC_71;  .L_Say24; .L_SayX24;
       ! phrase 11
       ! [11: repeat through the table of final question options begin]
        @push ct_0; @push ct_1;
@@ -12308,7 +12340,7 @@ self = noun;
                 if (( (ExistsTableLookUpEntry(ct_0,100,ct_1)) ))  {
                   ! phrase 15
                   ! [15: say final question wording entry]
-                  say__p=1;ParaContent();  print (PrintText) TableLookUpEntry(ct_0,100,ct_1);  .L_Say24; .L_SayX24;
+                  say__p=1;ParaContent();  print (PrintText) TableLookUpEntry(ct_0,100,ct_1);  .L_Say25; .L_SayX25;
                   ! phrase 16
                   ! [16: decrease named options count by 1]
                    t_0 = t_0 - 1; 
@@ -12317,23 +12349,23 @@ self = noun;
                    if (((t_0 == 0)))  {
                      ! phrase 18
                      ! [18: say ~?[line break]~]
-                     say__p=1;ParaContent();  print (PrintText) SC_69; ParaContent();  new_line;  .L_Say25; .L_SayX25;
+                     say__p=1;ParaContent();  print (PrintText) SC_72; ParaContent();  new_line;  .L_Say26; .L_SayX26;
                      ! phrase 19
                      ! [19: otherwise if the named options count is 1]
                       } else if (((t_0 == 1))) { 
                      ! phrase 20
                      ! [20: if the serial comma option is active , say ~,~]
-                      if ((((Adj_22_t1_v15(5))))) { say__p=1;ParaContent();  print (PrintText) SC_70;  .L_Say26; .L_SayX26;  }
+                      if ((((Adj_22_t1_v15(5))))) { say__p=1;ParaContent();  print (PrintText) SC_73;  .L_Say27; .L_SayX27;  }
                      ! phrase 21
                      ! [21: say ~ or ~]
-                     say__p=1;ParaContent();  print (PrintText) SC_71;  .L_Say27; .L_SayX27;
+                     say__p=1;ParaContent();  print (PrintText) SC_74;  .L_Say28; .L_SayX28;
                      ! phrase 22
                      ! [22: otherwise]
                      } else {
 
                      ! phrase 23
                      ! [23: say ~, ~]
-                     say__p=1;ParaContent();  print (PrintText) SC_72;  .L_Say28; .L_SayX28;
+                     say__p=1;ParaContent();  print (PrintText) SC_75;  .L_Say29; .L_SayX29;
                      ! phrase 24
                      ! [24: end if]
                      }
@@ -12362,7 +12394,7 @@ self = noun;
 [ R_68 ;
       ! phrase 1
       ! [1: say ~> [run paragraph on]~]
-      say__p=1;ParaContent();  print (PrintText) SC_73; ParaContent();  RunParagraphOn();  .L_Say29; .L_SayX29;
+      say__p=1;ParaContent();  print (PrintText) SC_76; ParaContent();  RunParagraphOn();  .L_Say30; .L_SayX30;
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -12615,40 +12647,40 @@ self = noun;
                 if (((t_0 ofclass K1_room)))  {
                   ! phrase 22
                   ! [22: if the domain is the location , say ~You ~]
-                   if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_74;  .L_Say30; .L_SayX30;  }
+                   if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_77;  .L_Say31; .L_SayX31;  }
                   ! phrase 23
                   ! [23: otherwise say ~In [the domain] you ~]
-                   else { say__p=1;ParaContent();  print (PrintText) SC_75; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_76;  .L_Say31; .L_SayX31;  }
+                   else { say__p=1;ParaContent();  print (PrintText) SC_78; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_79;  .L_Say32; .L_SayX32;  }
                   ! phrase 24
                   ! [24: otherwise if the domain is a supporter]
                    } else if (((t_0 ofclass K6_supporter))) { 
                   ! phrase 25
                   ! [25: say ~On [the domain] you ~]
-                  say__p=1;ParaContent();  print (PrintText) SC_77; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_76;  .L_Say32; .L_SayX32;
+                  say__p=1;ParaContent();  print (PrintText) SC_80; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_79;  .L_Say33; .L_SayX33;
                   ! phrase 26
                   ! [26: otherwise if the domain is an animal]
                    } else if (((t_0 ofclass K12_animal))) { 
                   ! phrase 27
                   ! [27: say ~On [the domain] you ~]
-                  say__p=1;ParaContent();  print (PrintText) SC_77; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_76;  .L_Say33; .L_SayX33;
+                  say__p=1;ParaContent();  print (PrintText) SC_80; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_79;  .L_Say34; .L_SayX34;
                   ! phrase 28
                   ! [28: otherwise]
                   } else {
 
                   ! phrase 29
                   ! [29: say ~In [the domain] you ~]
-                  say__p=1;ParaContent();  print (PrintText) SC_75; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_76;  .L_Say34; .L_SayX34;
+                  say__p=1;ParaContent();  print (PrintText) SC_78; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_79;  .L_Say35; .L_SayX35;
                   ! phrase 30
                   ! [30: end if]
                   }
 
                ! phrase 31
                ! [31: say ~can [if the locale paragraph count is greater than 0]also [end if]see ~]
-               say__p=1;ParaContent();  print (PrintText) SC_78; 
-	if (~~(((((Global_Vars-->8) > 0))))) jump L_Say35;
-		ParaContent();  print (PrintText) SC_79; 
-	.L_Say35; .L_SayX35;
-		ParaContent();  print (PrintText) SC_80;  .L_Say36; .L_SayX36;
+               say__p=1;ParaContent();  print (PrintText) SC_81; 
+	if (~~(((((Global_Vars-->8) > 0))))) jump L_Say36;
+		ParaContent();  print (PrintText) SC_82; 
+	.L_Say36; .L_SayX36;
+		ParaContent();  print (PrintText) SC_83;  .L_Say37; .L_SayX37;
                ! phrase 32
                ! [32: let the common holder be nothing]
                 t_2 = nothing; 
@@ -12691,13 +12723,13 @@ self = noun;
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT+RECURSE_BIT+PARTINV_BIT+
 			TERSE_BIT+CONCEAL_BIT);
-		@pull subst__v;  .L_Say37; .L_SayX37;  }
+		@pull subst__v;  .L_Say38; .L_SayX38;  }
                ! phrase 44
                ! [44: if the domain is the location , say ~ here~]
-                if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_81;  .L_Say38; .L_SayX38;  }
+                if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_84;  .L_Say39; .L_SayX39;  }
                ! phrase 45
                ! [45: say ~.[paragraph break]~]
-               say__p=1;ParaContent();  print (PrintText) SC_64; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say39; .L_SayX39;
+               say__p=1;ParaContent();  print (PrintText) SC_67; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say40; .L_SayX40;
                ! phrase 46
                ! [46: unfilter list recursion]
                 list_filter_routine = 0; 
@@ -12876,7 +12908,7 @@ self = noun;
        if (((~~(((Adj_55_t1_v9(t_0)))))))  {
          ! phrase 2
          ! [2: if a paragraph break is pending , say ~[conditional paragraph break]~]
-          if (( (say__p) )) { say__p=1;ParaContent();  DivideParagraphPoint();  .L_Say40; .L_SayX40;  }
+          if (( (say__p) )) { say__p=1;ParaContent();  DivideParagraphPoint();  .L_Say41; .L_SayX41;  }
          ! phrase 3
          ! [3: carry out the writing a paragraph about activity with the item]
           CarryOutActivity(V6_writing_a_paragraph_about, t_0); 
@@ -12891,7 +12923,7 @@ self = noun;
              (Adj_55_t2_v9(t_0)); 
             ! phrase 7
             ! [7: say ~[command clarification break]~]
-            say__p=1;ParaContent();  CommandClarificationBreak();  .L_Say41; .L_SayX41;
+            say__p=1;ParaContent();  CommandClarificationBreak();  .L_Say42; .L_SayX42;
             ! phrase 8
             ! [8: end if]
             }
@@ -12929,10 +12961,10 @@ self = noun;
              (Global_Vars-->8) = (Global_Vars-->8) + 1; 
             ! phrase 4
             ! [4: say ~[initial appearance of the item]~]
-            say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(9, self=t_0,initial); @pull self;  .L_Say42; .L_SayX42;
+            say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(9, self=t_0,initial); @pull self;  .L_Say43; .L_SayX43;
             ! phrase 5
             ! [5: say ~[paragraph break]~]
-            say__p=1;ParaContent();  DivideParagraphPoint(); new_line;  .L_Say43; .L_SayX43;
+            say__p=1;ParaContent();  DivideParagraphPoint(); new_line;  .L_Say44; .L_SayX44;
             ! phrase 6
             ! [6: if a locale-supportable thing is on the item begin]
              if ((Prop_8(,t_0)))  {
@@ -12958,13 +12990,13 @@ self = noun;
 
                ! phrase 13
                ! [13: say ~On [the item] ~]
-               say__p=1;ParaContent();  print (PrintText) SC_77; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_66;  .L_Say44; .L_SayX44;
+               say__p=1;ParaContent();  print (PrintText) SC_80; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_69;  .L_Say45; .L_SayX45;
                ! phrase 14
                ! [14: list the contents of the item , as a sentence , including contents , giving brief inventory information , tersely , not listing concealed items , prefacing with is/are , listing marked items only]
                 WriteListFrom(child(t_0), 3800); 
                ! phrase 15
                ! [15: say ~.[paragraph break]~]
-               say__p=1;ParaContent();  print (PrintText) SC_64; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say45; .L_SayX45;
+               say__p=1;ParaContent();  print (PrintText) SC_67; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say46; .L_SayX46;
                ! phrase 16
                ! [16: end if]
                }
@@ -13032,13 +13064,13 @@ self = noun;
              (Global_Vars-->8) = (Global_Vars-->8) + 1; 
             ! phrase 11
             ! [11: say ~On [the item] ~]
-            say__p=1;ParaContent();  print (PrintText) SC_77; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_66;  .L_Say46; .L_SayX46;
+            say__p=1;ParaContent();  print (PrintText) SC_80; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_69;  .L_Say47; .L_SayX47;
             ! phrase 12
             ! [12: list the contents of the item , as a sentence , including contents , giving brief inventory information , tersely , not listing concealed items , prefacing with is/are , listing marked items only]
              WriteListFrom(child(t_0), 3800); 
             ! phrase 13
             ! [13: say ~.[paragraph break]~]
-            say__p=1;ParaContent();  print (PrintText) SC_64; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say47; .L_SayX47;
+            say__p=1;ParaContent();  print (PrintText) SC_67; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say48; .L_SayX48;
             ! phrase 14
             ! [14: end if]
             }
@@ -13088,7 +13120,7 @@ self = noun;
        GL__M(##Inv,2,noun); 
       ! phrase 2
       ! [2: say ~:[line break]~]
-      say__p=1;ParaContent();  print (PrintText) SC_82; ParaContent();  new_line;  .L_Say48; .L_SayX48;
+      say__p=1;ParaContent();  print (PrintText) SC_85; ParaContent();  new_line;  .L_Say49; .L_SayX49;
       ! phrase 3
       ! [3: list the contents of the player , with newlines , indented , including contents , giving inventory information , with extra indentation]
        WriteListFrom(child(player), 8215); 
@@ -14684,7 +14716,7 @@ self = noun;
           if (((~~(((MStack-->MstVO(20007,3)) == nothing)))))  {
             ! phrase 49
             ! [49: say ~ ~]
-            say__p=1;ParaContent();  print (PrintText) SC_66;  .L_Say49; .L_SayX49;
+            say__p=1;ParaContent();  print (PrintText) SC_69;  .L_Say50; .L_SayX50;
             ! phrase 50
             ! [50: if the vehicle gone by is a supporter , issue actor-based library message going action number 20 for the vehicle gone by]
              if ((((MStack-->MstVO(20007,3)) ofclass K6_supporter))) {  AGL__M(##Go,20,(MStack-->MstVO(20007,3)));   }
@@ -14739,7 +14771,7 @@ self = noun;
              AGL__M(##Go,26,noun); 
             ! phrase 66
             ! [66: say ~.~]
-            say__p=1;ParaContent();  print (PrintText) SC_64;  new_line; .L_Say50; .L_SayX50;
+            say__p=1;ParaContent();  print (PrintText) SC_67;  new_line; .L_Say51; .L_SayX51;
             ! phrase 67
             ! [67: try looking]
              TryAction(0, player, ##Look, 0, 0);; 
@@ -14752,7 +14784,7 @@ self = noun;
 
          ! phrase 70
          ! [70: say ~.~]
-         say__p=1;ParaContent();  print (PrintText) SC_64;  new_line; .L_Say51; .L_SayX51;
+         say__p=1;ParaContent();  print (PrintText) SC_67;  new_line; .L_Say52; .L_SayX52;
          ! phrase 71
          ! [71: end if]
          }
@@ -15339,7 +15371,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_172, 172);
       ! phrase 1
       ! [1: say bold type]
-      say__p=1;ParaContent();  style bold;  .L_Say52; .L_SayX52;
+      say__p=1;ParaContent();  style bold;  .L_Say53; .L_SayX53;
       ! phrase 2
       ! [2: if the visibility level count is 0 begin]
        if ((((MStack-->MstVO(20011,2)) == 0)))  {
@@ -15357,21 +15389,21 @@ self = noun;
           } else if ((((MStack-->MstVO(20011,3)) == real_location))) { 
          ! phrase 7
          ! [7: say ~[visibility ceiling]~]
-         say__p=1;ParaContent();  print (PrintShortName) (MStack-->MstVO(20011,3));  .L_Say53; .L_SayX53;
+         say__p=1;ParaContent();  print (PrintShortName) (MStack-->MstVO(20011,3));  .L_Say54; .L_SayX54;
          ! phrase 8
          ! [8: otherwise]
          } else {
 
          ! phrase 9
          ! [9: say ~[The visibility ceiling]~]
-         say__p=1;ParaContent();  print (The) (MStack-->MstVO(20011,3));  .L_Say54; .L_SayX54;
+         say__p=1;ParaContent();  print (The) (MStack-->MstVO(20011,3));  .L_Say55; .L_SayX55;
          ! phrase 10
          ! [10: end if]
          }
 
       ! phrase 11
       ! [11: say roman type]
-      say__p=1;ParaContent();  style roman;  .L_Say55; .L_SayX55;
+      say__p=1;ParaContent();  style roman;  .L_Say56; .L_SayX56;
       ! phrase 12
       ! [12: let intermediate level be the visibility-holder of the actor]
        t_0 =  VisibilityParent(actor) ; 
@@ -15390,10 +15422,10 @@ self = noun;
 
       ! phrase 17
       ! [17: say line break]
-      say__p=1;ParaContent();  new_line;  .L_Say56; .L_SayX56;
+      say__p=1;ParaContent();  new_line;  .L_Say57; .L_SayX57;
       ! phrase 18
       ! [18: say run paragraph on with special look spacing]
-      say__p=1;ParaContent();  SpecialLookSpacingBreak();  .L_Say57; .L_SayX57;
+      say__p=1;ParaContent();  SpecialLookSpacingBreak();  .L_Say58; .L_SayX58;
    } ! Runs only when actor is the player
    else if (debug_rules > 1) DB_Rule(R_172, 172, true);
    rfalse;
@@ -15599,7 +15631,7 @@ self = noun;
        if ((((WhetherProvides(noun, false, description)))) && (((~~((GProperty(OBJECT_TY, noun,description) == EMPTY_TEXT_VALUE))))))  {
          ! phrase 2
          ! [2: say ~[the description of the noun][line break]~]
-         say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(OBJECT_TY, self=noun,description); @pull self; ParaContent();  new_line;  .L_Say58; .L_SayX58;
+         say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(OBJECT_TY, self=noun,description); @pull self; ParaContent();  new_line;  .L_Say59; .L_SayX59;
          ! phrase 3
          ! [3: now examine text printed is true]
           (MStack-->MstVO(20012,0)) = 1; 
@@ -18262,15 +18294,15 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check combining it with:
-[ R_761 ;
+[ R_762 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_761, 761);
+   if (debug_rules) DB_Rule(R_762, 762);
       ! phrase 1
       ! [1: if contraption is nothing begin]
        if ((((MStack-->MstVO(20080,0)) == nothing)))  {
          ! phrase 2
          ! [2: say ~You can't combine [the noun] and [the second noun] into anything useful.[line break]Try another combination of things.~]
-         say__p=1;ParaContent();  print (PrintText) SC_83; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_84; ParaContent();  print (the) second; ParaContent();  print (PrintText) SC_85; ParaContent();  new_line; ParaContent();  print (PrintText) SC_86;  new_line; .L_Say59; .L_SayX59;
+         say__p=1;ParaContent();  print (PrintText) SC_86; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_87; ParaContent();  print (the) second; ParaContent();  print (PrintText) SC_88; ParaContent();  new_line; ParaContent();  print (PrintText) SC_89;  new_line; .L_Say60; .L_SayX60;
          ! phrase 3
          ! [3: stop the action]
           rtrue; 
@@ -18279,7 +18311,7 @@ self = noun;
          }
 
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_761, 761, true);
+   else if (debug_rules > 1) DB_Rule(R_762, 762, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -18291,12 +18323,12 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out combining it with:
-[ R_762 ;
+[ R_763 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_762, 762);
+   if (debug_rules) DB_Rule(R_763, 763);
       ! phrase 1
       ! [1: say ~You fuse together [the noun] and [the second noun].~]
-      say__p=1;ParaContent();  print (PrintText) SC_87; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_84; ParaContent();  print (the) second; ParaContent();  print (PrintText) SC_64;  new_line; .L_Say60; .L_SayX60;
+      say__p=1;ParaContent();  print (PrintText) SC_90; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_87; ParaContent();  print (the) second; ParaContent();  print (PrintText) SC_67;  new_line; .L_Say61; .L_SayX61;
       ! phrase 2
       ! [2: remove the noun from play]
        RemoveFromPlay(noun); 
@@ -18307,7 +18339,7 @@ self = noun;
       ! [4: move the contraption to the player]
        MoveObject((MStack-->MstVO(20080,0)), player, 0, false); 
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_762, 762, true);
+   else if (debug_rules > 1) DB_Rule(R_763, 763, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -18319,14 +18351,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Report combining it with:
-[ R_763 ;
+[ R_764 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_763, 763);
+   if (debug_rules) DB_Rule(R_764, 764);
       ! phrase 1
       ! [1: say ~You now have a [a Contraption].~]
-      say__p=1;ParaContent();  print (PrintText) SC_88; ParaContent();  print (a) (MStack-->MstVO(20080,0)); ParaContent();  print (PrintText) SC_64;  new_line; .L_Say61; .L_SayX61;
+      say__p=1;ParaContent();  print (PrintText) SC_91; ParaContent();  print (a) (MStack-->MstVO(20080,0)); ParaContent();  print (PrintText) SC_67;  new_line; .L_Say62; .L_SayX62;
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_763, 763, true);
+   else if (debug_rules > 1) DB_Rule(R_764, 764, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -18338,14 +18370,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check spinning it to:
-[ R_765 ;
+[ R_766 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_765, 765);
+   if (debug_rules) DB_Rule(R_766, 766);
       ! phrase 1
       ! [1: if the noun is not the metal box , say ~[The noun] does not spin.~ instead]
-       if (((~~((noun == I137_metal_box))))) { say__p=1;ParaContent();  print (The) noun; ParaContent();  print (PrintText) SC_89;  new_line; .L_Say62; .L_SayX62;  rtrue; }
+       if (((~~((noun == I137_metal_box))))) { say__p=1;ParaContent();  print (The) noun; ParaContent();  print (PrintText) SC_92;  new_line; .L_Say63; .L_SayX63;  rtrue; }
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_765, 765, true);
+   else if (debug_rules > 1) DB_Rule(R_766, 766, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -18357,14 +18389,33 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Report spinning it to:
-[ R_766 ;
+[ R_767 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_766, 766);
+   if (debug_rules) DB_Rule(R_767, 767);
       ! phrase 1
       ! [1: say ~Click! and nothing else happens.~]
-      say__p=1;ParaContent();  print (PrintText) SC_90;  new_line; .L_Say63; .L_SayX63;
+      say__p=1;ParaContent();  print (PrintText) SC_93;  new_line; .L_Say64; .L_SayX64;
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_766, 766, true);
+   else if (debug_rules > 1) DB_Rule(R_767, 767, true);
+   rfalse;
+];
+! ----------------------------------------------------------------------------------------------------
+
+! ----------------------------------------------------------------------------------------------------
+! Rules in rulebook: check Talking to (B377_check_talking_to)
+! ----------------------------------------------------------------------------------------------------
+! Rule 1/1 ! Check talking to:
+! ----------------------------------------------------------------------------------------------------
+! No specific request
+! Check talking to:
+[ R_769 ;
+   if (actor == player) {
+   if (debug_rules) DB_Rule(R_769, 769);
+      ! phrase 1
+      ! [1: say ~[The noun] doesn't reply.~]
+      say__p=1;ParaContent();  print (The) noun; ParaContent();  print (PrintText) SC_94;  new_line; .L_Say65; .L_SayX65;
+   } ! Runs only when actor is the player
+   else if (debug_rules > 1) DB_Rule(R_769, 769, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20220,7 +20271,7 @@ Array TimedEventTimesTable table 0 0;
 
 
 
-Array rulebooks_array --> B0_procedural B1_startup B2_turn_sequence B3_shutdown B4_scene_changing B5_when_play_begins B6_when_play_ends B7_when_scene_begins B8_when_scene_ends B9_every_turn B10_action_processing B11_setting_action_variables B12_specific_action_processi B13_player_s_action_awarenes B14_accessibility B15_reaching_inside B16_reaching_outside B17_visibility B18_persuasion B19_unsuccessful_attempt_by B20_before B21_instead B22_check B23_carry_out B24_after B25_report B26_does_the_player_mean B27_when_entire_game_begins B28_when_entire_game_ends B29_before_printing_the_name B30_for_printing_the_name B31_after_printing_the_name B32_before_printing_the_plur B33_for_printing_the_plural_ B34_after_printing_the_plura B35_before_printing_a_number B36_for_printing_a_number B37_after_printing_a_number B38_before_printing_room_des B39_for_printing_room_descri B40_after_printing_room_desc B41_before_listing_contents B42_for_listing_contents B43_after_listing_contents B44_before_grouping_together B45_for_grouping_together B46_after_grouping_together B47_before_writing_a_paragra B48_for_writing_a_paragraph_ B49_after_writing_a_paragrap B50_before_listing_nondescri B51_for_listing_nondescript_ B52_after_listing_nondescrip B53_before_printing_the_name B54_for_printing_the_name_of B55_after_printing_the_name_ B56_before_printing_the_desc B57_for_printing_the_descrip B58_after_printing_the_descr B59_before_printing_the_anno B60_for_printing_the_announc B61_after_printing_the_annou B62_before_printing_the_anno B63_for_printing_the_announc B64_after_printing_the_annou B65_before_printing_a_refusa B66_for_printing_a_refusal_t B67_after_printing_a_refusal B68_before_constructing_the_ B69_for_constructing_the_sta B70_after_constructing_the_s B71_before_printing_the_bann B72_for_printing_the_banner_ B73_after_printing_the_banne B74_before_reading_a_command B75_for_reading_a_command B76_after_reading_a_command B77_before_deciding_the_scop B78_for_deciding_the_scope B79_after_deciding_the_scope B80_before_deciding_the_conc B81_for_deciding_the_conceal B82_after_deciding_the_conce B83_before_deciding_whether_ B84_for_deciding_whether_all B85_after_deciding_whether_a B86_before_clarifying_the_pa B87_for_clarifying_the_parse B88_after_clarifying_the_par B89_before_asking_which_do_y B90_for_asking_which_do_you_ B91_after_asking_which_do_yo B92_before_printing_a_parser B93_for_printing_a_parser_er B94_after_printing_a_parser_ B95_before_supplying_a_missi B96_for_supplying_a_missing_ B97_after_supplying_a_missin B98_before_supplying_a_missi B99_for_supplying_a_missing_ B100_after_supplying_a_missi B101_before_implicitly_takin B102_for_implicitly_taking B103_after_implicitly_taking B104_before_starting_the_vir B105_for_starting_the_virtua B106_after_starting_the_virt B107_before_amusing_a_victor B108_for_amusing_a_victoriou B109_after_amusing_a_victori B110_before_printing_the_pla B111_for_printing_the_player B112_after_printing_the_play B113_before_handling_the_fin B114_for_handling_the_final_ B115_after_handling_the_fina B116_before_printing_the_loc B117_for_printing_the_locale B118_after_printing_the_loca B119_before_choosing_notable B120_for_choosing_notable_lo B121_after_choosing_notable_ B122_before_printing_a_local B123_for_printing_a_locale_p B124_after_printing_a_locale B125_check_taking_inventory B126_carry_out_taking_invent B127_report_taking_inventory B128_check_taking B129_carry_out_taking B130_report_taking B131_check_removing_it_from B132_carry_out_removing_it_f B133_report_removing_it_from B134_check_dropping B135_carry_out_dropping B136_report_dropping B137_check_putting_it_on B138_carry_out_putting_it_on B139_report_putting_it_on B140_check_inserting_it_into B141_carry_out_inserting_it_ B142_report_inserting_it_int B143_check_eating B144_carry_out_eating B145_report_eating B146_check_going B147_carry_out_going B148_report_going B149_check_entering B150_carry_out_entering B151_report_entering B152_check_exiting B153_carry_out_exiting B154_report_exiting B155_check_getting_off B156_carry_out_getting_off B157_report_getting_off B158_check_looking B159_carry_out_looking B160_report_looking B161_check_examining B162_carry_out_examining B163_report_examining B164_check_looking_under B165_carry_out_looking_under B166_report_looking_under B167_check_searching B168_carry_out_searching B169_report_searching B170_check_consulting_it_abo B171_carry_out_consulting_it B172_report_consulting_it_ab B173_check_locking_it_with B174_carry_out_locking_it_wi B175_report_locking_it_with B176_check_unlocking_it_with B177_carry_out_unlocking_it_ B178_report_unlocking_it_wit B179_check_switching_on B180_carry_out_switching_on B181_report_switching_on B182_check_switching_off B183_carry_out_switching_off B184_report_switching_off B185_check_opening B186_carry_out_opening B187_report_opening B188_check_closing B189_carry_out_closing B190_report_closing B191_check_wearing B192_carry_out_wearing B193_report_wearing B194_check_taking_off B195_carry_out_taking_off B196_report_taking_off B197_check_giving_it_to B198_carry_out_giving_it_to B199_report_giving_it_to B200_check_showing_it_to B201_carry_out_showing_it_to B202_report_showing_it_to B203_check_waking B204_carry_out_waking B205_report_waking B206_check_throwing_it_at B207_carry_out_throwing_it_a B208_report_throwing_it_at B209_check_attacking B210_carry_out_attacking B211_report_attacking B212_check_kissing B213_carry_out_kissing B214_report_kissing B215_check_answering_it_that B216_carry_out_answering_it_ B217_report_answering_it_tha B218_check_telling_it_about B219_carry_out_telling_it_ab B220_report_telling_it_about B221_check_asking_it_about B222_carry_out_asking_it_abo B223_report_asking_it_about B224_check_asking_it_for B225_carry_out_asking_it_for B226_report_asking_it_for B227_check_waiting B228_carry_out_waiting B229_report_waiting B230_check_touching B231_carry_out_touching B232_report_touching B233_check_waving B234_carry_out_waving B235_report_waving B236_check_pulling B237_carry_out_pulling B238_report_pulling B239_check_pushing B240_carry_out_pushing B241_report_pushing B242_check_turning B243_carry_out_turning B244_report_turning B245_check_pushing_it_to B246_carry_out_pushing_it_to B247_report_pushing_it_to B248_check_squeezing B249_carry_out_squeezing B250_report_squeezing B251_check_saying_yes B252_carry_out_saying_yes B253_report_saying_yes B254_check_saying_no B255_carry_out_saying_no B256_report_saying_no B257_check_burning B258_carry_out_burning B259_report_burning B260_check_waking_up B261_carry_out_waking_up B262_report_waking_up B263_check_thinking B264_carry_out_thinking B265_report_thinking B266_check_smelling B267_carry_out_smelling B268_report_smelling B269_check_listening_to B270_carry_out_listening_to B271_report_listening_to B272_check_tasting B273_carry_out_tasting B274_report_tasting B275_check_cutting B276_carry_out_cutting B277_report_cutting B278_check_jumping B279_carry_out_jumping B280_report_jumping B281_check_tying_it_to B282_carry_out_tying_it_to B283_report_tying_it_to B284_check_drinking B285_carry_out_drinking B286_report_drinking B287_check_saying_sorry B288_carry_out_saying_sorry B289_report_saying_sorry B290_check_swearing_obscenel B291_carry_out_swearing_obsc B292_report_swearing_obscene B293_check_swearing_mildly B294_carry_out_swearing_mild B295_report_swearing_mildly B296_check_swinging B297_carry_out_swinging B298_report_swinging B299_check_rubbing B300_carry_out_rubbing B301_report_rubbing B302_check_setting_it_to B303_carry_out_setting_it_to B304_report_setting_it_to B305_check_waving_hands B306_carry_out_waving_hands B307_report_waving_hands B308_check_buying B309_carry_out_buying B310_report_buying B311_check_singing B312_carry_out_singing B313_report_singing B314_check_climbing B315_carry_out_climbing B316_report_climbing B317_check_sleeping B318_carry_out_sleeping B319_report_sleeping B320_check_quitting_the_game B321_carry_out_quitting_the_ B322_report_quitting_the_gam B323_check_saving_the_game B324_carry_out_saving_the_ga B325_report_saving_the_game B326_check_restoring_the_gam B327_carry_out_restoring_the B328_report_restoring_the_ga B329_check_restarting_the_ga B330_carry_out_restarting_th B331_report_restarting_the_g B332_check_verifying_the_sto B333_carry_out_verifying_the B334_report_verifying_the_st B335_check_switching_the_sto B336_carry_out_switching_the B337_report_switching_the_st B338_check_switching_the_sto B339_carry_out_switching_the B340_report_switching_the_st B341_check_requesting_the_st B342_carry_out_requesting_th B343_report_requesting_the_s B344_check_requesting_the_sc B345_carry_out_requesting_th B346_report_requesting_the_s B347_check_preferring_abbrev B348_carry_out_preferring_ab B349_report_preferring_abbre B350_check_preferring_unabbr B351_carry_out_preferring_un B352_report_preferring_unabb B353_check_preferring_someti B354_carry_out_preferring_so B355_report_preferring_somet B356_check_switching_score_n B357_carry_out_switching_sco B358_report_switching_score_ B359_check_switching_score_n B360_carry_out_switching_sco B361_report_switching_score_ B362_check_requesting_the_pr B363_carry_out_requesting_th B364_report_requesting_the_p B365_check_combining_it_with B366_carry_out_combining_it_ B367_report_combining_it_wit B368_check_spinning_it_to B369_carry_out_spinning_it_t B370_report_spinning_it_to B371_check_pooping B372_carry_out_pooping B373_report_pooping B374_check_flushing B375_carry_out_flushing B376_report_flushing 0;
+Array rulebooks_array --> B0_procedural B1_startup B2_turn_sequence B3_shutdown B4_scene_changing B5_when_play_begins B6_when_play_ends B7_when_scene_begins B8_when_scene_ends B9_every_turn B10_action_processing B11_setting_action_variables B12_specific_action_processi B13_player_s_action_awarenes B14_accessibility B15_reaching_inside B16_reaching_outside B17_visibility B18_persuasion B19_unsuccessful_attempt_by B20_before B21_instead B22_check B23_carry_out B24_after B25_report B26_does_the_player_mean B27_when_entire_game_begins B28_when_entire_game_ends B29_before_printing_the_name B30_for_printing_the_name B31_after_printing_the_name B32_before_printing_the_plur B33_for_printing_the_plural_ B34_after_printing_the_plura B35_before_printing_a_number B36_for_printing_a_number B37_after_printing_a_number B38_before_printing_room_des B39_for_printing_room_descri B40_after_printing_room_desc B41_before_listing_contents B42_for_listing_contents B43_after_listing_contents B44_before_grouping_together B45_for_grouping_together B46_after_grouping_together B47_before_writing_a_paragra B48_for_writing_a_paragraph_ B49_after_writing_a_paragrap B50_before_listing_nondescri B51_for_listing_nondescript_ B52_after_listing_nondescrip B53_before_printing_the_name B54_for_printing_the_name_of B55_after_printing_the_name_ B56_before_printing_the_desc B57_for_printing_the_descrip B58_after_printing_the_descr B59_before_printing_the_anno B60_for_printing_the_announc B61_after_printing_the_annou B62_before_printing_the_anno B63_for_printing_the_announc B64_after_printing_the_annou B65_before_printing_a_refusa B66_for_printing_a_refusal_t B67_after_printing_a_refusal B68_before_constructing_the_ B69_for_constructing_the_sta B70_after_constructing_the_s B71_before_printing_the_bann B72_for_printing_the_banner_ B73_after_printing_the_banne B74_before_reading_a_command B75_for_reading_a_command B76_after_reading_a_command B77_before_deciding_the_scop B78_for_deciding_the_scope B79_after_deciding_the_scope B80_before_deciding_the_conc B81_for_deciding_the_conceal B82_after_deciding_the_conce B83_before_deciding_whether_ B84_for_deciding_whether_all B85_after_deciding_whether_a B86_before_clarifying_the_pa B87_for_clarifying_the_parse B88_after_clarifying_the_par B89_before_asking_which_do_y B90_for_asking_which_do_you_ B91_after_asking_which_do_yo B92_before_printing_a_parser B93_for_printing_a_parser_er B94_after_printing_a_parser_ B95_before_supplying_a_missi B96_for_supplying_a_missing_ B97_after_supplying_a_missin B98_before_supplying_a_missi B99_for_supplying_a_missing_ B100_after_supplying_a_missi B101_before_implicitly_takin B102_for_implicitly_taking B103_after_implicitly_taking B104_before_starting_the_vir B105_for_starting_the_virtua B106_after_starting_the_virt B107_before_amusing_a_victor B108_for_amusing_a_victoriou B109_after_amusing_a_victori B110_before_printing_the_pla B111_for_printing_the_player B112_after_printing_the_play B113_before_handling_the_fin B114_for_handling_the_final_ B115_after_handling_the_fina B116_before_printing_the_loc B117_for_printing_the_locale B118_after_printing_the_loca B119_before_choosing_notable B120_for_choosing_notable_lo B121_after_choosing_notable_ B122_before_printing_a_local B123_for_printing_a_locale_p B124_after_printing_a_locale B125_check_taking_inventory B126_carry_out_taking_invent B127_report_taking_inventory B128_check_taking B129_carry_out_taking B130_report_taking B131_check_removing_it_from B132_carry_out_removing_it_f B133_report_removing_it_from B134_check_dropping B135_carry_out_dropping B136_report_dropping B137_check_putting_it_on B138_carry_out_putting_it_on B139_report_putting_it_on B140_check_inserting_it_into B141_carry_out_inserting_it_ B142_report_inserting_it_int B143_check_eating B144_carry_out_eating B145_report_eating B146_check_going B147_carry_out_going B148_report_going B149_check_entering B150_carry_out_entering B151_report_entering B152_check_exiting B153_carry_out_exiting B154_report_exiting B155_check_getting_off B156_carry_out_getting_off B157_report_getting_off B158_check_looking B159_carry_out_looking B160_report_looking B161_check_examining B162_carry_out_examining B163_report_examining B164_check_looking_under B165_carry_out_looking_under B166_report_looking_under B167_check_searching B168_carry_out_searching B169_report_searching B170_check_consulting_it_abo B171_carry_out_consulting_it B172_report_consulting_it_ab B173_check_locking_it_with B174_carry_out_locking_it_wi B175_report_locking_it_with B176_check_unlocking_it_with B177_carry_out_unlocking_it_ B178_report_unlocking_it_wit B179_check_switching_on B180_carry_out_switching_on B181_report_switching_on B182_check_switching_off B183_carry_out_switching_off B184_report_switching_off B185_check_opening B186_carry_out_opening B187_report_opening B188_check_closing B189_carry_out_closing B190_report_closing B191_check_wearing B192_carry_out_wearing B193_report_wearing B194_check_taking_off B195_carry_out_taking_off B196_report_taking_off B197_check_giving_it_to B198_carry_out_giving_it_to B199_report_giving_it_to B200_check_showing_it_to B201_carry_out_showing_it_to B202_report_showing_it_to B203_check_waking B204_carry_out_waking B205_report_waking B206_check_throwing_it_at B207_carry_out_throwing_it_a B208_report_throwing_it_at B209_check_attacking B210_carry_out_attacking B211_report_attacking B212_check_kissing B213_carry_out_kissing B214_report_kissing B215_check_answering_it_that B216_carry_out_answering_it_ B217_report_answering_it_tha B218_check_telling_it_about B219_carry_out_telling_it_ab B220_report_telling_it_about B221_check_asking_it_about B222_carry_out_asking_it_abo B223_report_asking_it_about B224_check_asking_it_for B225_carry_out_asking_it_for B226_report_asking_it_for B227_check_waiting B228_carry_out_waiting B229_report_waiting B230_check_touching B231_carry_out_touching B232_report_touching B233_check_waving B234_carry_out_waving B235_report_waving B236_check_pulling B237_carry_out_pulling B238_report_pulling B239_check_pushing B240_carry_out_pushing B241_report_pushing B242_check_turning B243_carry_out_turning B244_report_turning B245_check_pushing_it_to B246_carry_out_pushing_it_to B247_report_pushing_it_to B248_check_squeezing B249_carry_out_squeezing B250_report_squeezing B251_check_saying_yes B252_carry_out_saying_yes B253_report_saying_yes B254_check_saying_no B255_carry_out_saying_no B256_report_saying_no B257_check_burning B258_carry_out_burning B259_report_burning B260_check_waking_up B261_carry_out_waking_up B262_report_waking_up B263_check_thinking B264_carry_out_thinking B265_report_thinking B266_check_smelling B267_carry_out_smelling B268_report_smelling B269_check_listening_to B270_carry_out_listening_to B271_report_listening_to B272_check_tasting B273_carry_out_tasting B274_report_tasting B275_check_cutting B276_carry_out_cutting B277_report_cutting B278_check_jumping B279_carry_out_jumping B280_report_jumping B281_check_tying_it_to B282_carry_out_tying_it_to B283_report_tying_it_to B284_check_drinking B285_carry_out_drinking B286_report_drinking B287_check_saying_sorry B288_carry_out_saying_sorry B289_report_saying_sorry B290_check_swearing_obscenel B291_carry_out_swearing_obsc B292_report_swearing_obscene B293_check_swearing_mildly B294_carry_out_swearing_mild B295_report_swearing_mildly B296_check_swinging B297_carry_out_swinging B298_report_swinging B299_check_rubbing B300_carry_out_rubbing B301_report_rubbing B302_check_setting_it_to B303_carry_out_setting_it_to B304_report_setting_it_to B305_check_waving_hands B306_carry_out_waving_hands B307_report_waving_hands B308_check_buying B309_carry_out_buying B310_report_buying B311_check_singing B312_carry_out_singing B313_report_singing B314_check_climbing B315_carry_out_climbing B316_report_climbing B317_check_sleeping B318_carry_out_sleeping B319_report_sleeping B320_check_quitting_the_game B321_carry_out_quitting_the_ B322_report_quitting_the_gam B323_check_saving_the_game B324_carry_out_saving_the_ga B325_report_saving_the_game B326_check_restoring_the_gam B327_carry_out_restoring_the B328_report_restoring_the_ga B329_check_restarting_the_ga B330_carry_out_restarting_th B331_report_restarting_the_g B332_check_verifying_the_sto B333_carry_out_verifying_the B334_report_verifying_the_st B335_check_switching_the_sto B336_carry_out_switching_the B337_report_switching_the_st B338_check_switching_the_sto B339_carry_out_switching_the B340_report_switching_the_st B341_check_requesting_the_st B342_carry_out_requesting_th B343_report_requesting_the_s B344_check_requesting_the_sc B345_carry_out_requesting_th B346_report_requesting_the_s B347_check_preferring_abbrev B348_carry_out_preferring_ab B349_report_preferring_abbre B350_check_preferring_unabbr B351_carry_out_preferring_un B352_report_preferring_unabb B353_check_preferring_someti B354_carry_out_preferring_so B355_report_preferring_somet B356_check_switching_score_n B357_carry_out_switching_sco B358_report_switching_score_ B359_check_switching_score_n B360_carry_out_switching_sco B361_report_switching_score_ B362_check_requesting_the_pr B363_carry_out_requesting_th B364_report_requesting_the_p B365_check_combining_it_with B366_carry_out_combining_it_ B367_report_combining_it_wit B368_check_spinning_it_to B369_carry_out_spinning_it_t B370_report_spinning_it_to B371_check_pooping B372_carry_out_pooping B373_report_pooping B374_check_flushing B375_carry_out_flushing B376_report_flushing B377_check_talking_to B378_carry_out_talking_to B379_report_talking_to 0;
 
 Constant B0_procedural = EMPTY_RULEBOOK;
 Array B1_startup --> INITIALISE_MEMORY_R VIRTUAL_MACHINE_STARTUP_R SEED_RANDOM_NUMBER_GENERATOR_R UPDATE_CHRONOLOGICAL_RECORDS_R POSITION_PLAYER_IN_MODEL_R R_8 R_9 R_10 R_11 R_12 NULL; ! 10 rule(s)
@@ -20231,9 +20282,9 @@ Array B5_when_play_begins --> R_740 R_742 NULL; ! 2 rule(s)
 Constant B6_when_play_ends = EMPTY_RULEBOOK;
 Array B7_when_scene_begins --> R_57 NULL; ! 1 rule(s)
 Constant B8_when_scene_ends = EMPTY_RULEBOOK;
-Array B9_every_turn --> R_758 R_759 NULL; ! 2 rule(s)
+Array B9_every_turn --> R_759 R_760 NULL; ! 2 rule(s)
 Array B10_action_processing --> R_20 R_19 R_21 BASIC_VISIBILITY_R BASIC_ACCESSIBILITY_R CARRYING_REQUIREMENTS_R R_22 REQUESTED_ACTIONS_REQUIRE_R CARRY_OUT_REQUESTED_ACTIONS_R DESCEND_TO_SPECIFIC_ACTION_R R_23 NULL; ! 11 rule(s)
-Array B11_setting_action_variables --> R_760 R_137 R_171 R_159 NULL; ! 4 rule(s)
+Array B11_setting_action_variables --> R_761 R_137 R_171 R_159 NULL; ! 4 rule(s)
 Array B12_specific_action_processi --> WORK_OUT_DETAILS_OF_SPECIFIC_R R_24 R_25 R_26 R_27 R_28 R_29 R_30 NULL; ! 8 rule(s)
 Array B13_player_s_action_awarenes --> R_31 R_32 R_33 R_34 NULL; ! 4 rule(s)
 Array B14_accessibility --> ACCESS_THROUGH_BARRIERS_R NULL; ! 1 rule(s)
@@ -20243,10 +20294,10 @@ Array B17_visibility --> R_35 NULL; ! 1 rule(s)
 Constant B18_persuasion = EMPTY_RULEBOOK;
 Constant B19_unsuccessful_attempt_by = EMPTY_RULEBOOK;
 Constant B20_before = EMPTY_RULEBOOK;
-Array B21_instead --> R_745 R_746 R_747 R_748 R_749 R_750 R_751 R_752 R_753 R_764 NULL; ! 10 rule(s)
+Array B21_instead --> R_752 R_753 R_745 R_746 R_747 R_748 R_749 R_750 R_751 R_755 R_765 NULL; ! 11 rule(s)
 Constant B22_check = EMPTY_RULEBOOK;
 Constant B23_carry_out = EMPTY_RULEBOOK;
-Array B24_after --> R_756 R_755 R_757 R_767 R_754 NULL; ! 5 rule(s)
+Array B24_after --> R_756 R_757 R_758 R_768 R_754 NULL; ! 5 rule(s)
 Constant B25_report = EMPTY_RULEBOOK;
 Array B26_does_the_player_mean --> R_36 NULL; ! 1 rule(s)
 Constant B27_when_entire_game_begins = EMPTY_RULEBOOK;
@@ -20587,18 +20638,21 @@ Array B361_report_switching_score_ --> REP_SWITCH_NOTIFY_OFF_R NULL; ! 1 rule(s)
 Constant B362_check_requesting_the_pr = EMPTY_RULEBOOK;
 Array B363_carry_out_requesting_th --> ANNOUNCE_PRONOUN_MEANINGS_R NULL; ! 1 rule(s)
 Constant B364_report_requesting_the_p = EMPTY_RULEBOOK;
-Array B365_check_combining_it_with --> R_761 NULL; ! 1 rule(s)
-Array B366_carry_out_combining_it_ --> R_762 NULL; ! 1 rule(s)
-Array B367_report_combining_it_wit --> R_763 NULL; ! 1 rule(s)
-Array B368_check_spinning_it_to --> R_765 NULL; ! 1 rule(s)
+Array B365_check_combining_it_with --> R_762 NULL; ! 1 rule(s)
+Array B366_carry_out_combining_it_ --> R_763 NULL; ! 1 rule(s)
+Array B367_report_combining_it_wit --> R_764 NULL; ! 1 rule(s)
+Array B368_check_spinning_it_to --> R_766 NULL; ! 1 rule(s)
 Constant B369_carry_out_spinning_it_t = EMPTY_RULEBOOK;
-Array B370_report_spinning_it_to --> R_766 NULL; ! 1 rule(s)
+Array B370_report_spinning_it_to --> R_767 NULL; ! 1 rule(s)
 Constant B371_check_pooping = EMPTY_RULEBOOK;
 Constant B372_carry_out_pooping = EMPTY_RULEBOOK;
 Constant B373_report_pooping = EMPTY_RULEBOOK;
 Constant B374_check_flushing = EMPTY_RULEBOOK;
 Constant B375_carry_out_flushing = EMPTY_RULEBOOK;
 Constant B376_report_flushing = EMPTY_RULEBOOK;
+Array B377_check_talking_to --> R_769 NULL; ! 1 rule(s)
+Constant B378_carry_out_talking_to = EMPTY_RULEBOOK;
+Constant B379_report_talking_to = EMPTY_RULEBOOK;
 
 Constant BR_0 = R_8;
 Constant BR_1 = R_9;
@@ -20865,28 +20919,28 @@ Constant BR_261 = R_296;
 Constant BR_262 = R_297;
 Constant BR_263 = R_298;
 Constant BR_264 = R_299;
-Constant BR_730 = R_8;
-Constant BR_736 = R_9;
-Constant BR_737 = R_10;
-Constant BR_738 = R_11;
-Constant BR_739 = R_12;
-Constant BR_747 = R_16;
-Constant BR_748 = R_17;
-Constant BR_750 = R_18;
-Constant BR_753 = R_21;
-Constant BR_754 = R_19;
-Constant BR_755 = R_20;
-Constant BR_759 = R_22;
-Constant BR_763 = R_23;
-Constant BR_769 = R_35;
-Constant BR_771 = R_59;
-Constant BR_772 = R_60;
-Constant BR_774 = R_61;
-Constant BR_779 = R_69;
-Constant BR_780 = R_68;
-Constant BR_782 = R_70;
-Constant BR_783 = R_91;
-Constant BR_784 = R_148;
+Constant BR_735 = R_8;
+Constant BR_741 = R_9;
+Constant BR_742 = R_10;
+Constant BR_743 = R_11;
+Constant BR_744 = R_12;
+Constant BR_752 = R_16;
+Constant BR_753 = R_17;
+Constant BR_755 = R_18;
+Constant BR_758 = R_21;
+Constant BR_759 = R_19;
+Constant BR_760 = R_20;
+Constant BR_764 = R_22;
+Constant BR_768 = R_23;
+Constant BR_774 = R_35;
+Constant BR_776 = R_59;
+Constant BR_777 = R_60;
+Constant BR_779 = R_61;
+Constant BR_784 = R_69;
+Constant BR_785 = R_68;
+Constant BR_787 = R_70;
+Constant BR_788 = R_91;
+Constant BR_789 = R_148;
 
 
 
@@ -21965,7 +22019,7 @@ Global MStack_Frame_Extent = 0;
 ];
 
 #IFNDEF MEMORY_ECONOMY;
-Array rulebook_var_creators --> 0 0 0 0 0 0 0 0 0 0 RBSTVC_10 0 RBSTVC_12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+Array rulebook_var_creators --> 0 0 0 0 0 0 0 0 0 0 RBSTVC_10 0 RBSTVC_12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #ENDIF;
 [  RBSTVC_10 pos state;
     if (state == 1) {
@@ -23309,7 +23363,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ];
 #ENDIF;
 
-Constant MAX_ROUTE_LENGTH = 63 + 32;
+Constant MAX_ROUTE_LENGTH = 64 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -24462,6 +24516,9 @@ Array RulebookNames -->
     "check Flushing rulebook" ! 374
     "carry out Flushing rulebook" ! 375
     "report Flushing rulebook" ! 376
+    "check Talking to rulebook" ! 377
+    "carry out Talking to rulebook" ! 378
+    "report Talking to rulebook" ! 379
 ;
 
 
@@ -24794,112 +24851,114 @@ Array RulebookNames -->
 		if (R == SWITCH_SCORE_NOTIFY_OFF_R) { print "switch score notification off rule"; return; } ! 681, case 1
 		if (R == REP_SWITCH_NOTIFY_OFF_R) { print "standard report switching score notification off rule"; return; } ! 682, case 1
 		if (R == ANNOUNCE_PRONOUN_MEANINGS_R) { print "announce the pronoun meanings rule"; return; } ! 686, case 1
-		if (R == R_14) { print "A first turn sequence rule"; return; } ! 699, case 2
-		if (R == R_15) { print "A last turn sequence rule"; return; } ! 700, case 2
-		if (R == R_30) { print "last specific action-processing rule"; return; } ! 701, case 2
-		if (R == R_159) { print "Setting action variables for exiting"; return; } ! 702, case 2
-		if (R == R_740) { print "When play begins"; return; } ! 703, case 2
-		if (R == R_742) { print "When play begins"; return; } ! 704, case 2
-		if (R == R_743) { print "Rule for deciding whether all includes something"; return; } ! 705, case 2
-		if (R == R_744) { print "Rule for printing a parser error when the latest parser error is the nothing to do error"; return; } ! 706, case 2
-		if (R == R_745) { print "instead of taking flashlight"; return; } ! 707, case 2
-		if (R == R_746) { print "Instead of eating char-siu bau"; return; } ! 708, case 2
-		if (R == R_747) { print "Instead of attacking Madman Mercer"; return; } ! 709, case 2
-		if (R == R_748) { print "Instead of opening beautiful safe"; return; } ! 710, case 2
-		if (R == R_749) { print "Instead of opening titanium safe"; return; } ! 711, case 2
-		if (R == R_750) { print "Instead of opening green safe"; return; } ! 712, case 2
-		if (R == R_751) { print "Instead of opening fancy safe"; return; } ! 713, case 2
-		if (R == R_752) { print "Instead of opening wooden safe"; return; } ! 714, case 2
-		if (R == R_753) { print "Instead of opening smelly safe"; return; } ! 715, case 2
-		if (R == R_754) { print "after taking flashlight"; return; } ! 716, case 2
-		if (R == R_755) { print "After going to the bathroom for the first time"; return; } ! 717, case 2
-		if (R == R_756) { print "After pooping in toilet for the first time"; return; } ! 718, case 2
-		if (R == R_757) { print "After flushing toilet for the first time"; return; } ! 719, case 2
-		if (R == R_758) { print "Every turn"; return; } ! 720, case 2
-		if (R == R_759) { print "Every turn"; return; } ! 721, case 2
-		if (R == R_760) { print "Setting action variables for combining something with something"; return; } ! 722, case 2
-		if (R == R_761) { print "Check combining it with"; return; } ! 723, case 2
-		if (R == R_762) { print "Carry out combining it with"; return; } ! 724, case 2
-		if (R == R_763) { print "Report combining it with"; return; } ! 725, case 2
-		if (R == R_764) { print "Instead of opening the metal box"; return; } ! 726, case 2
-		if (R == R_765) { print "Check spinning it to"; return; } ! 727, case 2
-		if (R == R_766) { print "Report spinning it to"; return; } ! 728, case 2
-		if (R == R_767) { print "After spinning the closed metal box to 1384"; return; } ! 729, case 2
-		if (R == R_8) { print "start in the correct scenes rule"; return; } ! 730, case 1
-		if (R == POSITION_PLAYER_IN_MODEL_R) { print "position player in model world rule"; return; } ! 731, case 1
-		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 732, case 1
-		if (R == SEED_RANDOM_NUMBER_GENERATOR_R) { print "seed random number generator rule"; return; } ! 733, case 1
-		if (R == VIRTUAL_MACHINE_STARTUP_R) { print "virtual machine startup rule"; return; } ! 734, case 1
-		if (R == INITIALISE_MEMORY_R) { print "initialise memory rule"; return; } ! 735, case 1
-		if (R == R_9) { print "when play begins stage rule"; return; } ! 736, case 1
-		if (R == R_10) { print "fix baseline scoring rule"; return; } ! 737, case 1
-		if (R == R_11) { print "display banner rule"; return; } ! 738, case 1
-		if (R == R_12) { print "initial room description rule"; return; } ! 739, case 1
-		if (R == GENERATE_ACTION_R) { print "generate action rule"; return; } ! 740, case 1
-		if (R == PARSE_COMMAND_R) { print "parse command rule"; return; } ! 741, case 1
-		if (R == TIMED_EVENTS_R) { print "timed events rule"; return; } ! 742, case 1
-		if (R == ADVANCE_TIME_R) { print "advance time rule"; return; } ! 743, case 1
-		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 744, case 1
-		if (R == ADJUST_LIGHT_R) { print "adjust light rule"; return; } ! 745, case 1
-		if (R == NOTE_OBJECT_ACQUISITIONS_R) { print "note object acquisitions rule"; return; } ! 746, case 1
-		if (R == R_16) { print "notify score changes rule"; return; } ! 747, case 1
-		if (R == R_17) { print "when play ends stage rule"; return; } ! 748, case 1
-		if (R == RESURRECT_PLAYER_IF_ASKED_R) { print "resurrect player if asked rule"; return; } ! 749, case 1
-		if (R == R_18) { print "print player's obituary rule"; return; } ! 750, case 1
-		if (R == ASK_FINAL_QUESTION_R) { print "ask the final question rule"; return; } ! 751, case 1
-		if (R == DetectSceneChange) { print "scene change machinery rule"; return; } ! 752, case 1
-		if (R == R_21) { print "before stage rule"; return; } ! 753, case 1
-		if (R == R_19) { print "set pronouns from items from multiple object lists rule"; return; } ! 754, case 1
-		if (R == R_20) { print "announce items from multiple object lists rule"; return; } ! 755, case 1
-		if (R == BASIC_VISIBILITY_R) { print "basic visibility rule"; return; } ! 756, case 1
-		if (R == BASIC_ACCESSIBILITY_R) { print "basic accessibility rule"; return; } ! 757, case 1
-		if (R == CARRYING_REQUIREMENTS_R) { print "carrying requirements rule"; return; } ! 758, case 1
-		if (R == R_22) { print "instead stage rule"; return; } ! 759, case 1
-		if (R == REQUESTED_ACTIONS_REQUIRE_R) { print "requested actions require persuasion rule"; return; } ! 760, case 1
-		if (R == CARRY_OUT_REQUESTED_ACTIONS_R) { print "carry out requested actions rule"; return; } ! 761, case 1
-		if (R == DESCEND_TO_SPECIFIC_ACTION_R) { print "descend to specific action-processing rule"; return; } ! 762, case 1
-		if (R == R_23) { print "end action-processing in success rule"; return; } ! 763, case 1
-		if (R == WORK_OUT_DETAILS_OF_SPECIFIC_R) { print "work out details of specific action rule"; return; } ! 764, case 1
-		if (R == ACCESS_THROUGH_BARRIERS_R) { print "access through barriers rule"; return; } ! 765, case 1
-		if (R == CANT_REACH_INSIDE_ROOMS_R) { print "can't reach inside rooms rule"; return; } ! 766, case 1
-		if (R == CANT_REACH_INSIDE_CLOSED_R) { print "can't reach inside closed containers rule"; return; } ! 767, case 1
-		if (R == CANT_REACH_OUTSIDE_CLOSED_R) { print "can't reach outside closed containers rule"; return; } ! 768, case 1
-		if (R == R_35) { print "can't act in the dark rule"; return; } ! 769, case 1
-		if (R == STANDARD_NAME_PRINTING_R) { print "standard name printing rule"; return; } ! 770, case 1
-		if (R == R_59) { print "standard printing the plural name rule"; return; } ! 771, case 1
-		if (R == R_60) { print "standard printing a number of something rule"; return; } ! 772, case 1
-		if (R == STANDARD_CONTENTS_LISTING_R) { print "standard contents listing rule"; return; } ! 773, case 1
-		if (R == R_61) { print "look around once light available rule"; return; } ! 774, case 1
-		if (R == ENABLE_GLULX_ACCEL_R) { print "enable Glulx acceleration rule"; return; } ! 775, case 1
-		if (R == PRINT_OBITUARY_HEADLINE_R) { print "print obituary headline rule"; return; } ! 776, case 1
-		if (R == PRINT_FINAL_SCORE_R) { print "print final score rule"; return; } ! 777, case 1
-		if (R == DISPLAY_FINAL_STATUS_LINE_R) { print "display final status line rule"; return; } ! 778, case 1
-		if (R == R_69) { print "print the final question rule"; return; } ! 779, case 1
-		if (R == R_68) { print "print the final prompt rule"; return; } ! 780, case 1
-		if (R == READ_FINAL_ANSWER_R) { print "read the final answer rule"; return; } ! 781, case 1
-		if (R == R_70) { print "standard respond to final question rule"; return; } ! 782, case 1
-		if (R == R_91) { print "can't take component parts rule"; return; } ! 783, case 1
-		if (R == R_148) { print "find what to enter rule"; return; } ! 784, case 1
-		if (R == QUIT_THE_GAME_R) { print "quit the game rule"; return; } ! 785, case 1
-		if (R == SAVE_THE_GAME_R) { print "save the game rule"; return; } ! 786, case 1
-		if (R == RESTORE_THE_GAME_R) { print "restore the game rule"; return; } ! 787, case 1
-		if (R == RESTART_THE_GAME_R) { print "restart the game rule"; return; } ! 788, case 1
-		if (R == VERIFY_THE_STORY_FILE_R) { print "verify the story file rule"; return; } ! 789, case 1
-		if (R == SWITCH_TRANSCRIPT_ON_R) { print "switch the story transcript on rule"; return; } ! 790, case 1
-		if (R == SWITCH_TRANSCRIPT_OFF_R) { print "switch the story transcript off rule"; return; } ! 791, case 1
-		if (R == ANNOUNCE_STORY_FILE_VERSION_R) { print "announce the story file version rule"; return; } ! 792, case 1
-		if (R == ANNOUNCE_SCORE_R) { print "announce the score rule"; return; } ! 793, case 1
-		if (R == PREFER_ABBREVIATED_R) { print "prefer abbreviated room descriptions rule"; return; } ! 794, case 1
-		if (R == REP_PREFER_ABBREVIATED_R) { print "standard report preferring abbreviated room descriptions rule"; return; } ! 795, case 1
-		if (R == PREFER_UNABBREVIATED_R) { print "prefer unabbreviated room descriptions rule"; return; } ! 796, case 1
-		if (R == REP_PREFER_UNABBREVIATED_R) { print "standard report preferring unabbreviated room descriptions rule"; return; } ! 797, case 1
-		if (R == PREFER_SOMETIMES_ABBREVIATED_R) { print "prefer sometimes abbreviated room descriptions rule"; return; } ! 798, case 1
-		if (R == REP_PREFER_SOMETIMES_ABBR_R) { print "standard report preferring sometimes abbreviated room descriptions rule"; return; } ! 799, case 1
-		if (R == SWITCH_SCORE_NOTIFY_ON_R) { print "switch score notification on rule"; return; } ! 800, case 1
-		if (R == REP_SWITCH_NOTIFY_ON_R) { print "standard report switching score notification on rule"; return; } ! 801, case 1
-		if (R == SWITCH_SCORE_NOTIFY_OFF_R) { print "switch score notification off rule"; return; } ! 802, case 1
-		if (R == REP_SWITCH_NOTIFY_OFF_R) { print "standard report switching score notification off rule"; return; } ! 803, case 1
-		if (R == ANNOUNCE_PRONOUN_MEANINGS_R) { print "announce the pronoun meanings rule"; return; } ! 804, case 1
+		if (R == R_14) { print "A first turn sequence rule"; return; } ! 702, case 2
+		if (R == R_15) { print "A last turn sequence rule"; return; } ! 703, case 2
+		if (R == R_30) { print "last specific action-processing rule"; return; } ! 704, case 2
+		if (R == R_159) { print "Setting action variables for exiting"; return; } ! 705, case 2
+		if (R == R_740) { print "When play begins"; return; } ! 706, case 2
+		if (R == R_742) { print "When play begins"; return; } ! 707, case 2
+		if (R == R_743) { print "Rule for deciding whether all includes something"; return; } ! 708, case 2
+		if (R == R_744) { print "Rule for printing a parser error when the latest parser error is the nothing to do error"; return; } ! 709, case 2
+		if (R == R_745) { print "instead of taking flashlight"; return; } ! 710, case 2
+		if (R == R_746) { print "Instead of eating char-siu bau"; return; } ! 711, case 2
+		if (R == R_747) { print "Instead of attacking Madman Mercer"; return; } ! 712, case 2
+		if (R == R_748) { print "Instead of opening beautiful safe"; return; } ! 713, case 2
+		if (R == R_749) { print "Instead of opening green safe"; return; } ! 714, case 2
+		if (R == R_750) { print "Instead of opening fancy safe"; return; } ! 715, case 2
+		if (R == R_751) { print "Instead of opening wooden safe"; return; } ! 716, case 2
+		if (R == R_752) { print "Instead of talking to the Store Clerk for the first time"; return; } ! 717, case 2
+		if (R == R_753) { print "Instead of giving apple to the Store Clerk"; return; } ! 718, case 2
+		if (R == R_754) { print "after taking flashlight"; return; } ! 719, case 2
+		if (R == R_755) { print "instead of taking poop"; return; } ! 720, case 2
+		if (R == R_756) { print "After going to the bathroom for the first time"; return; } ! 721, case 2
+		if (R == R_757) { print "After pooping toilet for the first time"; return; } ! 722, case 2
+		if (R == R_758) { print "After flushing toilet for the first time"; return; } ! 723, case 2
+		if (R == R_759) { print "Every turn"; return; } ! 724, case 2
+		if (R == R_760) { print "Every turn"; return; } ! 725, case 2
+		if (R == R_761) { print "Setting action variables for combining something with something"; return; } ! 726, case 2
+		if (R == R_762) { print "Check combining it with"; return; } ! 727, case 2
+		if (R == R_763) { print "Carry out combining it with"; return; } ! 728, case 2
+		if (R == R_764) { print "Report combining it with"; return; } ! 729, case 2
+		if (R == R_765) { print "Instead of opening the metal box"; return; } ! 730, case 2
+		if (R == R_766) { print "Check spinning it to"; return; } ! 731, case 2
+		if (R == R_767) { print "Report spinning it to"; return; } ! 732, case 2
+		if (R == R_768) { print "After spinning the closed metal box to 1384"; return; } ! 733, case 2
+		if (R == R_769) { print "Check talking to"; return; } ! 734, case 2
+		if (R == R_8) { print "start in the correct scenes rule"; return; } ! 735, case 1
+		if (R == POSITION_PLAYER_IN_MODEL_R) { print "position player in model world rule"; return; } ! 736, case 1
+		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 737, case 1
+		if (R == SEED_RANDOM_NUMBER_GENERATOR_R) { print "seed random number generator rule"; return; } ! 738, case 1
+		if (R == VIRTUAL_MACHINE_STARTUP_R) { print "virtual machine startup rule"; return; } ! 739, case 1
+		if (R == INITIALISE_MEMORY_R) { print "initialise memory rule"; return; } ! 740, case 1
+		if (R == R_9) { print "when play begins stage rule"; return; } ! 741, case 1
+		if (R == R_10) { print "fix baseline scoring rule"; return; } ! 742, case 1
+		if (R == R_11) { print "display banner rule"; return; } ! 743, case 1
+		if (R == R_12) { print "initial room description rule"; return; } ! 744, case 1
+		if (R == GENERATE_ACTION_R) { print "generate action rule"; return; } ! 745, case 1
+		if (R == PARSE_COMMAND_R) { print "parse command rule"; return; } ! 746, case 1
+		if (R == TIMED_EVENTS_R) { print "timed events rule"; return; } ! 747, case 1
+		if (R == ADVANCE_TIME_R) { print "advance time rule"; return; } ! 748, case 1
+		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 749, case 1
+		if (R == ADJUST_LIGHT_R) { print "adjust light rule"; return; } ! 750, case 1
+		if (R == NOTE_OBJECT_ACQUISITIONS_R) { print "note object acquisitions rule"; return; } ! 751, case 1
+		if (R == R_16) { print "notify score changes rule"; return; } ! 752, case 1
+		if (R == R_17) { print "when play ends stage rule"; return; } ! 753, case 1
+		if (R == RESURRECT_PLAYER_IF_ASKED_R) { print "resurrect player if asked rule"; return; } ! 754, case 1
+		if (R == R_18) { print "print player's obituary rule"; return; } ! 755, case 1
+		if (R == ASK_FINAL_QUESTION_R) { print "ask the final question rule"; return; } ! 756, case 1
+		if (R == DetectSceneChange) { print "scene change machinery rule"; return; } ! 757, case 1
+		if (R == R_21) { print "before stage rule"; return; } ! 758, case 1
+		if (R == R_19) { print "set pronouns from items from multiple object lists rule"; return; } ! 759, case 1
+		if (R == R_20) { print "announce items from multiple object lists rule"; return; } ! 760, case 1
+		if (R == BASIC_VISIBILITY_R) { print "basic visibility rule"; return; } ! 761, case 1
+		if (R == BASIC_ACCESSIBILITY_R) { print "basic accessibility rule"; return; } ! 762, case 1
+		if (R == CARRYING_REQUIREMENTS_R) { print "carrying requirements rule"; return; } ! 763, case 1
+		if (R == R_22) { print "instead stage rule"; return; } ! 764, case 1
+		if (R == REQUESTED_ACTIONS_REQUIRE_R) { print "requested actions require persuasion rule"; return; } ! 765, case 1
+		if (R == CARRY_OUT_REQUESTED_ACTIONS_R) { print "carry out requested actions rule"; return; } ! 766, case 1
+		if (R == DESCEND_TO_SPECIFIC_ACTION_R) { print "descend to specific action-processing rule"; return; } ! 767, case 1
+		if (R == R_23) { print "end action-processing in success rule"; return; } ! 768, case 1
+		if (R == WORK_OUT_DETAILS_OF_SPECIFIC_R) { print "work out details of specific action rule"; return; } ! 769, case 1
+		if (R == ACCESS_THROUGH_BARRIERS_R) { print "access through barriers rule"; return; } ! 770, case 1
+		if (R == CANT_REACH_INSIDE_ROOMS_R) { print "can't reach inside rooms rule"; return; } ! 771, case 1
+		if (R == CANT_REACH_INSIDE_CLOSED_R) { print "can't reach inside closed containers rule"; return; } ! 772, case 1
+		if (R == CANT_REACH_OUTSIDE_CLOSED_R) { print "can't reach outside closed containers rule"; return; } ! 773, case 1
+		if (R == R_35) { print "can't act in the dark rule"; return; } ! 774, case 1
+		if (R == STANDARD_NAME_PRINTING_R) { print "standard name printing rule"; return; } ! 775, case 1
+		if (R == R_59) { print "standard printing the plural name rule"; return; } ! 776, case 1
+		if (R == R_60) { print "standard printing a number of something rule"; return; } ! 777, case 1
+		if (R == STANDARD_CONTENTS_LISTING_R) { print "standard contents listing rule"; return; } ! 778, case 1
+		if (R == R_61) { print "look around once light available rule"; return; } ! 779, case 1
+		if (R == ENABLE_GLULX_ACCEL_R) { print "enable Glulx acceleration rule"; return; } ! 780, case 1
+		if (R == PRINT_OBITUARY_HEADLINE_R) { print "print obituary headline rule"; return; } ! 781, case 1
+		if (R == PRINT_FINAL_SCORE_R) { print "print final score rule"; return; } ! 782, case 1
+		if (R == DISPLAY_FINAL_STATUS_LINE_R) { print "display final status line rule"; return; } ! 783, case 1
+		if (R == R_69) { print "print the final question rule"; return; } ! 784, case 1
+		if (R == R_68) { print "print the final prompt rule"; return; } ! 785, case 1
+		if (R == READ_FINAL_ANSWER_R) { print "read the final answer rule"; return; } ! 786, case 1
+		if (R == R_70) { print "standard respond to final question rule"; return; } ! 787, case 1
+		if (R == R_91) { print "can't take component parts rule"; return; } ! 788, case 1
+		if (R == R_148) { print "find what to enter rule"; return; } ! 789, case 1
+		if (R == QUIT_THE_GAME_R) { print "quit the game rule"; return; } ! 790, case 1
+		if (R == SAVE_THE_GAME_R) { print "save the game rule"; return; } ! 791, case 1
+		if (R == RESTORE_THE_GAME_R) { print "restore the game rule"; return; } ! 792, case 1
+		if (R == RESTART_THE_GAME_R) { print "restart the game rule"; return; } ! 793, case 1
+		if (R == VERIFY_THE_STORY_FILE_R) { print "verify the story file rule"; return; } ! 794, case 1
+		if (R == SWITCH_TRANSCRIPT_ON_R) { print "switch the story transcript on rule"; return; } ! 795, case 1
+		if (R == SWITCH_TRANSCRIPT_OFF_R) { print "switch the story transcript off rule"; return; } ! 796, case 1
+		if (R == ANNOUNCE_STORY_FILE_VERSION_R) { print "announce the story file version rule"; return; } ! 797, case 1
+		if (R == ANNOUNCE_SCORE_R) { print "announce the score rule"; return; } ! 798, case 1
+		if (R == PREFER_ABBREVIATED_R) { print "prefer abbreviated room descriptions rule"; return; } ! 799, case 1
+		if (R == REP_PREFER_ABBREVIATED_R) { print "standard report preferring abbreviated room descriptions rule"; return; } ! 800, case 1
+		if (R == PREFER_UNABBREVIATED_R) { print "prefer unabbreviated room descriptions rule"; return; } ! 801, case 1
+		if (R == REP_PREFER_UNABBREVIATED_R) { print "standard report preferring unabbreviated room descriptions rule"; return; } ! 802, case 1
+		if (R == PREFER_SOMETIMES_ABBREVIATED_R) { print "prefer sometimes abbreviated room descriptions rule"; return; } ! 803, case 1
+		if (R == REP_PREFER_SOMETIMES_ABBR_R) { print "standard report preferring sometimes abbreviated room descriptions rule"; return; } ! 804, case 1
+		if (R == SWITCH_SCORE_NOTIFY_ON_R) { print "switch score notification on rule"; return; } ! 805, case 1
+		if (R == REP_SWITCH_NOTIFY_ON_R) { print "standard report switching score notification on rule"; return; } ! 806, case 1
+		if (R == SWITCH_SCORE_NOTIFY_OFF_R) { print "switch score notification off rule"; return; } ! 807, case 1
+		if (R == REP_SWITCH_NOTIFY_OFF_R) { print "standard report switching score notification off rule"; return; } ! 808, case 1
+		if (R == ANNOUNCE_PRONOUN_MEANINGS_R) { print "announce the pronoun meanings rule"; return; } ! 809, case 1
 
 		print "(nameless rule at address ", R, ")";
 	}
@@ -26991,11 +27050,11 @@ Verb meta 'tree'
 
 [ LITTLE_USED_DO_NOTHING_R; rfalse; ];
 
-Array LIST_CONST_1588 --> 0 9 2 (I99_flashlight) (I108_reflector) ;
-Array LIST_CONST_1596 --> 0 9 2 (I131_flashlight_reflector_th) (I109_condenser_lens) ;
-Array LIST_CONST_1609 --> 0 9 2 (I132_flashlight_reflector_co) (I110_imaging_lens) ;
-Array LIST_CONST_1626 --> 0 9 2 (I133_flashlight_reflector_co) (I111_shutter) ;
-Array LIST_CONST_1645 --> 0 9 2 (I134_flashlight_reflector_co) (I112_viewing_screen) ;
+Array LIST_CONST_1551 --> 0 9 2 (I99_flashlight) (I109_reflector) ;
+Array LIST_CONST_1559 --> 0 9 2 (I131_flashlight_reflector_th) (I110_condenser_lens) ;
+Array LIST_CONST_1572 --> 0 9 2 (I132_flashlight_reflector_co) (I111_imaging_lens) ;
+Array LIST_CONST_1589 --> 0 9 2 (I133_flashlight_reflector_co) (I112_shutter) ;
+Array LIST_CONST_1608 --> 0 9 2 (I134_flashlight_reflector_co) (I113_viewing_screen) ;
 
 
 
@@ -27143,7 +27202,7 @@ Array LIST_CONST_1645 --> 0 9 2 (I134_flashlight_reflector_co) (I112_viewing_scr
           t_0 = (Resolver_5(t_1,real_location,"source", 11)); 
          ! phrase 4
          ! [4: if place is a room , say ~ [way] ~]
-          if (((t_0 ofclass K1_room))) { say__p=1;ParaContent();  print (PrintText) SC_66; ParaContent();  print (PrintShortName) t_1; ParaContent();  print (PrintText) SC_66;  .L_Say64; .L_SayX64;  }
+          if (((t_0 ofclass K1_room))) { say__p=1;ParaContent();  print (PrintText) SC_69; ParaContent();  print (PrintShortName) t_1; ParaContent();  print (PrintText) SC_69;  .L_Say66; .L_SayX66;  }
          ! phrase 5
          ! [5: end repeat]
          }
@@ -27156,17 +27215,17 @@ say__p=1;ParaContent();  #ifdef TARGET_ZCODE; @push self; self = 12356; @print_u
 	#ifnot; if (unicode_gestalt_ok) glk_put_char_uni(12356); else print "?"; #endif; ParaContent();  #ifdef TARGET_ZCODE; @push self; self = 12385; @print_unicode self; @pull self;
 	#ifnot; if (unicode_gestalt_ok) glk_put_char_uni(12385); else print "?"; #endif; ParaContent();  #ifdef TARGET_ZCODE; @push self; self = 12356; @print_unicode self; @pull self;
 	#ifnot; if (unicode_gestalt_ok) glk_put_char_uni(12356); else print "?"; #endif; ParaContent();  #ifdef TARGET_ZCODE; @push self; self = 12356; @print_unicode self; @pull self;
-	#ifnot; if (unicode_gestalt_ok) glk_put_char_uni(12356); else print "?"; #endif; ParaContent();  print (PrintText) SC_91;  .L_Say65; .L_SayX65;
+	#ifnot; if (unicode_gestalt_ok) glk_put_char_uni(12356); else print "?"; #endif; ParaContent();  print (PrintText) SC_95;  .L_Say67; .L_SayX67;
     rtrue;
 ];
 
 [ text_routine_1;
-say__p=1;ParaContent();  print (PrintText) SC_92; ParaContent(); (PHR_741_r8 ()); .L_Say66; .L_SayX66;
+say__p=1;ParaContent();  print (PrintText) SC_96; ParaContent(); (PHR_741_r8 ()); .L_Say68; .L_SayX68;
     rtrue;
 ];
 
 [ text_routine_2;
-say__p=1;ParaContent();  print (PrintShortName) real_location;  .L_Say67; .L_SayX67;
+say__p=1;ParaContent();  print (PrintShortName) real_location;  .L_Say69; .L_SayX69;
     rtrue;
 ];
 
@@ -27190,7 +27249,7 @@ say__p=1;ParaContent();  print (PrintShortName) real_location;  .L_Say67; .L_Say
 ];
 
 [ PAPR_0 ;
-if ((action ==##A82_pooping) &&  (actor==player) && ((real_location == I129_toilet) && (true))) rtrue;
+if ((action ==##A84_talking_to) &&  (actor==player) && ((noun == I138_store_clerk) && (true))) rtrue;
     rfalse;
 ];
 [ PAPR_1 ;
@@ -27198,13 +27257,17 @@ if ((action ==##Go) &&  (actor==player) && (((MStack-->MstVON(20007,1)) == I95_b
     rfalse;
 ];
 [ PAPR_2 ;
-if ((action ==##A83_flushing) &&  (actor==player) && ((noun == I129_toilet) && (true))) rtrue;
+if ((action ==##A82_pooping) &&  (actor==player) && ((noun == I128_toilet) && (true))) rtrue;
     rfalse;
 ];
-Array PastActionsI6Routines --> PAPR_0 PAPR_1 PAPR_2 0 0;
+[ PAPR_3 ;
+if ((action ==##A83_flushing) &&  (actor==player) && ((noun == I128_toilet) && (true))) rtrue;
+    rfalse;
+];
+Array PastActionsI6Routines --> PAPR_0 PAPR_1 PAPR_2 PAPR_3 0 0;
 
 Constant NO_PAST_TENSE_CONDS 2;
-Constant NO_PAST_TENSE_ACTIONS 3;
+Constant NO_PAST_TENSE_ACTIONS 4;
 
 [ TestSinglePastState past_flag pt turn_end wanted
 	old new trips consecutives ct_0 ct_1 I7BASPL;
@@ -27605,6 +27668,12 @@ Verb 'poop'
 ;
 Verb 'flush'
     * noun  -> A83_flushing
+;
+Verb 'talk'
+    * 'to' creature  -> A84_talking_to
+;
+Verb 'converse'
+    * 'with' creature  -> A84_talking_to
 ;
 [ Parse_Name_GV1
     original_wn  ! first word of text parsed
@@ -28256,7 +28325,7 @@ Verb 'flush'
     DetectPluralWord(original_wn, n);
     return n;
 ];
-[ Consult_Grammar_100
+[ Consult_Grammar_102
     range_from  ! call parameter: word number of snippet start
     range_words  ! call parameter: snippet length
     original_wn  ! first word of text parsed
@@ -28271,7 +28340,7 @@ Verb 'flush'
     return GPR_FAIL;
 ];
 
-[ Consult_Grammar_101
+[ Consult_Grammar_103
     range_from  ! call parameter: word number of snippet start
     range_words  ! call parameter: snippet length
     original_wn  ! first word of text parsed
@@ -28286,7 +28355,7 @@ Verb 'flush'
     return GPR_FAIL;
 ];
 
-[ Consult_Grammar_102
+[ Consult_Grammar_104
     range_from  ! call parameter: word number of snippet start
     range_words  ! call parameter: snippet length
     original_wn  ! first word of text parsed
@@ -28301,7 +28370,7 @@ Verb 'flush'
     return GPR_FAIL;
 ];
 
-[ Consult_Grammar_103
+[ Consult_Grammar_105
     range_from  ! call parameter: word number of snippet start
     range_words  ! call parameter: snippet length
     original_wn  ! first word of text parsed
@@ -28316,7 +28385,7 @@ Verb 'flush'
     return GPR_FAIL;
 ];
 
-[ Consult_Grammar_104
+[ Consult_Grammar_106
     range_from  ! call parameter: word number of snippet start
     range_words  ! call parameter: snippet length
     original_wn  ! first word of text parsed
@@ -28959,99 +29028,103 @@ ArgumentTypeFailed(filename, line);
 
 
 Array ConstantListPointers --> 
-LIST_CONST_1588 LIST_CONST_1596 LIST_CONST_1609 LIST_CONST_1626 LIST_CONST_1645  0 0;
+LIST_CONST_1551 LIST_CONST_1559 LIST_CONST_1572 LIST_CONST_1589 LIST_CONST_1608  0 0;
 
-Constant SC_66 = " ";
-Constant SC_84 = " and ";
-Constant SC_89 = " does not spin.";
-Constant SC_81 = " here";
-Constant SC_85 = " into anything useful.";
-Constant SC_71 = " or ";
-Constant SC_76 = " you ";
-Constant SC_72 = ", ";
-Constant SC_70 = ",";
-Constant SC_64 = ".";
+Constant SC_69 = " ";
+Constant SC_87 = " and ";
+Constant SC_92 = " does not spin.";
+Constant SC_94 = " doesn't reply.";
+Constant SC_84 = " here";
+Constant SC_88 = " into anything useful.";
+Constant SC_74 = " or ";
+Constant SC_79 = " you ";
+Constant SC_75 = ", ";
+Constant SC_73 = ",";
+Constant SC_67 = ".";
 Constant SC_49 = ": ";
-Constant SC_82 = ":";
-Constant SC_73 = "> ";
+Constant SC_85 = ":";
+Constant SC_76 = "> ";
 Constant SC_40 = ">";
-Constant SC_69 = "?";
+Constant SC_72 = "?";
 Constant SC_35 = "A  C  H  D";
-Constant SC_65 = "A basket of apples.";
-Constant SC_18 = "A beautiful safe that has a keyhole that look like a beautiful key goes in.";
-Constant SC_34 = "A device used to light up dark rooms.";
-Constant SC_33 = "A glowing basket containing many glowing apples.";
-Constant SC_25 = "A green safe that is very green.";
-Constant SC_17 = "A hair salon with little pieces of hair on the floor everywhere.";
+Constant SC_23 = "A a very scruffy, sleepy looking man wearing a green sweater vest with jeans on.";
+Constant SC_68 = "A basket of apples.";
+Constant SC_16 = "A beautiful safe that has a keyhole that look like a beautiful key goes in.";
+Constant SC_33 = "A device used to light up dark rooms.";
+Constant SC_32 = "A glowing basket containing many glowing apples.";
+Constant SC_22 = "A green safe that is very green.";
+Constant SC_15 = "A hair salon with little pieces of hair on the floor everywhere.";
 Constant SC_7 = "A large stage used for lion dance shows, and many other performances.";
 Constant SC_38 = "A mammoth metal box, with a dial which can spin to any number.  It looks as hard as diamond, so don't get any ideas.";
 Constant SC_10 = "A nice little Chinese restaurant where you can smell all of the Char-Siu Buns.";
-Constant SC_14 = "A rental video shop, with stands and stands of videos.";
-Constant SC_26 = "A stinky smelling bathroom.";
-Constant SC_29 = "A street lighted with street light.";
-Constant SC_11 = "A titanium safe able to with stand attacks of all sorts.";
-Constant SC_19 = "A wad of hair leftover from someone's haircut.";
+Constant SC_13 = "A rental video shop, with stands and stands of videos.";
+Constant SC_24 = "A stinky smelling bathroom.";
+Constant SC_28 = "A street lighted with street light.";
+Constant SC_64 = "A toilet filled with an explosion of poop.";
+Constant SC_18 = "A wad of hair leftover from someone's haircut.";
 Constant SC_6 = "A white guy about 5 foot 7 inches with curly brown hair wearing a hockey mask.  He is holding a machete.";
 Constant SC_4 = "As good-looking as ever.";
-Constant SC_90 = "Click! and nothing else happens.";
-Constant SC_63 = "Clonk! and the metal door swings slowly open, revealing ";
+Constant SC_93 = "Click! and nothing else happens.";
+Constant SC_66 = "Clonk! and the metal door swings slowly open, revealing ";
 Constant SC_2 = "Dylan Zhang";
-Constant SC_92 = "Exits: ";
-Constant SC_31 = "Fishy smelling market where you can hear the loud clerk yelling ~Come get yo ninety nine sense feesh~.";
-Constant SC_67 = "Hey maybe you should actually TRY and play the game, you little cheater. K, thanks.";
-Constant SC_30 = "How to Build a Film Projector for Dummies:^^Steps:^^*note: must combine in this order^^1. Combine flashlight with Reflector^^2. Combine flashlight + Reflector Thing with Condenser Lens^^3. Combine flashlight + Reflector + Condenser Lens Thing with Imaging Lens^^4. Combine flashlight + Reflector + Condenser Lens + Imaging Lens Thing with Shutter^^5. Combine flashlight + Reflector + Condenser Lens + Imaging Lens + Shutter Thing with Viewing Screen^^6. After combining you should have a Film Projector^^7. Find Film";
-Constant SC_75 = "In ";
-Constant SC_22 = "Lots of furniture clutter the store.";
-Constant SC_52 = "Madman Mercer is unphased by your weak punch, and BOOM counters with a nice little uppercut knocking you down.  You lose conciousness as you see Madman Mercer walking toward you.";
+Constant SC_96 = "Exits: ";
+Constant SC_30 = "Fishy smelling market where you can hear the loud clerk yelling ~Come get yo ninety nine sense feesh~.";
+Constant SC_70 = "Hey maybe you should actually TRY and play the game, you little cheater. K, thanks.";
+Constant SC_29 = "How to Build a Film Projector for Dummies:^^Steps:^^*note: must combine in this order^^1. Combine flashlight with Reflector^^2. Combine flashlight + Reflector Thing with Condenser Lens^^3. Combine flashlight + Reflector + Condenser Lens Thing with Imaging Lens^^4. Combine flashlight + Reflector + Condenser Lens + Imaging Lens Thing with Shutter^^5. Combine flashlight + Reflector + Condenser Lens + Imaging Lens + Shutter Thing with Viewing Screen^^6. After combining you should have a Film Projector^^7. Find Film";
+Constant SC_78 = "In ";
+Constant SC_19 = "Lots of furniture clutter the store.";
+Constant SC_55 = "Madman Mercer is unphased by your weak punch, and BOOM counters with a nice little uppercut knocking you down.  You lose conciousness as you see Madman Mercer walking toward you.";
 Constant SC_48 = "Madman Mercer walks to another room.";
 Constant SC_47 = "Madman mercer knocks you out, and everything goes black.";
-Constant SC_32 = "Many different containers of fruit are on the stands.";
-Constant SC_77 = "On ";
-Constant SC_60 = "Plop! brown things come from your butt into the toilet";
+Constant SC_50 = "Man I'm tired, and could really use some lihing mui apples right now, but this convenience store doesn't have fresh apples.";
+Constant SC_31 = "Many different containers of fruit are on the stands.";
+Constant SC_80 = "On ";
+Constant SC_63 = "Plop! brown things come from your butt into the toilet.  I recommend you flush it before it stinks up the place.";
+Constant SC_60 = "Poop is not solid enoguh and the brown goo slips through your hands.";
 Constant SC_44 = "QUIT";
 Constant SC_41 = "RESTART";
 Constant SC_42 = "RESTORE a saved game";
 Constant SC_37 = "Snug yet eery room that gives you the heeby jeebies.";
-Constant SC_59 = "The box opens only when turned to the correct combination.";
+Constant SC_51 = "Thanks man you are a life saver.  Here is something as a reward.";
+Constant SC_61 = "The box opens only when turned to the correct combination.";
 Constant SC_5 = "The outside of all the stores around you.";
-Constant SC_24 = "There are many snack sold here.";
-Constant SC_86 = "Try another combination of things.";
+Constant SC_21 = "There are many snack sold here.";
+Constant SC_89 = "Try another combination of things.";
 Constant SC_45 = "UNDO the last command";
-Constant SC_68 = "Would you like to ";
-Constant SC_74 = "You ";
-Constant SC_83 = "You can't combine ";
-Constant SC_87 = "You fuse together ";
+Constant SC_71 = "Would you like to ";
+Constant SC_77 = "You ";
+Constant SC_86 = "You can't combine ";
+Constant SC_90 = "You fuse together ";
 Constant SC_46 = "You go out with your friends to watch the latest horror movie called ~Madman Mercer.~  In the movie you see Madman Mercer chasing people through Chinatown in the middle of the night with a machete.  As you are watching you suddenly fall asleep.  When you wake up you are on the cold damp ground of Chinatown.  You can hear the high speed swings of a machete.  In your mind you think ~Oh no~. ";
-Constant SC_88 = "You now have a ";
-Constant SC_27 = "a beautiful key that unlocks beautiful things.";
-Constant SC_23 = "a green key that looks like it unlocks green things.";
-Constant SC_20 = "a key with a poopy smell.";
-Constant SC_28 = "a safe stained with the smell of poop and pee.";
-Constant SC_15 = "a titanium key that can unlock titanium things.";
+Constant SC_91 = "You now have a ";
+Constant SC_52 = "You receive a piece of cold ripped paper";
+Constant SC_25 = "a beautiful key that unlocks beautiful things.";
+Constant SC_34 = "a big, nice, juicy, red apple.";
+Constant SC_20 = "a green key that looks like it unlocks green things.";
+Constant SC_26 = "a safe stained with the smell of poop and pee.";
 Constant SC_8 = "a very fancy and expensive looking safe.  I would rather steal the safe than what's inside.";
-Constant SC_13 = "a well crafted wooden key to unlock wooden things.";
+Constant SC_12 = "a well crafted wooden key to unlock wooden things.";
 Constant SC_39 = "a wheel of film that is for film projectors that is titled ~Movie Theater~";
-Constant SC_16 = "a wooden safe crafted very well from wood.";
-Constant SC_79 = "also ";
-Constant SC_12 = "an amazing delicacy that make you mouth drool.  You really want to eat it.";
+Constant SC_14 = "a wooden safe crafted very well from wood.";
+Constant SC_82 = "also ";
+Constant SC_11 = "an amazing delicacy that make you mouth drool.  You really want to eat it.";
 Constant SC_9 = "an expensive looking key that looks like it unlocks expensive things.";
-Constant SC_78 = "can ";
+Constant SC_81 = "can ";
 Constant SC_36 = "hint";
-Constant SC_91 = "ichi  san  hachi  yon";
-Constant SC_80 = "see ";
+Constant SC_95 = "ichi  san  hachi  yon";
+Constant SC_83 = "see ";
 Constant SC_43 = "see some suggestions for AMUSING things to do";
-Constant SC_50 = "taken";
-Constant SC_62 = "the toilet clogs and you see a key appear!";
+Constant SC_27 = "smelly brown substance.  I wouldn't take that if I were you.";
+Constant SC_53 = "taken";
+Constant SC_65 = "the toilet clogs and a soggy scrap of paper appears!";
 Constant SC_3 = "the";
-Constant SC_21 = "very sharp scissors able to cut through any hair.";
-Constant SC_61 = "you have the urge to POOP";
-Constant SC_54 = "you see a cold ripped paper.";
-Constant SC_57 = "you see a dirty ripped paper.";
-Constant SC_55 = "you see a paint splattered ripped paper.";
-Constant SC_58 = "you see a pee-stained ripped paper.";
-Constant SC_56 = "you see a perfume scented ripped paper.";
-Constant SC_53 = "you see a small ripped paper.";
-Constant SC_51 = "you start eating the char-siu bau, and suddenly you bite something hard.  You see that it is a wooden key.";
+Constant SC_17 = "very sharp scissors able to cut through any hair.";
+Constant SC_62 = "you have the urge to POOP";
+Constant SC_59 = "you see a dirty ripped paper.";
+Constant SC_57 = "you see a paint splattered ripped paper.";
+Constant SC_58 = "you see a perfume scented ripped paper.";
+Constant SC_56 = "you see a small ripped paper.";
+Constant SC_54 = "you start eating the char-siu bau, and suddenly you bite something hard.  You see that it is a wooden key.";
 
 #ifndef p0_specification; Constant p0_specification = 0; #endif;
 #ifndef p1_indefinite_appearance_tex; Constant p1_indefinite_appearance_tex = 0; #endif;

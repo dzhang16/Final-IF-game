@@ -51,6 +51,8 @@ Fruit Stands is a room.  It is east of the Downtown.  The description is "Many d
 
 Flashlight is a thing.  Flashlight is lit.  The flashlight is in the basket of fruit.  The description is "A device used to light up dark rooms."
 
+Apple is a thing.  The apple is in the basket of fruit.  The description is "a big, nice, juicy, red apple."
+
 basket of fruit is an open openable container in the fruit stands.  The description is "A glowing basket containing many glowing apples."
 
 Film is a thing.  The description is "a wheel of film that is for film projectors that is titled ‘Movie Theater’"
@@ -61,7 +63,7 @@ cold ripped paper is a thing.  The description of the cold ripped paper is "い�
 paint splattered ripped paper is a thing.  The description of the paint splattered ripped paper is "hint".
 perfume scented ripped paper is a thing.  The description of the perfume scented ripped paper is "hint".
 dirty ripped paper is a thing.  The description of the dirty ripped paper is "hint".
-pee-stained ripped paper is a thing.  The description of the pee-stained ripped paper is "hint".
+soggy scrap of paper is a thing.  The description of the soggy scrap of paper is "hint".
 
 [10 film projector parts]
 [1][Light Source is a thing in the hair salon.  ]
@@ -115,10 +117,6 @@ Instead of opening beautiful safe:
 	say "you see a small ripped paper.";
 	move small ripped paper to beautiful safe.
 	
-Instead of opening titanium safe:
-	say "you see a cold ripped paper.";
-	move cold ripped paper to titanium safe.
-	
 Instead of opening green safe:
 	say "you see a paint splattered ripped paper.";
 	move paint splattered ripped paper to green safe.
@@ -131,12 +129,15 @@ Instead of opening wooden safe:
 	say "you see a dirty ripped paper.";
 	move dirty ripped paper to wooden safe.
 	
-Instead of opening smelly safe:
-	say "you see a pee-stained ripped paper.";
-	move pee-stained ripped paper to smelly safe.
+	
+Instead of talking to the Store Clerk for the first time:
+	say "Man I'm tired, and could really use some lihing mui apples right now, but this convenience store doesn't have fresh apples."
+	
+Instead of giving apple to the Store Clerk:
+	say "Thanks man you are a life saver.  Here is something as a reward.[line break]You receive a piece of cold ripped paper";
+	move cold ripped paper to player.
 	
 	
-
 [after staments]
 
 after taking flashlight:
@@ -146,8 +147,6 @@ after taking flashlight:
 [safes]
 
 the beautiful safe is scenery in the Hair Salon.  It is a closed openable container.  It is locked and lockable.  beautiful key unlocks the beautiful safe.  The description of the beautiful safe is "A beautiful safe that has a keyhole that look like a beautiful key goes in."
-
-the titanium safe is scenery in the restaurant.  It is a closed openable container.  It is locked and lockable.  titanium key unlocks the titanium safe.  The description of the titanium safe is "A titanium safe able to with stand attacks of all sorts."
 
 the green safe is scenery in the convenience store.  It is a closed openable container.  It is locked and lockable.  green key unlocks the green safe.  The description of the green safe is "A green safe that is very green."
 
@@ -161,15 +160,11 @@ the smelly safe is scenery in the bathroom.  It is a closed openable container. 
 
 the beautiful key is a thing in the bathroom.  beautiful key unlocks the beautiful safe.  The description of the beautiful key is "a beautiful key that unlocks beautiful things."
 
-the titanium key is a thing in the video store.  titanium key unlocks the titanium safe.  The description of the titanium key is "a titanium key that can unlock titanium things."
-
 the green key is a thing in the furniture store.  green key unlocks the green safe.  The description of the green key is "a green key that looks like it unlocks green things."
 
 the fancy key is a thing in the stage.  fancy key unlocks the fancy safe.  The description of the fancy key is "an expensive looking key that looks like it unlocks expensive things."
 
 the wooden key is a thing.  Wooden key is in the char-siu bau.  wooden key unlocks the wooden safe.  The description of the wooden key is "a well crafted wooden key to unlock wooden things."
-
-the smelly key is a thing.  Smelly key is in the wad of hair.  smelly key unlocks the smelly safe.  The description of the smelly key is "a key with a poopy smell."
 
 [other keys]
 
@@ -185,21 +180,27 @@ the wad of hair is a thing in the hair salon.  It is a closed openable container
 [wooden key hiding place]
 the char-siu bau is a thing in the restaurant.  it is a closed openable container.  It is locked and lockable.  The description of the char-siu bau is "an amazing delicacy that make you mouth drool.  You really want to eat it."
 
-[beautiful key hiding place]
+[toilet puzzle]
 the toilet is a fixed in place thing.  The toilet is in the bathroom.  it is a open openable container. 
 
+instead of taking poop:
+	say "Poop is not solid enoguh and the brown goo slips through your hands."
+
+poop is a thing in the toilet.  The description of poop is "smelly brown substance.  I wouldn't take that if I were you."
+
 After going to the bathroom for the first time:
-	say "you have the urge to POOP";
-	move player to the bathroom.
+	move player to the bathroom.;
+	say "you have the urge to POOP"
 	
-[instead of pooping in toilet:
-	say "Plop! brown things come from your butt into the toilet"]
-	
-After pooping in toilet for the first time:
-	say "Plop! brown things come from your butt into the toilet"
+After pooping toilet for the first time:
+	say "Plop! brown things come from your butt into the toilet.  I recommend you flush it before it stinks up the place.";
+	now description of the toilet is "A toilet filled with an explosion of poop."
 	
 After flushing toilet for the first time:
-	say "the toilet clogs and you see a key appear!"
+	say "the toilet clogs and a soggy scrap of paper appears!";
+	move soggy scrap of paper to toilet.
+	
+	
 
 [Madman Mercer]
 Madman Mercer is a male man.  Madman Mercer is in the Cultural Plaza.  The description of Madman Mercer is "A white guy about 5 foot 7 inches with curly brown hair wearing a hockey mask.  He is holding a machete."
@@ -361,7 +362,12 @@ After spinning the closed metal box to 1384: now the metal box is open; say "Clo
 [definitions]
 Pooping is an action applying to one thing.  Understand "poop in [something]" as pooping.
 Flushing is an action applying to one thing.  Understand "flush [something]" as flushing.
+Talking to is an action applying to one visible thing.  Understand "talk to [someone]"or "converse with [someone]" as talking to.
 
+Check talking to: say "[The noun] doesn't reply."
+
+[NPC]
+The Store Clerk is a man in the convenience store.  The description is "A a very scruffy, sleepy looking man wearing a green sweater vest with jeans on."
 
 
 
