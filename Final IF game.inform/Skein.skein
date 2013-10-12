@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x9227040" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x2149df90" />
+  <activeNode nodeId="node-0x92795b0" />
   <item nodeId="node-0x9227040">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -14,14 +14,14 @@ An Interactive Fiction by Dylan Zhang
 Release 1 / Serial number 131011 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Cultural Plaza
-The outside of all the stores around you.
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
 
 You can see Madman Mercer here.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1748">NO</temporary>
+    <temporary score="1832">NO</temporary>
     <children>
       <child nodeId="node-0x1c7317f0" />
       <child nodeId="node-0x14386e40" />
@@ -3253,8 +3253,8 @@ You can see Imaging Lens, beautiful key, and a toilet (in which is poop) here.
 you have the urge to POOP
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1748">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1832">YES</temporary>
     <children>
       <child nodeId="node-0x2233ee00" />
     </children>
@@ -3266,18 +3266,55 @@ you have the urge to POOP
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1748">YES</temporary>
+    <temporary score="1832">YES</temporary>
     <children>
       <child nodeId="node-0x2149df90" />
     </children>
   </item>
   <item nodeId="node-0x2149df90">
     <command xml:space="preserve">poop in toilet</command>
-    <result xml:space="preserve">Plop! brown things come from your butt into the toilet
+    <result xml:space="preserve">Plop! brown things come from your butt into the toilet.  I recommend you flush it before it stinks up the place.
+
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1747">YES</temporary>
+    <temporary score="1832">YES</temporary>
+    <children>
+      <child nodeId="node-0x143e35d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x143e35d0">
+    <command xml:space="preserve">flush toilet</command>
+    <result xml:space="preserve">the toilet clogs and a soggy scrap of paper appears!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1832">YES</temporary>
+    <children>
+      <child nodeId="node-0x14395320" />
+    </children>
+  </item>
+  <item nodeId="node-0x14395320">
+    <command xml:space="preserve">take soggy scrap of paper</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1832">YES</temporary>
+    <children>
+      <child nodeId="node-0x92795b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x92795b0">
+    <command xml:space="preserve">x soggy paper</command>
+    <result xml:space="preserve">hint
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1831">YES</temporary>
   </item>
   <item nodeId="node-0x132a5bb0">
     <command xml:space="preserve">go e</command>
