@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x9227040" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x92795b0" />
+  <activeNode nodeId="node-0x1320cee0" />
   <item nodeId="node-0x9227040">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -11,7 +11,7 @@
 You go out with your friends to watch the latest horror movie called &quot;Madman Mercer.&quot;  In the movie you see Madman Mercer chasing people through Chinatown in the middle of the night with a machete.  As you are watching you suddenly fall asleep.  When you wake up you are on the cold damp ground of Chinatown.  You can hear the high speed swings of a machete.  In your mind you think &quot;Oh no&quot;. 
 Escape the Movie
 An Interactive Fiction by Dylan Zhang
-Release 1 / Serial number 131011 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 131014 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Cultural Plaza
 The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
@@ -21,7 +21,7 @@ You can see Madman Mercer here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1832">NO</temporary>
+    <temporary score="1895">NO</temporary>
     <children>
       <child nodeId="node-0x1c7317f0" />
       <child nodeId="node-0x14386e40" />
@@ -3254,7 +3254,7 @@ you have the urge to POOP
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1832">YES</temporary>
+    <temporary score="1895">YES</temporary>
     <children>
       <child nodeId="node-0x2233ee00" />
     </children>
@@ -3266,7 +3266,7 @@ you have the urge to POOP
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1832">YES</temporary>
+    <temporary score="1895">YES</temporary>
     <children>
       <child nodeId="node-0x2149df90" />
     </children>
@@ -3278,7 +3278,7 @@ you have the urge to POOP
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1832">YES</temporary>
+    <temporary score="1895">YES</temporary>
     <children>
       <child nodeId="node-0x143e35d0" />
     </children>
@@ -3290,7 +3290,7 @@ you have the urge to POOP
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1832">YES</temporary>
+    <temporary score="1895">YES</temporary>
     <children>
       <child nodeId="node-0x14395320" />
     </children>
@@ -3302,7 +3302,7 @@ you have the urge to POOP
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1832">YES</temporary>
+    <temporary score="1895">YES</temporary>
     <children>
       <child nodeId="node-0x92795b0" />
     </children>
@@ -3314,7 +3314,49 @@ you have the urge to POOP
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1831">YES</temporary>
+    <temporary score="1895">YES</temporary>
+    <children>
+      <child nodeId="node-0x1acb2940" />
+    </children>
+  </item>
+  <item nodeId="node-0x1acb2940">
+    <command xml:space="preserve">go nw</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1895">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c736fe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c736fe0">
+    <command xml:space="preserve">go s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the loud chinese fisherman yelling &quot;Come get yo ninety nine sense feesh&quot;.
+
+You can see Reflector and a chinese fisherman here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1895">YES</temporary>
+    <children>
+      <child nodeId="node-0x1320cee0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1320cee0">
+    <command xml:space="preserve">go e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1894">YES</temporary>
   </item>
   <item nodeId="node-0x132a5bb0">
     <command xml:space="preserve">go e</command>

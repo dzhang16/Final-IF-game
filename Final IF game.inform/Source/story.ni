@@ -37,7 +37,7 @@ Stage is a room. It is north of the Cultural Plaza.  The description is "A large
 The curtains is a fixed in place thing.  The curtain is in the stage.  The description is "A big red curtain that spanning about 40 feet wide and 20 feet tall."
 
 
-Restaurant is a room.  It is west of the Cultural Plaza.  The description is "A nice little Chinese restaurant where you can smell all of their famous Char-Siu buns.  There are about 20 tables and 4 chairs to each table.  You also see a pretty decent size aquarium where they keep their fresh lobster, crabs, and fish."
+[Restaurant is a room.  It is west of the Cultural Plaza.  The description is "A nice little Chinese restaurant where you can smell all of their famous Char-Siu buns.  There are about 20 tables and 4 chairs to each table.  You also see a pretty decent size aquarium where they keep their fresh lobster, crabs, and fish."
 [scenery]
 The tables are scenery in the restaurant.  The description is "20 wooden tables that have a white cloth covering the whole table.  Each table has their own set of condiments including soy sauce, hot sauce, salt, pepper, and red vinegar."
 
@@ -49,7 +49,7 @@ The salt is scenery in the restaurant.  The description is "A nice little salt s
 
 The pepper is scenery in the restaurant.  The description is "A nice little pepper shaker."
 
-The red vinegar is scenery in the restaurant.  The description is "A squeeze bottle filled with red vinegar used to eat the dragon dumplings.  You start drooling just thinking about the awesome combinations of the vinegar and dumplings."
+The red vinegar is scenery in the restaurant.  The description is "A squeeze bottle filled with red vinegar used to eat the dragon dumplings.  You start drooling just thinking about the awesome combinations of the vinegar and dumplings."]
 
 
 Video Store is a room.  It is east of the Cultural Plaza.  The description is "A rental video shop, with stands and stands of videos."
@@ -64,20 +64,27 @@ Convenience Store is a dark room.  It is southwest of the Cultural Plaza.  The d
 
 Bathroom is a room.  It is southeast of the Cultural Plaza.  The description is "A stinky smelling bathroom."
 
-Downtown is a room.  It is south of the Cultural Plaza.  The description is "A street lighted with street light."
+[Downtown is a room.  It is south of the Cultural Plaza.  The description is "A street lighted with street light."]
 
-Fish Market is a room.  It is west of the Downtown.  The description is "Fishy smelling market where you can hear the loud clerk yelling ‘Come get yo ninety nine sense feesh’."
+Fish Market is a room.  It is south of the Cultural Plaza.  The description is "Fishy smelling market where you can hear the loud chinese fisherman yelling ‘Come get yo ninety nine sense feesh’."
 
-Fruit Stands is a room.  It is east of the Downtown.  The description is "Many different containers of fruit are on the stands."
-
+Fruit store is a room.  It is west of the Cultural Plaza.  The description is "Many different baskets of fruit fill the store."
 
 [items in the game]
 
-Flashlight is a thing.  Flashlight is lit.  The flashlight is in the basket of fruit.  The description is "A device used to light up dark rooms."
+basket of pears is a thing in the fruit store.  Basket of pears is an open openable container.  The description of the basket of pears is "many green pears fill the basket."
 
-Apple is a thing.  The apple is in the basket of fruit.  The description is "a big, nice, juicy, red apple."
+pear is a thing.  The pear is in the basket of pears.  The description of the pear is "nice green pear."
 
-basket of fruit is an open openable container in the fruit stands.  The description is "A glowing basket containing many glowing apples."
+basket of peaches is a thing in the fruit store.  Basket of pears is an open openable container.  The description of the basket of peaches is "many fuzzy peaches fill the basket."
+
+peach is a thing.  Peach is in the basket of peaches.  The description of the peach is "a very fuzzy peach."
+
+Flashlight is a thing.  Flashlight is lit.  The description is "A device used to light up dark rooms."
+
+Apple is a thing.  The apple is in the basket of apples.  The description is "a big, nice, juicy, red apple."
+
+basket of apples is thing.  Basket of apples is an open openable container.  Basket of apples is in the fruit store.  The description of the basket of apples is "A basket containing many apples, and you see a light emitting from under the apples, which are covering the strange object."
 
 Film is a thing.  The description is "a wheel of film that is for film projectors that is titled ‘Movie Theater’"
 
@@ -91,17 +98,17 @@ soggy scrap of paper is a thing.  The description of the soggy scrap of paper is
 
 [10 film projector parts]
 [1][Light Source is a thing in the hair salon.  ]
-[2]Reflector is a thing in the restaurant.  The description of the Reflector is "It seems to be a part of some kind of machine."
+[2]Reflector is a thing in the Fish Market.  The description of the Reflector is "A light reflecting mirror.  It seems to be a part of some kind of machine."
 
 [3]Condenser Lens is a thing in the convenience store.  The description of the Condenser Lens is "You recognize the lens as a part of a projector."
 
-[4]Imaging Lens is a thing in the Bathroom.  The description of the Imaging Lens is "You realize it was apart of a projector."
+[4]Imaging Lens is a thing in the Bathroom.  The description of the Imaging Lens is "You recognize the lens as the part projector of a projector that produces images."
 
 [5]shutter is a thing in the furniture store.  The description of the Shutter is "You recognize the shutter as a shutter from one of those projectors you saw at the movie theater."
 
 [6]Viewing Screen is a thing in the video store.  The description of the Viewing Screen is "A big screen used to project movies on."
 
-The Instruction Manual is an object. The Instruction Manual is in the Downtown. The description of the Instruction Manual is "How to Build a Film Projector for Dummies:
+The Instruction Manual is an object. The Instruction Manual is in the Fish Market. The description of the Instruction Manual is "How to Build a Film Projector for Dummies:
 
 Steps: 
 
@@ -133,10 +140,10 @@ instead of taking flashlight:
 	say "taken";
 	move flashlight to player.
 	
-Instead of eating char-siu bau:
+[Instead of eating char-siu bau:
 	say "you start eating the char-siu bau, and suddenly you bite something hard.  You see that it is a wooden key.";
 	move wooden key to player.;
-	remove char-siu bau from play.
+	remove char-siu bau from play.]
 	
 Instead of attacking Madman Mercer:
 	say "Madman Mercer is unphased by your weak punch, and BOOM counters with a nice little uppercut knocking you down.  You lose conciousness as you see Madman Mercer walking toward you.";
@@ -154,9 +161,9 @@ Instead of opening fancy safe:
 	say "you see a perfume scented ripped paper.";
 	move perfume scented ripped paper to fancy safe.
 	
-Instead of opening wooden safe:
+[Instead of opening wooden safe:
 	say "you see a dirty ripped paper.";
-	move dirty ripped paper to wooden safe.
+	move dirty ripped paper to wooden safe.]
 	
 	
 Instead of talking to the Store Clerk for the first time:
@@ -169,7 +176,7 @@ Instead of giving apple to the Store Clerk:
 Instead of opening curtain:
 	say "The curtains are too big and made out of a heavy material.  You can even budge it without the help of the motors to pull it back, but you need to turn the motors on somehow."
 	
-Instead of taking soy sauce:
+[Instead of taking soy sauce:
 	say "You don't have time for that.  Madman Mercer might come any minute now."
 	
 Instead of taking hot sauce:
@@ -182,13 +189,19 @@ Instead of taking pepper:
 	say "You don't have time for that.  Madman Mercer might come any minute now."
 	
 Instead of taking red vinegar:
-	say "You don't have time for that.  Madman Mercer might come any minute now."
+	say "You don't have time for that.  Madman Mercer might come any minute now."]
 	
-	
+
 [after staments]
 
 after taking flashlight:
-	now description of the basket of fruit is "A basket of apples.".
+	now description of the basket of apples is "A basket of apples.".
+	
+after taking apples:
+	say "you take the apples and reveal a flashlight.";
+	move flashlight to basket of apples.
+	
+
 	
 
 [safes]
@@ -199,7 +212,7 @@ the green safe is scenery in the convenience store.  It is a closed openable con
 
 the fancy safe is scenery in the stage.  It is a closed openable container.  It is locked and lockable.  fancy key unlocks the fancy safe.  The description of the fancy safe is "a very fancy and expensive looking safe.  I would rather steal the safe than what's inside."
 
-the wooden safe is scenery in the video store.  It is a closed openable container.  It is locked and lockable.  wooden key unlocks the wooden safe.  The description of the wooden safe is "a wooden safe crafted very well from wood."
+[the wooden safe is scenery in the video store.  It is a closed openable container.  It is locked and lockable.  wooden key unlocks the wooden safe.  The description of the wooden safe is "a wooden safe crafted very well from wood."]
 
 
 [keys]
@@ -210,7 +223,6 @@ the green key is a thing in the furniture store.  green key unlocks the green sa
 
 the fancy key is a thing in the stage.  fancy key unlocks the fancy safe.  The description of the fancy key is "an expensive looking key that looks like it unlocks expensive things."
 
-the wooden key is a thing.  Wooden key is in the char-siu bau.  wooden key unlocks the wooden safe.  The description of the wooden key is "a well crafted wooden key to unlock wooden things."
 
 [other keys]
 
@@ -222,9 +234,6 @@ the pair of scissors is a thing.  The Pair of Scissors is in the hair salon.  Th
 
 [smelly key hiding place]
 the wad of hair is a thing in the hair salon.  It is a closed openable container.  It is locked and lockable.  The pair of scissors unlocks the wad of hair.  The description of the wad of hair is "A wad of hair leftover from someone's haircut."
-
-[wooden key hiding place]
-the char-siu bau is a thing in the restaurant.  it is a closed openable container.  It is locked and lockable.  The description of the char-siu bau is "an amazing delicacy that make you mouth drool.  You really want to eat it."
 
 [toilet puzzle]
 the toilet is a fixed in place thing.  The toilet is in the bathroom.  it is a open openable container. 
@@ -425,6 +434,8 @@ Check talking to: say "[The noun] doesn't reply."
 
 [NPC]
 The Store Clerk is a man in the convenience store.  The description is "A a very scruffy, sleepy looking man wearing a green sweater vest with jeans on."
+
+The chinese fisherman is a man in the fish market.  The description is "A fishy smelling man with an apron on holding fishes in both hands."
 
 
 
