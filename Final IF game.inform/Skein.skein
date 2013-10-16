@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x9227040" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1320cee0" />
+  <activeNode nodeId="node-0x22e9c390" />
   <item nodeId="node-0x9227040">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -11,7 +11,7 @@
 You go out with your friends to watch the latest horror movie called &quot;Madman Mercer.&quot;  In the movie you see Madman Mercer chasing people through Chinatown in the middle of the night with a machete.  As you are watching you suddenly fall asleep.  When you wake up you are on the cold damp ground of Chinatown.  You can hear the high speed swings of a machete.  In your mind you think &quot;Oh no&quot;. 
 Escape the Movie
 An Interactive Fiction by Dylan Zhang
-Release 1 / Serial number 131014 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 131016 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Cultural Plaza
 The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
@@ -21,7 +21,7 @@ You can see Madman Mercer here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1895">NO</temporary>
+    <temporary score="3165">NO</temporary>
     <children>
       <child nodeId="node-0x1c7317f0" />
       <child nodeId="node-0x14386e40" />
@@ -30,7 +30,1438 @@ You can see Madman Mercer here.
       <child nodeId="node-0x1c7b72f0" />
       <child nodeId="node-0x92d8530" />
       <child nodeId="node-0x13279ce0" />
+      <child nodeId="node-0x34408d40" />
     </children>
+  </item>
+  <item nodeId="node-0x34408d40">
+    <command xml:space="preserve">go w</command>
+    <result xml:space="preserve">
+Fruit store
+Many different baskets of fruit fill the store.
+
+You can see green basket (in which is pears), pink basket (in which is peaches), and a red basket (in which is Apples) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x2233f6a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2233f6a0">
+    <command xml:space="preserve">take apples</command>
+    <result xml:space="preserve">you take the apples and revealed a flashlight.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22ee8380" />
+    </children>
+  </item>
+  <item nodeId="node-0x22ee8380">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Apples
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x1f6b67e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1f6b67e0">
+    <command xml:space="preserve">x apples</command>
+    <result xml:space="preserve">Big, nice, juicy, red apples.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x225cd000" />
+    </children>
+  </item>
+  <item nodeId="node-0x225cd000">
+    <command xml:space="preserve">take flashlight</command>
+    <result xml:space="preserve">taken
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x214b86f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x214b86f0">
+    <command xml:space="preserve">take peaches</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x223ddc60" />
+    </children>
+  </item>
+  <item nodeId="node-0x223ddc60">
+    <command xml:space="preserve">go e</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x225864c0" />
+      <child nodeId="node-0x1f696640" />
+    </children>
+  </item>
+  <item nodeId="node-0x1f696640">
+    <command xml:space="preserve">go e</command>
+    <result xml:space="preserve">
+video store
+A rental video shop, with stands and stands of videos.
+
+You can see a red key and Viewing Screen here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x214b6260" />
+    </children>
+  </item>
+  <item nodeId="node-0x214b6260">
+    <command xml:space="preserve">take viewing screen</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22ef8bd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22ef8bd0">
+    <command xml:space="preserve">go w</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e709e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e709e0">
+    <command xml:space="preserve">go s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the loud chinese fisherman yelling in his accent &quot;Come get yo ninety nine sense feesh.  Veeery cheap fish.&quot;.
+
+You can see Reflector, an Instruction Manual, and a chinese fisherman here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x223acfa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x223acfa0">
+    <command xml:space="preserve">take reflector</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x223257f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x223257f0">
+    <command xml:space="preserve">take manual</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22eab7a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22eab7a0">
+    <command xml:space="preserve">go n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x223c6a90" />
+    </children>
+  </item>
+  <item nodeId="node-0x223c6a90">
+    <command xml:space="preserve">go w</command>
+    <result xml:space="preserve">
+Fruit store
+Many different baskets of fruit fill the store.
+
+You can see green basket (in which is pears), pink basket (empty), and a red basket (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22d6e1d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22d6e1d0">
+    <command xml:space="preserve">take apples</command>
+    <result xml:space="preserve">You already have that.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x1acdb650" />
+    </children>
+  </item>
+  <item nodeId="node-0x1acdb650">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  an Instruction Manual
+  Reflector
+  Viewing Screen
+  peaches
+  Flashlight (providing light)
+  Apples
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22eeaf80" />
+    </children>
+  </item>
+  <item nodeId="node-0x22eeaf80">
+    <command xml:space="preserve">take flashlight</command>
+    <result xml:space="preserve">taken
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e91920" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e91920">
+    <command xml:space="preserve">go e</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x926f7b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x926f7b0">
+    <command xml:space="preserve">go nw</command>
+    <result xml:space="preserve">
+Hair Salon
+A hair salon with little pieces of hair on the floor everywhere.
+
+You can see a pair of scissors and a wad of hair (closed) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x2146d0a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2146d0a0">
+    <command xml:space="preserve">take scissors</command>
+    <result xml:space="preserve">Taken.
+
+Madman Mercer walks to another room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x3441ae00" />
+    </children>
+  </item>
+  <item nodeId="node-0x3441ae00">
+    <command xml:space="preserve">cut hair</command>
+    <result xml:space="preserve">Cutting that up would achieve little.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22dc4650" />
+    </children>
+  </item>
+  <item nodeId="node-0x22dc4650">
+    <command xml:space="preserve">open hair</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22de3300" />
+    </children>
+  </item>
+  <item nodeId="node-0x22de3300">
+    <command xml:space="preserve">x hair</command>
+    <result xml:space="preserve">A wad of hair leftover from someone&apos;s haircut.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x223b00d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x223b00d0">
+    <command xml:space="preserve">go se</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x223c62d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x223c62d0">
+    <command xml:space="preserve">go ne</command>
+    <result xml:space="preserve">
+Furniture Store
+Lots of furniture clutter the store.
+
+You can see a couch, shutter, and green key here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x34454450" />
+    </children>
+  </item>
+  <item nodeId="node-0x34454450">
+    <command xml:space="preserve">search couch</command>
+    <result xml:space="preserve">You search the gaps in the couch cushions. 
+You find a crumpled paper.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x1acbea90" />
+    </children>
+  </item>
+  <item nodeId="node-0x1acbea90">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  crumpled paper
+  a pair of scissors
+  Flashlight (providing light)
+  an Instruction Manual
+  Reflector
+  Viewing Screen
+  peaches
+  Apples
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x223da6b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x223da6b0">
+    <command xml:space="preserve">go sw</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e6d330" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e6d330">
+    <command xml:space="preserve">go sw</command>
+    <result xml:space="preserve">
+Convenience Store
+A small family run convenience store filled with racks of snack, and a fridge of drinks.
+
+You can see racks of snacks, Condenser Lens, and a Store Clerk here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x2235dfe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2235dfe0">
+    <command xml:space="preserve">take condenser lens</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e197b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e197b0">
+    <command xml:space="preserve">go ne</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x3602de60" />
+    </children>
+  </item>
+  <item nodeId="node-0x3602de60">
+    <command xml:space="preserve">go se</command>
+    <result xml:space="preserve">Bathroom
+A stinky smelling bathroom.  Urinals lining the wall and unflushed toilets fill the bathroom.
+
+You can see Madman Mercer, Imaging Lens, beautiful key, and a toilet (in which is poop) here.
+
+you have the urge to POOP
+Madman Mercer walks to another room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x214563c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x214563c0">
+    <command xml:space="preserve">take imaging lens</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x34401d40" />
+    </children>
+  </item>
+  <item nodeId="node-0x34401d40">
+    <command xml:space="preserve">go nw</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x36387340" />
+    </children>
+  </item>
+  <item nodeId="node-0x36387340">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Imaging Lens
+  Condenser Lens
+  crumpled paper
+  a pair of scissors
+  Flashlight (providing light)
+  an Instruction Manual
+  Reflector
+  Viewing Screen
+  peaches
+  Apples
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22ecd5f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22ecd5f0">
+    <command xml:space="preserve">x manual</command>
+    <result xml:space="preserve">How to Build a Film Projector for Dummies:
+
+Steps:
+
+*note: must combine in this order
+
+1. Combine flashlight with Reflector
+
+2. Combine flashlight Reflector Thing with Condenser Lens
+
+3. Combine flashlight Reflector Condenser Lens Thing with Imaging Lens
+
+4. Combine flashlight Reflector Condenser Lens Imaging Lens Thing with Shutter
+
+5. Combine flashlight Reflector Condenser Lens Imaging Lens Shutter Thing with Viewing Screen
+
+6. After combining you should have a Film Projector
+
+7. Find Film
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x223be3a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x223be3a0">
+    <command xml:space="preserve">combine flashlight with reflector</command>
+    <result xml:space="preserve">You fuse together Flashlight and Reflector.
+
+You now have a flashlight Reflector Thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x16888dd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x16888dd0">
+    <command xml:space="preserve">combine flashlight reflector thing with condenser lens</command>
+    <result xml:space="preserve">You fuse together flashlight Reflector Thing and Condenser Lens.
+
+You now have a flashlight Reflector Condenser Lens Thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x3634dc30" />
+    </children>
+  </item>
+  <item nodeId="node-0x3634dc30">
+    <command xml:space="preserve">combine flashlight reflector condenser lens thing with imaging lens</command>
+    <result xml:space="preserve">You fuse together flashlight Reflector Condenser Lens Thing and Imaging Lens.
+
+You now have a flashlight Reflector Condenser Lens Imaging Lens Thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x3637c1f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3637c1f0">
+    <command xml:space="preserve">combine flashlight reflector condenser lens imaging lens thing with shutter</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e6ea90" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e6ea90">
+    <command xml:space="preserve">flashlight Reflector Condenser Lens Imaging Lens Thing with shutter</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x3637edd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3637edd0">
+    <command xml:space="preserve">combine flashlight Reflector Condenser Lens Imaging Lens Thing with shutter</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x3444d010" />
+    </children>
+  </item>
+  <item nodeId="node-0x3444d010">
+    <command xml:space="preserve">combine flashlight Reflector Condenser Lens Imaging Lens Thing with shutter</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22ee2eb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22ee2eb0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  flashlight Reflector Condenser Lens Imaging Lens Thing (providing light)
+  crumpled paper
+  a pair of scissors
+  an Instruction Manual
+  Viewing Screen
+  peaches
+  Apples
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x3600f370" />
+    </children>
+  </item>
+  <item nodeId="node-0x3600f370">
+    <command xml:space="preserve">go sw</command>
+    <result xml:space="preserve">
+Convenience Store
+A small family run convenience store filled with racks of snack, and a fridge of drinks.
+
+You can see racks of snacks and a Store Clerk here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x223111c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x223111c0">
+    <command xml:space="preserve">take shutter</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e27b60" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e27b60">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Convenience Store
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x36022ee0" />
+    </children>
+  </item>
+  <item nodeId="node-0x36022ee0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Cultural Plaza
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22ed0f90" />
+    </children>
+  </item>
+  <item nodeId="node-0x22ed0f90">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Cultural Plaza
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e07220" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e07220">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Cultural Plaza
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22352d10" />
+    </children>
+  </item>
+  <item nodeId="node-0x22352d10">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Cultural Plaza
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e4fa30" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e4fa30">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">&quot;Undo&quot; failed.  [Not all interpreters provide it.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x2234eba0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2234eba0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">&quot;Undo&quot; failed.  [Not all interpreters provide it.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x21d93290" />
+    </children>
+  </item>
+  <item nodeId="node-0x21d93290">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x214d4790" />
+    </children>
+  </item>
+  <item nodeId="node-0x214d4790">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  flashlight Reflector Condenser Lens Imaging Lens Thing (providing light)
+  crumpled paper
+  a pair of scissors
+  an Instruction Manual
+  Viewing Screen
+  peaches
+  Apples
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22d283d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22d283d0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Cultural Plaza
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x214cef00" />
+    </children>
+  </item>
+  <item nodeId="node-0x214cef00">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Cultural Plaza
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x214b0590" />
+    </children>
+  </item>
+  <item nodeId="node-0x214b0590">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">&quot;Undo&quot; failed.  [Not all interpreters provide it.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x3604dc10" />
+    </children>
+  </item>
+  <item nodeId="node-0x3604dc10">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">&quot;Undo&quot; failed.  [Not all interpreters provide it.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x21d161d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x21d161d0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  flashlight Reflector Condenser Lens Imaging Lens Thing (providing light)
+  crumpled paper
+  a pair of scissors
+  an Instruction Manual
+  Viewing Screen
+  peaches
+  Apples
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x3601c290" />
+    </children>
+  </item>
+  <item nodeId="node-0x3601c290">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Cultural Plaza
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e26140" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e26140">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">&quot;Undo&quot; failed.  [Not all interpreters provide it.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22382820" />
+    </children>
+  </item>
+  <item nodeId="node-0x22382820">
+    <command xml:space="preserve">go se</command>
+    <result xml:space="preserve">
+Bathroom
+A stinky smelling bathroom.  Urinals lining the wall and unflushed toilets fill the bathroom.
+
+You can see beautiful key and a toilet (in which is poop) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e271e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e271e0">
+    <command xml:space="preserve">go nw</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e3a070" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e3a070">
+    <command xml:space="preserve">go sw</command>
+    <result xml:space="preserve">
+Convenience Store
+A small family run convenience store filled with racks of snack, and a fridge of drinks.
+
+You can see Madman Mercer, racks of snacks, and a Store Clerk here.
+
+Madman Mercer walks to another room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x223991a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x223991a0">
+    <command xml:space="preserve">ne</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x344c6690" />
+    </children>
+  </item>
+  <item nodeId="node-0x344c6690">
+    <command xml:space="preserve">go ne</command>
+    <result xml:space="preserve">
+Furniture Store
+Lots of furniture clutter the store.
+
+You can see a couch, shutter, and green key here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x225e8c90" />
+    </children>
+  </item>
+  <item nodeId="node-0x225e8c90">
+    <command xml:space="preserve">take shutter</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22dbc2a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22dbc2a0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  shutter
+  flashlight Reflector Condenser Lens Imaging Lens Thing (providing light)
+  crumpled paper
+  a pair of scissors
+  an Instruction Manual
+  Viewing Screen
+  peaches
+  Apples
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x21d74130" />
+    </children>
+  </item>
+  <item nodeId="node-0x21d74130">
+    <command xml:space="preserve">combine flashlight Reflector Condenser Lens Imaging Lens Thing with shutter</command>
+    <result xml:space="preserve">You fuse together flashlight Reflector Condenser Lens Imaging Lens Thing and shutter.
+
+You now have a flashlight Reflector Condenser Lens Imaging Lens Shutter Thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x36046e00" />
+    </children>
+  </item>
+  <item nodeId="node-0x36046e00">
+    <command xml:space="preserve">combine flashlight Reflector Condenser Lens Imaging Lens shutter Thing with viewing screen</command>
+    <result xml:space="preserve">You fuse together flashlight Reflector Condenser Lens Imaging Lens Shutter Thing and Viewing Screen.
+
+You now have a Film Projector.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22d9f670" />
+    </children>
+  </item>
+  <item nodeId="node-0x22d9f670">
+    <command xml:space="preserve">go sw</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x36371db0" />
+    </children>
+  </item>
+  <item nodeId="node-0x36371db0">
+    <command xml:space="preserve">go n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a nice big curtain at the back of the stage to conceal the backstage of performers and props.
+
+You can see a red door and fancy key here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22399990" />
+    </children>
+  </item>
+  <item nodeId="node-0x22399990">
+    <command xml:space="preserve">go s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x34496e10" />
+    </children>
+  </item>
+  <item nodeId="node-0x34496e10">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">
+Hair Salon
+A hair salon with little pieces of hair on the floor everywhere.
+
+You can see a wad of hair (closed) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x143a68f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x143a68f0">
+    <command xml:space="preserve">go se</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x223336a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x223336a0">
+    <command xml:space="preserve">go ne</command>
+    <result xml:space="preserve">
+Furniture Store
+Lots of furniture clutter the store.
+
+You can see a couch and green key here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e94630" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e94630">
+    <command xml:space="preserve">search couch</command>
+    <result xml:space="preserve">You search the gaps in the couch cushions. 
+You find a crumpled paper.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22db4fa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22db4fa0">
+    <command xml:space="preserve">go sw</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x225c2160" />
+    </children>
+  </item>
+  <item nodeId="node-0x225c2160">
+    <command xml:space="preserve">go e</command>
+    <result xml:space="preserve">
+video store
+A rental video shop, with stands and stands of videos.
+
+You can see a red key here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x2233c030" />
+    </children>
+  </item>
+  <item nodeId="node-0x2233c030">
+    <command xml:space="preserve">take red key</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x36d8eb80" />
+    </children>
+  </item>
+  <item nodeId="node-0x36d8eb80">
+    <command xml:space="preserve">go w</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22d93fc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22d93fc0">
+    <command xml:space="preserve">go n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a nice big curtain at the back of the stage to conceal the backstage of performers and props.
+
+You can see a red door and fancy key here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x21d87ab0" />
+    </children>
+  </item>
+  <item nodeId="node-0x21d87ab0">
+    <command xml:space="preserve">unlock red door</command>
+    <result xml:space="preserve">What do you want to unlock the red door with?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c7285d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c7285d0">
+    <command xml:space="preserve">red key</command>
+    <result xml:space="preserve">You unlock the red door.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x36da1c80" />
+    </children>
+  </item>
+  <item nodeId="node-0x36da1c80">
+    <command xml:space="preserve">open red door</command>
+    <result xml:space="preserve">You open the red door.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x225d54d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x225d54d0">
+    <command xml:space="preserve">go n</command>
+    <result xml:space="preserve">
+Backstage
+A strange room that you wouldn&apos;t have guessed to be behind the stage of Cultual Plaza.  The room surrounds you with metal walls and a very bright light, like the ones they use in surgeries hanging from the ceiling.
+
+A metal box the size of and Xbox 360, that has a dial which can spin to any number on the front.  It looks very solid, so I wouldn&apos;t waste your energy on trying force it open.
+
+You can also see a red door here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x132dc510" />
+    </children>
+  </item>
+  <item nodeId="node-0x132dc510">
+    <command xml:space="preserve">spin dial to 1384</command>
+    <result xml:space="preserve">Clonk! and the metal door swings slowly open, revealing Film Footage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e5e280" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e5e280">
+    <command xml:space="preserve">take film</command>
+    <result xml:space="preserve">(Film Footage)
+Taken.
+
+Madman Mercer walks to another room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22d68910" />
+    </children>
+  </item>
+  <item nodeId="node-0x22d68910">
+    <command xml:space="preserve">play film</command>
+    <result xml:space="preserve">Which do you mean, Film Footage or Film Projector?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x363abcd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x363abcd0">
+    <command xml:space="preserve">Film</command>
+    <result xml:space="preserve">Which do you mean, Film Footage or Film Projector?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x225ee040" />
+    </children>
+  </item>
+  <item nodeId="node-0x225ee040">
+    <command xml:space="preserve">film footage</command>
+    <result xml:space="preserve">you put the film into the projector and you start the projector up.  It starts playing a movie of the movie theater that your friends are at.  You start feeling drowsy and you fall unconcious.  You wake up at the movie theater next to your friends.  You ask them about your absence.  They tell you that you were sleeping the whole time.  Maybe it was all a dream?
+
+
+
+    *** You have won ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x21dccb80" />
+    </children>
+  </item>
+  <item nodeId="node-0x21dccb80">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Backstage
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3165">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e9c390" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e9c390">
+    <command xml:space="preserve">x me</command>
+    <result xml:space="preserve">You are boy named Dominuse, who is asian.  You are wearing shorts and a t-shirt.  You are a pretty tick guy.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3164">YES</temporary>
+  </item>
+  <item nodeId="node-0x225864c0">
+    <command xml:space="preserve">go se</command>
+    <result xml:space="preserve">Bathroom
+A stinky smelling bathroom.  Urinals lining the wall and unflushed toilets fill the bathroom.
+
+You can see Imaging Lens, beautiful key, and a toilet (in which is poop) here.
+
+you have the urge to POOP
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2359">YES</temporary>
+    <children>
+      <child nodeId="node-0x223b7c00" />
+    </children>
+  </item>
+  <item nodeId="node-0x223b7c00">
+    <command xml:space="preserve">poop in toilet</command>
+    <result xml:space="preserve">Plop! brown things come from your butt into the toilet.  I recommend you flush it before it stinks up the place.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2359">YES</temporary>
+    <children>
+      <child nodeId="node-0x22d84dd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22d84dd0">
+    <command xml:space="preserve">x toilet</command>
+    <result xml:space="preserve">A toilet filled with an explosion of poop.
+
+In the toilet is poop.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2359">YES</temporary>
+    <children>
+      <child nodeId="node-0x22313f00" />
+    </children>
+  </item>
+  <item nodeId="node-0x22313f00">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Bathroom
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2359">YES</temporary>
+    <children>
+      <child nodeId="node-0x1f6bd820" />
+    </children>
+  </item>
+  <item nodeId="node-0x1f6bd820">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Bathroom
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2359">YES</temporary>
+    <children>
+      <child nodeId="node-0x225579e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x225579e0">
+    <command xml:space="preserve">x toilet</command>
+    <result xml:space="preserve">A dirty looking toilet which people do not flush after using.
+
+In the toilet is poop.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2358">YES</temporary>
   </item>
   <item nodeId="node-0x13279ce0">
     <command xml:space="preserve">x madman mercer</command>
@@ -3246,7 +4677,7 @@ Steps:
   <item nodeId="node-0x22381720">
     <command xml:space="preserve">go se</command>
     <result xml:space="preserve">Bathroom
-A stinky smelling bathroom.
+A stinky smelling bathroom.  Urinals lining the wall and unflushed toilets fill the bathroom.
 
 You can see Imaging Lens, beautiful key, and a toilet (in which is poop) here.
 
@@ -3254,7 +4685,7 @@ you have the urge to POOP
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1895">YES</temporary>
+    <temporary score="2239">YES</temporary>
     <children>
       <child nodeId="node-0x2233ee00" />
     </children>
@@ -3266,7 +4697,7 @@ you have the urge to POOP
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1895">YES</temporary>
+    <temporary score="2239">YES</temporary>
     <children>
       <child nodeId="node-0x2149df90" />
     </children>
@@ -3278,7 +4709,7 @@ you have the urge to POOP
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1895">YES</temporary>
+    <temporary score="2239">YES</temporary>
     <children>
       <child nodeId="node-0x143e35d0" />
     </children>
@@ -3290,7 +4721,7 @@ you have the urge to POOP
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1895">YES</temporary>
+    <temporary score="2239">YES</temporary>
     <children>
       <child nodeId="node-0x14395320" />
     </children>
@@ -3302,7 +4733,7 @@ you have the urge to POOP
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1895">YES</temporary>
+    <temporary score="2239">YES</temporary>
     <children>
       <child nodeId="node-0x92795b0" />
     </children>
@@ -3313,8 +4744,8 @@ you have the urge to POOP
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1895">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="2239">YES</temporary>
     <children>
       <child nodeId="node-0x1acb2940" />
     </children>
@@ -3328,7 +4759,7 @@ The center of this nice little mall with stores surrounding you.  It is outdoors
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1895">YES</temporary>
+    <temporary score="2239">YES</temporary>
     <children>
       <child nodeId="node-0x1c736fe0" />
     </children>
@@ -3337,14 +4768,16 @@ The center of this nice little mall with stores surrounding you.  It is outdoors
     <command xml:space="preserve">go s</command>
     <result xml:space="preserve">
 Fish Market
-Fishy smelling market where you can hear the loud chinese fisherman yelling &quot;Come get yo ninety nine sense feesh&quot;.
+Fishy smelling market where you can hear the loud chinese fisherman yelling in his accent &quot;Come get yo ninety nine sense feesh.  Veeery cheap fish.&quot;.
 
-You can see Reflector and a chinese fisherman here.
+You can see Madman Mercer, Reflector, an Instruction Manual, and a chinese fisherman here.
+
+Madman Mercer walks to another room.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="1895">YES</temporary>
+    <temporary score="2239">YES</temporary>
     <children>
       <child nodeId="node-0x1320cee0" />
     </children>
@@ -3356,7 +4789,463 @@ You can see Reflector and a chinese fisherman here.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="1894">YES</temporary>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x22d5d330" />
+    </children>
+  </item>
+  <item nodeId="node-0x22d5d330">
+    <command xml:space="preserve">go n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x22581ba0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22581ba0">
+    <command xml:space="preserve">go se</command>
+    <result xml:space="preserve">
+Bathroom
+A stinky smelling bathroom.  Urinals lining the wall and unflushed toilets fill the bathroom.
+
+You can see Imaging Lens, beautiful key, and a toilet (in which is poop) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x2259fd60" />
+    </children>
+  </item>
+  <item nodeId="node-0x2259fd60">
+    <command xml:space="preserve">pee in urinal</command>
+    <result xml:space="preserve">You don&apos;t feel the urge to pee right now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c774930" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c774930">
+    <command xml:space="preserve">go nw</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x132efa20" />
+    </children>
+  </item>
+  <item nodeId="node-0x132efa20">
+    <command xml:space="preserve">go s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the loud chinese fisherman yelling in his accent &quot;Come get yo ninety nine sense feesh.  Veeery cheap fish.&quot;.
+
+You can see Reflector, an Instruction Manual, and a chinese fisherman here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x214b6080" />
+    </children>
+  </item>
+  <item nodeId="node-0x214b6080">
+    <command xml:space="preserve">x fisherman</command>
+    <result xml:space="preserve">A fishy smelling man with an apron on holding fishes in both hands.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x21451a80" />
+    </children>
+  </item>
+  <item nodeId="node-0x21451a80">
+    <command xml:space="preserve">x fishes</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c7b9c20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c7b9c20">
+    <command xml:space="preserve">x fish</command>
+    <result xml:space="preserve">A tiny looking little things.  Grey in color, and you almost felt sorry for the fish.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c759470" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c759470">
+    <command xml:space="preserve">go n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x22d7db60" />
+    </children>
+  </item>
+  <item nodeId="node-0x22d7db60">
+    <command xml:space="preserve">go e</command>
+    <result xml:space="preserve">
+Video Store
+A rental video shop, with stands and stands of videos.
+
+You can see Viewing Screen here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x214eb070" />
+    </children>
+  </item>
+  <item nodeId="node-0x214eb070">
+    <command xml:space="preserve">go w</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x22ef3110" />
+    </children>
+  </item>
+  <item nodeId="node-0x22ef3110">
+    <command xml:space="preserve">go w</command>
+    <result xml:space="preserve">
+Fruit store
+Many different baskets of fruit fill the store.
+
+You can see basket of pears (in which is pear), basket of peaches (in which is peach), and a red basket (in which is Apples) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x21d50410" />
+    </children>
+  </item>
+  <item nodeId="node-0x21d50410">
+    <command xml:space="preserve">go e</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x22303df0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22303df0">
+    <command xml:space="preserve">go sw</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x132d3e60" />
+    </children>
+  </item>
+  <item nodeId="node-0x132d3e60">
+    <command xml:space="preserve">go ne</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x132c3800" />
+    </children>
+  </item>
+  <item nodeId="node-0x132c3800">
+    <command xml:space="preserve">go w</command>
+    <result xml:space="preserve">
+Fruit store
+Many different baskets of fruit fill the store.
+
+You can see Madman Mercer, basket of pears (in which is pear), basket of peaches (in which is peach), and a red basket (in which is Apples) here.
+
+Madman Mercer walks to another room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x344331d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x344331d0">
+    <command xml:space="preserve">x basket of apples</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x3443a2c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x3443a2c0">
+    <command xml:space="preserve">take apples</command>
+    <result xml:space="preserve">you take the apples and revealed a flashlight.
+
+Madman Mercer walks to another room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x21d80e80" />
+    </children>
+  </item>
+  <item nodeId="node-0x21d80e80">
+    <command xml:space="preserve">x apples</command>
+    <result xml:space="preserve">a big, nice, juicy, red apple.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x22306600" />
+    </children>
+  </item>
+  <item nodeId="node-0x22306600">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Apples
+  soggy scrap of paper
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x3443cc00" />
+    </children>
+  </item>
+  <item nodeId="node-0x3443cc00">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x223c6470" />
+    </children>
+  </item>
+  <item nodeId="node-0x223c6470">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Fruit store
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x34462bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x34462bb0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Fruit store
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x214f9230" />
+    </children>
+  </item>
+  <item nodeId="node-0x214f9230">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Fruit store
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x22e60ef0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22e60ef0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Fruit store
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x2239a650" />
+    </children>
+  </item>
+  <item nodeId="node-0x2239a650">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Fruit store
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x22322d30" />
+    </children>
+  </item>
+  <item nodeId="node-0x22322d30">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x214c1dd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x214c1dd0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Fruit store
+Many different baskets of fruit fill the store.
+
+You can see Madman Mercer, basket of pears (in which is pear), basket of peaches (in which is peach), and a red basket (in which is Apples) here.
+
+Madman Mercer walks to another room.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x22ef2660" />
+    </children>
+  </item>
+  <item nodeId="node-0x22ef2660">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x22d714c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x22d714c0">
+    <command xml:space="preserve">take apples</command>
+    <result xml:space="preserve">you take the apples and revealed a flashlight.
+
+Madman mercer knocks you out, and everything goes black.
+Madman Mercer walks to another room.
+
+
+
+    *** You have died ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c71ee20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c71ee20">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x214bda80" />
+    </children>
+  </item>
+  <item nodeId="node-0x214bda80">
+    <command xml:space="preserve">take apples</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2239">YES</temporary>
+    <children>
+      <child nodeId="node-0x21ddfb80" />
+    </children>
+  </item>
+  <item nodeId="node-0x21ddfb80">
+    <command xml:space="preserve">restart</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2238">YES</temporary>
   </item>
   <item nodeId="node-0x132a5bb0">
     <command xml:space="preserve">go e</command>

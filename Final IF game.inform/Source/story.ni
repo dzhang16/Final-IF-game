@@ -32,10 +32,12 @@ The bushes are scenery in the Cultural Plaza.  The description is "Nicely cut re
 
 The stores are scenery in the Cultural Plaza.  The description is "You look to the north and see the great, big stage.  You look northwest and see a nice little hair salon.  You look to the west and see a nice place to eat dim-sum.  You look southwest and see a convenience store.   You look northeast and see a furniture store.  You look east and see a rental video store.  You look southeast and see the bathrooms."
 
-Stage is a room. It is north of the Cultural Plaza.  The description is "A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a nice big curtain at the back of the stage to conceal the backstage of performers and props." 
+Stage is a room. It is north of the Cultural Plaza.  The description is "A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a nice big curtain at the back of the stage to conceal the backstage of performers and props.".
 [scenery]
-The curtains is a fixed in place thing.  The curtain is in the stage.  The description is "A big red curtain that spanning about 40 feet wide and 20 feet tall."
+[The curtains is a fixed in place thing.  The curtain is in the stage.  The description is "A big red curtain that spanning about 40 feet wide and 20 feet tall."]
+the red door is a door.  The red door is lockable and locked.  The red key unlocks the red door.  The red door is south of the Backstage and north of the stage.  The description of the red door is "A red door that is red because that is the lucky chinese color."
 
+the red key is a thing.  The red key is in the video store.  The description of the red key is "A brass key that was painted red, so that people knew what kind of door it unlocked.".
 
 [Restaurant is a room.  It is west of the Cultural Plaza.  The description is "A nice little Chinese restaurant where you can smell all of their famous Char-Siu buns.  There are about 20 tables and 4 chairs to each table.  You also see a pretty decent size aquarium where they keep their fresh lobster, crabs, and fish."
 [scenery]
@@ -52,46 +54,72 @@ The pepper is scenery in the restaurant.  The description is "A nice little pepp
 The red vinegar is scenery in the restaurant.  The description is "A squeeze bottle filled with red vinegar used to eat the dragon dumplings.  You start drooling just thinking about the awesome combinations of the vinegar and dumplings."]
 
 
-Video Store is a room.  It is east of the Cultural Plaza.  The description is "A rental video shop, with stands and stands of videos."
+Video Store is a room.  It is east of the Cultural Plaza.  The description is "A rental video shop, with stands and stands of videos.".
 [scenery]
 
 
 Hair Salon is a room.  It is northwest of the Cultural Plaza.  The description is "A hair salon with little pieces of hair on the floor everywhere."
 
-Furniture Store is a room.  It is northeast of the Cultural Plaza.  The description is "Lots of furniture clutter the store."
+Furniture Store is a room.  It is northeast of the Cultural Plaza.  The description is "Lots of furniture clutter the store.".
+[items in the store]
+the couch is a thing.  The couch is in the furniture store.  The description of the couch is "A nice big light brown leather couch.  Lots of people come and sit on it everday, and maybe you can search the couch to see if anything fell out of their pockets in between the couch cushions".
 
-Convenience Store is a dark room.  It is southwest of the Cultural Plaza.  The description is "There are many snack sold here."
+after examining couch for the first time:
+	now description of the couch is "A nice big light brown leather couch.".
 
-Bathroom is a room.  It is southeast of the Cultural Plaza.  The description is "A stinky smelling bathroom."
+Instead of taking the couch:
+	say "It is too big and heavy for you to carry.".
+
+Instead of searching the couch:
+	say "You search the gaps in the couch cushions. [line break]You find a crumpled paper.";
+	move crumpled paper to player.
+
+Convenience Store is a dark room.  It is southwest of the Cultural Plaza.  The description is "A small family run convenience store filled with racks of snack, and a fridge of drinks.".
+[scenery]
+racks of snacks is a thing in the convenience store.  The description of the racks of snacks is "chips on one level, candy on another, so many awesome snacks.".
+
+fridge is scenery in the convenience store.  The description of the fridge is "A rectangular box with a see through door, in which you can see many different assortment of drinks.".
+
+Bathroom is a room.  It is southeast of the Cultural Plaza.  The description of the bathroom is "A stinky smelling bathroom.  Urinals lining the wall and unflushed toilets fill the bathroom.".
+[scenery]
+urinal is scenery in the bathroom.  The description of the urinal is "An unflushed urinal that has some pubic hair lining the edge.".
+
+urinals is scenery in the bathroom.  The description of the urinals is "A place where men pee in.".
 
 [Downtown is a room.  It is south of the Cultural Plaza.  The description is "A street lighted with street light."]
 
-Fish Market is a room.  It is south of the Cultural Plaza.  The description is "Fishy smelling market where you can hear the loud chinese fisherman yelling ‘Come get yo ninety nine sense feesh’."
+Fish Market is a room.  It is south of the Cultural Plaza.  The description is "Fishy smelling market where you can hear the loud chinese fisherman yelling in his accent ‘Come get yo ninety nine sense feesh.  Veeery cheap fish.’.".
+[scenery]
+cheap fish is scenery in the Fish Market.  The description of the cheap fish is "A tiny looking little things.  Grey in color, and you almost felt sorry for the fish.".
 
-Fruit store is a room.  It is west of the Cultural Plaza.  The description is "Many different baskets of fruit fill the store."
+Fruit store is a room.  It is west of the Cultural Plaza.  The description is "Many different baskets of fruit fill the store.".
+[scenery]
+[pears is scenery in the fruit store.  The description of the pears is "green snowman shaped fruits.".
+apples is scenery in the fruit store.  The description of the apples is "many red molar tooth shaped fruits.".
+peaches is scenery in the fruit store.  The description of the peaches is "many fuzzy pinkish violet, spherical fruits.".]
 
 [items in the game]
 
-basket of pears is a thing in the fruit store.  Basket of pears is an open openable container.  The description of the basket of pears is "many green pears fill the basket."
+green basket is a thing in the fruit store.  green basket is an open openable container.  The description of the green basket is "many green pears fill the basket.".
 
-pear is a thing.  The pear is in the basket of pears.  The description of the pear is "nice green pear."
+pears is a thing.  The pears is in the green basket.  The description of the pears is "nice green, snowman shaped pears.".
 
-basket of peaches is a thing in the fruit store.  Basket of pears is an open openable container.  The description of the basket of peaches is "many fuzzy peaches fill the basket."
+pink basket is a thing in the fruit store.  pink basket is an open openable container.  The description of the pink basket is "many fuzzy peaches fill the basket.".
 
-peach is a thing.  Peach is in the basket of peaches.  The description of the peach is "a very fuzzy peach."
+peaches is a thing.  The peaches is in the pink basket.  The description of the peaches is "Very fuzzy, pinkish violet, spherical peaches.".
 
-Flashlight is a thing.  Flashlight is lit.  The description is "A device used to light up dark rooms."
+Flashlight is a thing.  Flashlight is lit.  The description of the flashlight is "A device used to light up dark rooms.".
 
-Apple is a thing.  The apple is in the basket of apples.  The description is "a big, nice, juicy, red apple."
+Apples is a thing.  The Apples is in the red basket.  The description of the apples is "Big, nice, juicy, red apples.".
 
-basket of apples is thing.  Basket of apples is an open openable container.  Basket of apples is in the fruit store.  The description of the basket of apples is "A basket containing many apples, and you see a light emitting from under the apples, which are covering the strange object."
+red basket is thing.  red basket is in the fruit store.  red basket is an open openable container.  The description of the red basket is "A basket containing many apples, and you see a light emitting from under the apples, which are covering the strange object.".
 
-Film is a thing.  The description is "a wheel of film that is for film projectors that is titled ‘Movie Theater’"
+Film Footage is a thing.  The description is "a wheel of film that is for film projectors that is titled ‘Movie Theater’"
 
 [ripped papers]
 small ripped paper is a thing.  The description of the small ripped paper is "A  C  H  D".
 cold ripped paper is a thing.  The description of the cold ripped paper is "いちいいichi  san  hachi  yon".
-paint splattered ripped paper is a thing.  The description of the paint splattered ripped paper is "hint".
+crumpled paper is a thing.  The description of the crumpled paper is "MCCCLXXXIV".
 perfume scented ripped paper is a thing.  The description of the perfume scented ripped paper is "hint".
 dirty ripped paper is a thing.  The description of the dirty ripped paper is "hint".
 soggy scrap of paper is a thing.  The description of the soggy scrap of paper is "hint".
@@ -116,13 +144,13 @@ Steps:
 
 1. Combine flashlight with Reflector
 
-2. Combine flashlight + Reflector Thing with Condenser Lens
+2. Combine flashlight Reflector Thing with Condenser Lens
 
-3. Combine flashlight + Reflector + Condenser Lens Thing with Imaging Lens
+3. Combine flashlight Reflector Condenser Lens Thing with Imaging Lens
 
-4. Combine flashlight + Reflector + Condenser Lens + Imaging Lens Thing with Shutter
+4. Combine flashlight Reflector Condenser Lens Imaging Lens Thing with Shutter
 
-5. Combine flashlight + Reflector + Condenser Lens + Imaging Lens + Shutter Thing with Viewing Screen
+5. Combine flashlight Reflector Condenser Lens Imaging Lens Shutter Thing with Viewing Screen
 
 6. After combining you should have a Film Projector
 
@@ -132,7 +160,7 @@ Steps:
 
 [Understand Statements]
 Understand "read [something]" as examining.
-Understand "curtains" as curtain.
+[Understand "curtains" as curtain.]
 
 [instead statements]
 
@@ -153,9 +181,9 @@ Instead of opening beautiful safe:
 	say "you see a small ripped paper.";
 	move small ripped paper to beautiful safe.
 	
-Instead of opening green safe:
+[Instead of opening green safe:
 	say "you see a paint splattered ripped paper.";
-	move paint splattered ripped paper to green safe.
+	move paint splattered ripped paper to green safe.]
 	
 Instead of opening fancy safe:
 	say "you see a perfume scented ripped paper.";
@@ -169,12 +197,28 @@ Instead of opening fancy safe:
 Instead of talking to the Store Clerk for the first time:
 	say "Man I'm tired, and could really use some lihing mui apples right now, but this convenience store doesn't have fresh apples."
 	
-Instead of giving apple to the Store Clerk:
+Instead of giving apples to the Store Clerk:
 	say "Thanks man you are a life saver.  Here is something as a reward.[line break]You receive a piece of cold ripped paper";
 	move cold ripped paper to player.
 	
-Instead of opening curtain:
-	say "The curtains are too big and made out of a heavy material.  You can even budge it without the help of the motors to pull it back, but you need to turn the motors on somehow."
+[Instead of opening curtain:
+	say "The curtains are too big and made out of a heavy material.  You can even budge it without the help of the motors to pull it back, but you need to turn the motors on somehow."]
+	
+instead of peeing urinal:
+	say "You don't feel the urge to pee right now."
+	
+instead of taking apples for the first time:
+	say "you take the apples and revealed a flashlight.";
+	move apples to player;
+	move flashlight to fruit store.
+	
+instead of examining the player:
+	say "You are boy named Dominuse, who is asian.  You are wearing shorts and a t-shirt.  You are a pretty tick guy."
+	
+Instead of cutting wad of hair:
+	say "you cut the wad of hair open";
+	unlock wad of hair;
+	open wad of hair.
 	
 [Instead of taking soy sauce:
 	say "You don't have time for that.  Madman Mercer might come any minute now."
@@ -195,11 +239,7 @@ Instead of taking red vinegar:
 [after staments]
 
 after taking flashlight:
-	now description of the basket of apples is "A basket of apples.".
-	
-after taking apples:
-	say "you take the apples and reveal a flashlight.";
-	move flashlight to basket of apples.
+	now description of the red basket is "A basket of apples.".
 	
 
 	
@@ -236,7 +276,7 @@ the pair of scissors is a thing.  The Pair of Scissors is in the hair salon.  Th
 the wad of hair is a thing in the hair salon.  It is a closed openable container.  It is locked and lockable.  The pair of scissors unlocks the wad of hair.  The description of the wad of hair is "A wad of hair leftover from someone's haircut."
 
 [toilet puzzle]
-the toilet is a fixed in place thing.  The toilet is in the bathroom.  it is a open openable container. 
+the toilet is a fixed in place thing.  The toilet is in the bathroom.  it is a open openable container.  The description of the toilet is "A dirty looking toilet which people do not flush after using.".
 
 instead of taking poop:
 	say "Poop is not solid enoguh and the brown goo slips through your hands."
@@ -387,13 +427,15 @@ Light Condenser + Viewing Screen Thing]
 
 [2]flashlight Reflector Condenser Lens Thing is an object.  The description of the flashlight reflector condenser lens thing is "A Flashlight + a Reflector + a Condenser lens."
 
-[3]flashlight Reflector Condenser Lens Imaging Lens Thing is an object.  The description of the flashlight reflector condenser lens imaging lens thing is "A Flashlight + a Reflector + a Condenser Lens + a Imaging lens."
+[3]flashlight Reflector Condenser Lens Imaging Lens Thing is an object.  flashlight Reflector Condenser Lens Imaging Lens Thing is lit.  The description of the flashlight reflector condenser lens imaging lens thing is "A Flashlight + a Reflector + a Condenser Lens + a Imaging lens.".
 
 [4]flashlight Reflector Condenser Lens Imaging Lens Shutter Thing is an object.  The description of the flashlight reflector condenser lens imaging lens shutter thing is "A Flashlight + a Reflector + a Condenser Lens + a Imaging Lens + a Shutter."
 
 [5]Film Projector is an object.  The description of the Film Projector is "a make-shift Film Projector that you made hastily.  Hopefully it can still play film though."
 
-
+Instead of playing film:
+	say "you put the film into the projector and you start the projector up.  It starts playing a movie of the movie theater that your friends are at.  You start feeling drowsy and you fall unconcious.  You wake up at the movie theater next to your friends.  You ask them about your absence.  They tell you that you were sleeping the whole time.  Maybe it was all a dream?";
+	end the game in victory.
 
 [secret door]
 [Include Secret Doors by Andrew Owen.
@@ -412,7 +454,7 @@ say "One of the panels has an unusually wide seam around it. On closer inspectio
 
 
 [code for a combo lock]
-The Vault is a room.  It is north of the stage.  The description of the vault is "A strange room that you wouldn't have guessed to be behind the stage of Cultual Plaza.  The room surrounds you with metal walls and a very bright light, like the ones they use in surgeries hanging from the ceiling.".  The metal box is here. "A metal box the size of and Xbox 360, that has a dial which can spin to any number on the front.  It looks very solid, so I wouldn't waste your energy on trying force it open." 
+The Backstage is a room.  It is north of the red door.  The description of the backstage is "A strange room that you wouldn't have guessed to be behind the stage of Cultual Plaza.  The room surrounds you with metal walls and a very bright light, like the ones they use in surgeries hanging from the ceiling.".  The metal box is here. "A metal box the size of and Xbox 360, that has a dial which can spin to any number on the front.  It looks very solid, so I wouldn't waste your energy on trying force it open." 
 
 Instead of opening the metal box, say "The box opens only when dial is spinned to the correct combination."
 
@@ -429,7 +471,11 @@ After spinning the closed metal box to 1384: now the metal box is open; say "Clo
 Pooping is an action applying to one thing.  Understand "poop in [something]" as pooping.
 Flushing is an action applying to one thing.  Understand "flush [something]" as flushing.
 Talking to is an action applying to one visible thing.  Understand "talk to [someone]"or "converse with [someone]" as talking to.
-
+peeing is an action applying to one thing.  Understand "pee in [something]" as peeing.
+[searching is an action applying to one thing.  Understand "search [something]" as searching.]
+Understand "look in [something]" as searching.
+Playing is an action applying to one thing.  Understand "play [something]" as playing.
+Understand "cut [something]" as cutting.
 Check talking to: say "[The noun] doesn't reply."
 
 [NPC]
