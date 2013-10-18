@@ -13,7 +13,7 @@ To say exit list:
 		
 Use serial comma.
 
-When play begins: say "You go out with your friends to watch the latest horror movie called ‘Madman Mercer.’  In the movie you see Madman Mercer chasing people through Chinatown in the middle of the night with a machete.  As you are watching you suddenly fall asleep.  When you wake up you are on the cold damp ground of Chinatown.  You can hear the high speed swings of a machete.  In your mind you think ‘Oh no’. "
+When play begins: say "You go out with your friends to watch the latest horror movie called ‘Madman Mercer.’  In the movie you see Madman Mercer chasing people through Chinatown in the middle of the night with a machete.  As you are watching you suddenly fall asleep.  When you wake up you are on the cold damp ground of Chinatown.  You can hear the high speed swings of a machete.  In your mind you think ‘Oh no’. ".
 
 [Disable take all from tonic]
 Rule for deciding whether all includes something: it does not.
@@ -24,7 +24,18 @@ Rule for printing a parser error when the latest parser error is the nothing to 
 use no scoring. 
 
 [Rooms]
-Cultural Plaza is a room.  The description is "The center of this nice little mall with stores surrounding you.  It is outdoors and deserted unlike how lively it usually is, with the old chinese folk sitting on the benches outside by the bushes playing there violin, and the many old chinese folk slowly moving there bodies in an intense session of Tai-Chi."
+Cultural Plaza is a room.  The description is "The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.[line break]  [line break]There is a nice little directory here too, showing all the stores."
+
+directory is scenery in the cultural plaza.  The description of the directory is "Exits:[line break]
+north: stage[line break]
+northeast: furniture store[line break]
+northwest: hair salon[line break]
+west: fruit store[line break]
+east: video store[line break]
+south: fish market[line break]
+southeast: bathroom[line break]
+southwest: convenience store.".
+
 [scenery]
 The benches are scenery in the Cultural Plaza.  The description is "Old wooden benches that have become smooth from being sat on so much."
 
@@ -32,7 +43,7 @@ The bushes are scenery in the Cultural Plaza.  The description is "Nicely cut re
 
 The stores are scenery in the Cultural Plaza.  The description is "You look to the north and see the great, big stage.  You look northwest and see a nice little hair salon.  You look to the west and see a nice place to eat dim-sum.  You look southwest and see a convenience store.   You look northeast and see a furniture store.  You look east and see a rental video store.  You look southeast and see the bathrooms."
 
-Stage is a room. It is north of the Cultural Plaza.  The description is "A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a nice big curtain at the back of the stage to conceal the backstage of performers and props.".
+Stage is a room. It is north of the Cultural Plaza.  The description is "A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.".
 [scenery]
 [The curtains is a fixed in place thing.  The curtain is in the stage.  The description is "A big red curtain that spanning about 40 feet wide and 20 feet tall."]
 the red door is a door.  The red door is lockable and locked.  The red key unlocks the red door.  The red door is south of the Backstage and north of the stage.  The description of the red door is "A red door that is red because that is the lucky chinese color."
@@ -54,13 +65,13 @@ The pepper is scenery in the restaurant.  The description is "A nice little pepp
 The red vinegar is scenery in the restaurant.  The description is "A squeeze bottle filled with red vinegar used to eat the dragon dumplings.  You start drooling just thinking about the awesome combinations of the vinegar and dumplings."]
 
 
-Video Store is a room.  It is east of the Cultural Plaza.  The description is "A rental video shop, with stands and stands of videos.".
+Video Store is a room.  It is east of the Cultural Plaza.  The description is "A rental video shop, with stands and stands of videos.  The exit to Cultural Plaza is to the west.".
 [scenery]
 
 
-Hair Salon is a room.  It is northwest of the Cultural Plaza.  The description is "A hair salon with little pieces of hair on the floor everywhere."
+Hair Salon is a room.  It is northwest of the Cultural Plaza.  The description is "A hair salon with little pieces of hair on the floor everywhere.  You see a beautiful safe.  The exit to Cultural Plaza is to the southeast."
 
-Furniture Store is a room.  It is northeast of the Cultural Plaza.  The description is "Lots of furniture clutter the store.".
+Furniture Store is a room.  It is northeast of the Cultural Plaza.  The description is "Lots of furniture clutter the store.  The exit to Cultural Plaza is to the southwest.".
 [items in the store]
 the couch is a thing.  The couch is in the furniture store.  The description of the couch is "A nice big light brown leather couch.  Lots of people come and sit on it everday, and maybe you can search the couch to see if anything fell out of their pockets in between the couch cushions".
 
@@ -71,16 +82,16 @@ Instead of taking the couch:
 	say "It is too big and heavy for you to carry.".
 
 Instead of searching the couch:
-	say "You search the gaps in the couch cushions. [line break]You find a crumpled paper.";
-	move crumpled paper to player.
+	say "You search the gaps in the couch cushions. [line break]You find a wrinkled paper.";
+	move wrinkled paper to player.
 
-Convenience Store is a dark room.  It is southwest of the Cultural Plaza.  The description is "A small family run convenience store filled with racks of snack, and a fridge of drinks.".
+Convenience Store is a dark room.  It is southwest of the Cultural Plaza.  The description is "A small family run convenience store filled with racks of snack, and a fridge of drinks.  The exit to Cultural Plaza is to the northeast.".
 [scenery]
 racks of snacks is a thing in the convenience store.  The description of the racks of snacks is "chips on one level, candy on another, so many awesome snacks.".
 
 fridge is scenery in the convenience store.  The description of the fridge is "A rectangular box with a see through door, in which you can see many different assortment of drinks.".
 
-Bathroom is a room.  It is southeast of the Cultural Plaza.  The description of the bathroom is "A stinky smelling bathroom.  Urinals lining the wall and unflushed toilets fill the bathroom.".
+Bathroom is a room.  It is southeast of the Cultural Plaza.  The description of the bathroom is "A stinky smelling bathroom.  Urinals lining the wall and unflushed toilets fill the bathroom.  The exit to Cultural Plaza is to the northwest.".
 [scenery]
 urinal is scenery in the bathroom.  The description of the urinal is "An unflushed urinal that has some pubic hair lining the edge.".
 
@@ -88,11 +99,14 @@ urinals is scenery in the bathroom.  The description of the urinals is "A place 
 
 [Downtown is a room.  It is south of the Cultural Plaza.  The description is "A street lighted with street light."]
 
-Fish Market is a room.  It is south of the Cultural Plaza.  The description is "Fishy smelling market where you can hear the loud chinese fisherman yelling in his accent ‘Come get yo ninety nine sense feesh.  Veeery cheap fish.’.".
+Fish Market is a room.  It is south of the Cultural Plaza.  The description is "Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent ‘Come get yo ninety nine sense fish.  Veeery cheap fish.’.  The exit to Cultural Plaza is to the north.".
 [scenery]
+instead of talking to fisherman:
+	say "what are you doing in this movie?  You are not a character of this movie.  Go back to where you came from by building a film projector, and the rest is up to you."
+	
 cheap fish is scenery in the Fish Market.  The description of the cheap fish is "A tiny looking little things.  Grey in color, and you almost felt sorry for the fish.".
 
-Fruit store is a room.  It is west of the Cultural Plaza.  The description is "Many different baskets of fruit fill the store.".
+Fruit store is a room.  It is west of the Cultural Plaza.  The description is "Many different baskets of fruit fill the store.  The exit to Cultural Plaza is to the east.".
 [scenery]
 [pears is scenery in the fruit store.  The description of the pears is "green snowman shaped fruits.".
 apples is scenery in the fruit store.  The description of the apples is "many red molar tooth shaped fruits.".
@@ -100,11 +114,11 @@ peaches is scenery in the fruit store.  The description of the peaches is "many 
 
 [items in the game]
 
-green basket is a thing in the fruit store.  green basket is an open openable container.  The description of the green basket is "many green pears fill the basket.".
+green basket is a thing in the fruit store.  green basket is fixed in place.  green basket is an open openable container.  The description of the green basket is "many green pears fill the basket.".
 
 pears is a thing.  The pears is in the green basket.  The description of the pears is "nice green, snowman shaped pears.".
 
-pink basket is a thing in the fruit store.  pink basket is an open openable container.  The description of the pink basket is "many fuzzy peaches fill the basket.".
+pink basket is a thing in the fruit store.  pink basket is fixed in place.  pink basket is an open openable container.  The description of the pink basket is "many fuzzy peaches fill the basket.".
 
 peaches is a thing.  The peaches is in the pink basket.  The description of the peaches is "Very fuzzy, pinkish violet, spherical peaches.".
 
@@ -112,17 +126,28 @@ Flashlight is a thing.  Flashlight is lit.  The description of the flashlight is
 
 Apples is a thing.  The Apples is in the red basket.  The description of the apples is "Big, nice, juicy, red apples.".
 
-red basket is thing.  red basket is in the fruit store.  red basket is an open openable container.  The description of the red basket is "A basket containing many apples, and you see a light emitting from under the apples, which are covering the strange object.".
+red basket is thing.  red basket is in the fruit store.  red basket is fixed in place.  red basket is an open openable container.  The description of the red basket is "A basket containing many apples, and you see a light emitting from under the apples, which are covering the strange object.".
 
-Film Footage is a thing.  The description is "a wheel of film that is for film projectors that is titled ‘Movie Theater’"
+Film Footage is a thing.  The description is "a wheel of film that is for film projectors that is titled ‘Movie Theater.  Maybe you should play the film footage when you get the projector.’".
+
+The worn out book is a thing in the Cultural Plaza.  The description is "It seems like Madman Mercer dropped this book.  The cover says DO NOT READ: Property of Madman Mercer.[line break]Maybe you should try opening the book and reading it.".
+
+Instead of opening book:
+	say "You open the book. [line break] [line break]The first page says:[line break]
+My Plan:[line break]
+-Find the magical Film that opens up a dimensional gate to reality[line break]
+-Escape the horror movie[line break]
+-Proceed to kill everyone in the real world[line break]
+-Build Film Projector to play film [line break]
+-Find the papers that contain the combination of numbers to get the film [line break] [line break] The rest of the pages are Madman Mercer writing about how his life sucks.[line break][line break]Maybe you should find the pages and build to projector to escape back to your world"
 
 [ripped papers]
-small ripped paper is a thing.  The description of the small ripped paper is "A  C  H  D".
-cold ripped paper is a thing.  The description of the cold ripped paper is "いちいいichi  san  hachi  yon".
-crumpled paper is a thing.  The description of the crumpled paper is "MCCCLXXXIV".
-perfume scented ripped paper is a thing.  The description of the perfume scented ripped paper is "hint".
-dirty ripped paper is a thing.  The description of the dirty ripped paper is "hint".
-soggy scrap of paper is a thing.  The description of the soggy scrap of paper is "hint".
+small paper is a thing.  The description of the small ripped paper is "You see the number 1, and 3 other illegible numbers".
+scrap of paper is a thing.  The description of the scrap of paper is "いちいYou see the numberい 3, and 3 other illegible numbers".
+wrinkled paper is a thing.  The description of the wrinkled paper is "You see the number 8, and 3 other illegible numbers" .
+beat up paper is a thing.  The description of the beat up paper is "You see the number 4, and 3 other illegible numbers".
+dirty paper is a thing.  The description of the dirty ripped paper is "There are numbers on other pieces of paper that represent the correct number to spin a dial to, to unlock something, but you also need to know the order.".
+soggy paper is a thing.  The description of the soggy paper is "The order of the number combination is A  C  H  D, you think about the alphabet.".
 
 [10 film projector parts]
 [1][Light Source is a thing in the hair salon.  ]
@@ -136,7 +161,7 @@ soggy scrap of paper is a thing.  The description of the soggy scrap of paper is
 
 [6]Viewing Screen is a thing in the video store.  The description of the Viewing Screen is "A big screen used to project movies on."
 
-The Instruction Manual is an object. The Instruction Manual is in the Fish Market. The description of the Instruction Manual is "How to Build a Film Projector for Dummies:
+The Instruction Manual is an object. The Instruction Manual is in the cultural plaza. The description of the Instruction Manual is "How to Build a Film Projector for Dummies:
 
 Steps: 
 
@@ -160,6 +185,7 @@ Steps:
 
 [Understand Statements]
 Understand "read [something]" as examining.
+Understand "read [something]" as opening.
 [Understand "curtains" as curtain.]
 
 [instead statements]
@@ -179,7 +205,7 @@ Instead of attacking Madman Mercer:
 	
 Instead of opening beautiful safe:
 	say "you see a small ripped paper.";
-	move small ripped paper to beautiful safe.
+	move small paper to beautiful safe.
 	
 [Instead of opening green safe:
 	say "you see a paint splattered ripped paper.";
@@ -187,7 +213,7 @@ Instead of opening beautiful safe:
 	
 Instead of opening fancy safe:
 	say "you see a perfume scented ripped paper.";
-	move perfume scented ripped paper to fancy safe.
+	move beat up paper to fancy safe.
 	
 [Instead of opening wooden safe:
 	say "you see a dirty ripped paper.";
@@ -195,11 +221,11 @@ Instead of opening fancy safe:
 	
 	
 Instead of talking to the Store Clerk for the first time:
-	say "Man I'm tired, and could really use some lihing mui apples right now, but this convenience store doesn't have fresh apples."
+	say "Man I'm tired, and could really use some lihing mui apples right now, but this convenience store doesn't have any fresh apples."
 	
 Instead of giving apples to the Store Clerk:
-	say "Thanks man you are a life saver.  Here is something as a reward.[line break]You receive a piece of cold ripped paper";
-	move cold ripped paper to player.
+	say "Thanks man you are a life saver.  Here is something as a reward.[line break]You receive a scrap of paper";
+	move scrap of paper to player.
 	
 [Instead of opening curtain:
 	say "The curtains are too big and made out of a heavy material.  You can even budge it without the help of the motors to pull it back, but you need to turn the motors on somehow."]
@@ -213,12 +239,37 @@ instead of taking apples for the first time:
 	move flashlight to fruit store.
 	
 instead of examining the player:
-	say "You are boy named Dominuse, who is asian.  You are wearing shorts and a t-shirt.  You are a pretty tick guy."
+	say "You are a boy named Dominuse, who is asian.  You are wearing shorts and a t-shirt.  You are a pretty tick guy."
 	
-Instead of cutting wad of hair:
+instead of talking to Madman Mercer for the first time:
+	say "I wouldn't do that if I were you, he might rage so hard on you and kill you."
+	
+Instead of talking to Madman Mercer:
+	say "Madman Mercer says, ‘SHUT UP!’ and swings his machete at you, taking you out.’";
+	end the game in death.
+
+instead of taking green basket:
+	say "Shoplifting is illegal.".
+	
+instead of taking pink basket:
+	say "Shoplifting is illegal.".
+	
+instead of taking red basket:
+	say "Shoplifting is illegal.".
+	
+instead of attacking madman mercer for the first time:
+	say "No one is stopping, but I wouldn't try to kill him because he is armed and dangerous.".
+	
+Instead of going west for the first time:
+	move player to the fruit store;
+	say "The red basket catches your attention.".
+
+every turn rule:
+	If player is in a unlit room, say "try find a flashlight first.".
+
+[Instead of opening wad of hair:
 	say "you cut the wad of hair open";
-	unlock wad of hair;
-	open wad of hair.
+	move]
 	
 [Instead of taking soy sauce:
 	say "You don't have time for that.  Madman Mercer might come any minute now."
@@ -248,7 +299,7 @@ after taking flashlight:
 
 the beautiful safe is scenery in the Hair Salon.  It is a closed openable container.  It is locked and lockable.  beautiful key unlocks the beautiful safe.  The description of the beautiful safe is "A beautiful safe that has a keyhole that look like a beautiful key goes in."
 
-the green safe is scenery in the convenience store.  It is a closed openable container.  It is locked and lockable.  green key unlocks the green safe.  The description of the green safe is "A green safe that is very green."
+[the green safe is scenery in the convenience store.  It is a closed openable container.  It is locked and lockable.  green key unlocks the green safe.  The description of the green safe is "A green safe that is very green."]
 
 the fancy safe is scenery in the stage.  It is a closed openable container.  It is locked and lockable.  fancy key unlocks the fancy safe.  The description of the fancy safe is "a very fancy and expensive looking safe.  I would rather steal the safe than what's inside."
 
@@ -259,7 +310,7 @@ the fancy safe is scenery in the stage.  It is a closed openable container.  It 
 
 the beautiful key is a thing in the bathroom.  beautiful key unlocks the beautiful safe.  The description of the beautiful key is "a beautiful key that unlocks beautiful things."
 
-the green key is a thing in the furniture store.  green key unlocks the green safe.  The description of the green key is "a green key that looks like it unlocks green things."
+[the green key is a thing in the furniture store.  green key unlocks the green safe.  The description of the green key is "a green key that looks like it unlocks green things."]
 
 the fancy key is a thing in the stage.  fancy key unlocks the fancy safe.  The description of the fancy key is "an expensive looking key that looks like it unlocks expensive things."
 
@@ -269,11 +320,10 @@ the fancy key is a thing in the stage.  fancy key unlocks the fancy safe.  The d
 the pair of scissors is a thing.  The Pair of Scissors is in the hair salon.  The pair of scissors unlocks the wad of hair.  the description of the pair of scissors is "very sharp scissors able to cut through even the strongest hairs."
 
 
-
 [hiding places for the key]
 
 [smelly key hiding place]
-the wad of hair is a thing in the hair salon.  It is a closed openable container.  It is locked and lockable.  The pair of scissors unlocks the wad of hair.  The description of the wad of hair is "A wad of hair leftover from someone's haircut."
+[the wad of hair is a thing in the hair salon.  It is a closed openable container.  It is locked and lockable.  The pair of scissors unlocks the wad of hair.  The description of the wad of hair is "A wad of hair leftover from someone's haircut."]
 
 [toilet puzzle]
 the toilet is a fixed in place thing.  The toilet is in the bathroom.  it is a open openable container.  The description of the toilet is "A dirty looking toilet which people do not flush after using.".
@@ -292,8 +342,8 @@ After pooping toilet for the first time:
 	now description of the toilet is "A toilet filled with an explosion of poop."
 	
 After flushing toilet for the first time:
-	say "the toilet clogs and a soggy scrap of paper appears!";
-	move soggy scrap of paper to toilet.
+	say "the toilet clogs and a soggy paper appears!";
+	move soggy paper to toilet.
 	
 	
 
@@ -309,15 +359,17 @@ Madman Mercer is a male man.  Madman Mercer is in the Cultural Plaza.  The descr
 	
 Every turn: if Madman Mercer is in a room (called the current space) begin;
 let next space be a random room;
-if Madman Mercer is visible for 3 turns, say "Madman mercer knocks you out, and everything goes black.";
-if Madman Mercer is visible, say "Madman Mercer walks to another room.";
+[if Madman Mercer is visible for 3 turns, say "Madman mercer knocks you out, and everything goes black.";]
+if Madman Mercer is not visible, say "You are safe from Madman Mercer for now.";
 move Madman Mercer to next space [try to make Madman move after 3 turns];
 end if.
 
+every turn rule:
+	if madman mercer is visible, say "Madman Mercer looks into your soul with his blood shot eyes."
 
 
 Every turn:
-	if Madman Mercer is visible for 3 turns, end the game in death [make it so that it is 3 turns in a row]
+	if Madman Mercer is visible for 5 turns, end the game in death [make it so that it is 3 turns in a row]
 	
 
 [Every turn:
@@ -454,9 +506,9 @@ say "One of the panels has an unusually wide seam around it. On closer inspectio
 
 
 [code for a combo lock]
-The Backstage is a room.  It is north of the red door.  The description of the backstage is "A strange room that you wouldn't have guessed to be behind the stage of Cultual Plaza.  The room surrounds you with metal walls and a very bright light, like the ones they use in surgeries hanging from the ceiling.".  The metal box is here. "A metal box the size of and Xbox 360, that has a dial which can spin to any number on the front.  It looks very solid, so I wouldn't waste your energy on trying force it open." 
+The Backstage is a room.  It is north of the red door.  The description of the backstage is "A strange room that you wouldn't have guessed to be behind the stage of Cultual Plaza.  The room surrounds you with metal walls and a very bright light, like the ones they use in surgeries hanging from the ceiling.".  The metal box is here. "A metal box the size of an Xbox 360, that has a dial which can spin to number.  It looks very solid, so I wouldn't waste your energy on trying force it open." 
 
-Instead of opening the metal box, say "The box opens only when dial is spinned to the correct combination."
+Instead of opening the metal box, say "The box opens only when dial is spinned to the correct number."
 
 In the metal box is film. The metal box is closed and fixed in place. Understand "dial" as the metal box.
 
@@ -484,7 +536,12 @@ The Store Clerk is a man in the convenience store.  The description is "A a very
 The chinese fisherman is a man in the fish market.  The description is "A fishy smelling man with an apron on holding fishes in both hands."
 
 
-
+[get that cat random chance]
+Every turn when a random chance of 1 in 9 succeeds:
+	Say "You hear the speedy swings of the machete cutting the air.";
+	if a random chance of 1 in 2 succeeds:
+		say "You can hear the loud heavy footsteps from the Madman Mercer as he walks into the room,  I would recommend not staying too long in this room.";
+		move Madman Mercer to player.
 
 
 
