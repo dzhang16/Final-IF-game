@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x1cc52120" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x2e7a5b50" />
+  <activeNode nodeId="node-0x1cdeb510" />
   <item nodeId="node-0x1cc52120">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -18,15 +18,17 @@ The center of this nice little mall with stores surrounding you, and bushes deco
   
 There is a nice little directory here too, showing all the stores.
 
-You can see a worn out book, an Instruction Manual, and Madman Mercer here.
+You can see a worn out book and an Instruction Manual here.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="3303">NO</temporary>
+    <temporary score="3967">NO</temporary>
     <children>
       <child nodeId="node-0x1b215430" />
+      <child nodeId="node-0x2da93960" />
       <child nodeId="node-0x1b21c430" />
+      <child nodeId="node-0x11fd70a0" />
       <child nodeId="node-0x1b220830" />
       <child nodeId="node-0x1b2207c0" />
       <child nodeId="node-0x1b223500" />
@@ -49,13 +51,871 @@ You are safe from Madman Mercer for now.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3967">YES</temporary>
     <children>
       <child nodeId="node-0x1fcc9cc0" />
+      <child nodeId="node-0x1c779090" />
+      <child nodeId="node-0xda63600" />
+      <child nodeId="node-0x1fc9b090" />
     </children>
   </item>
-  <item nodeId="node-0x1fcc9cc0">
-    <command xml:space="preserve">go s</command>
+  <item nodeId="node-0x1fc9b090">
+    <command xml:space="preserve">take fancy key</command>
+    <result xml:space="preserve">Taken.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x19701750" />
+    </children>
+  </item>
+  <item nodeId="node-0x19701750">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x19723960" />
+    </children>
+  </item>
+  <item nodeId="node-0x19723960">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">
+Hair Salon
+A hair salon with little pieces of hair on the floor everywhere.  You see a beautiful safe.  The exit to Cultural Plaza is to the southeast.
+
+You hear the speedy swings of the machete cutting the air.
+You can hear the loud heavy footsteps from the Madman Mercer as he walks into the room,  I would recommend not staying too long in this room.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c791010" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c791010">
+    <command xml:space="preserve">unfo</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x173391f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x173391f0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Hair Salon
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x1973f820" />
+    </children>
+  </item>
+  <item nodeId="node-0x1973f820">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Cultural Plaza
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c174a40" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c174a40">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Fruit store
+Many different baskets of fruit fill the store.  The exit to Cultural Plaza is to the east.
+
+You can see green basket (in which is pears), pink basket (in which is peaches), and a red basket (in which is Apples) here.
+
+The red basket catches your attention.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x1732c540" />
+    </children>
+  </item>
+  <item nodeId="node-0x1732c540">
+    <command xml:space="preserve">take apples</command>
+    <result xml:space="preserve">you take the apples and revealed a flashlight.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc39e60" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc39e60">
+    <command xml:space="preserve">take flashlight</command>
+    <result xml:space="preserve">taken
+You hear the speedy swings of the machete cutting the air.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ccc7830" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ccc7830">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Fruit store
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c19ce20" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c19ce20">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Fruit store
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x173f95e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x173f95e0">
+    <command xml:space="preserve">take apple</command>
+    <result xml:space="preserve">you take the apples and revealed a flashlight.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c196bd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c196bd0">
+    <command xml:space="preserve">take flashlight</command>
+    <result xml:space="preserve">taken
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x197cffe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x197cffe0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x173da4a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x173da4a0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x1977e450" />
+    </children>
+  </item>
+  <item nodeId="node-0x1977e450">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fb30fc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fb30fc0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+
+You can see Reflector and a chinese fisherman here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc9cb80" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc9cb80">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x19211e60" />
+    </children>
+  </item>
+  <item nodeId="node-0x19211e60">
+    <command xml:space="preserve">undp</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fb0d190" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fb0d190">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Cultural Plaza
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c13f180" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c13f180">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">Are you sure you want to restart? </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3580">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cd4eff0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cd4eff0">
+    <command xml:space="preserve">yes</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3579">YES</temporary>
+  </item>
+  <item nodeId="node-0xda63600">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+You hear the speedy swings of the machete cutting the air.
+You can hear the loud heavy footsteps from the Madman Mercer as he walks into the room,  I would recommend not staying too long in this room.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x19743e60" />
+    </children>
+  </item>
+  <item nodeId="node-0x19743e60">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Fruit store
+Many different baskets of fruit fill the store.  The exit to Cultural Plaza is to the east.
+
+You can see green basket (in which is pears), pink basket (in which is peaches), and a red basket (in which is Apples) here.
+
+The red basket catches your attention.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x197b9890" />
+    </children>
+  </item>
+  <item nodeId="node-0x197b9890">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cc268e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cc268e0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+You hear the speedy swings of the machete cutting the air.
+You can hear the loud heavy footsteps from the Madman Mercer as he walks into the room,  I would recommend not staying too long in this room.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x17359150" />
+    </children>
+  </item>
+  <item nodeId="node-0x17359150">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+video store
+A rental video shop, with stands and stands of videos.  The exit to Cultural Plaza is to the west.
+
+You can see a red key and Viewing Screen here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+
+
+    *** You have died ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x173d5cf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x173d5cf0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x19225f20" />
+    </children>
+  </item>
+  <item nodeId="node-0x19225f20">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x1736c270" />
+    </children>
+  </item>
+  <item nodeId="node-0x1736c270">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fb3b000" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fb3b000">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x19254580" />
+    </children>
+  </item>
+  <item nodeId="node-0x19254580">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x173b05f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x173b05f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fcf8610" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fcf8610">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x1be5af0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1be5af0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x17353390" />
+    </children>
+  </item>
+  <item nodeId="node-0x17353390">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x197395f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x197395f0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e7caa10" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e7caa10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x1730cd50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1730cd50">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e7be580" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e7be580">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cdb1440" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cdb1440">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x19733360" />
+    </children>
+  </item>
+  <item nodeId="node-0x19733360">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fb239d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fb239d0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c16c400" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c16c400">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fb60d10" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fb60d10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fcb01f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fcb01f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3648">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fceb950" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fceb950">
+    <command xml:space="preserve">restart</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3647">YES</temporary>
+  </item>
+  <item nodeId="node-0x1c779090">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
+
+You hear the speedy swings of the machete cutting the air.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fcb8d40" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fcb8d40">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x19709160" />
+    </children>
+  </item>
+  <item nodeId="node-0x19709160">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+
+You can see Reflector and a chinese fisherman here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cdc4df0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cdc4df0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cd467a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cd467a0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c7536e0" />
+      <child nodeId="node-0x2da6c940" />
+    </children>
+  </item>
+  <item nodeId="node-0x2da6c940">
+    <command xml:space="preserve">ne</command>
+    <result xml:space="preserve">
+Furniture Store
+Lots of furniture clutter the store.  The exit to Cultural Plaza is to the southwest.
+
+You can see a couch and shutter here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c141000" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c141000">
+    <command xml:space="preserve">sw</command>
+    <result xml:space="preserve">try find a flashlight first.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c10fee0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c10fee0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b2eb2c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b2eb2c0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c734bc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c734bc0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fcd04e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fcd04e0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x197c6b20" />
+    </children>
+  </item>
+  <item nodeId="node-0x197c6b20">
+    <command xml:space="preserve">sw</command>
     <result xml:space="preserve">
 Cultural Plaza
 The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
@@ -66,12 +926,1308 @@ You can see a worn out book and an Instruction Manual here.
 
 You are safe from Madman Mercer for now.
 
-Madman Mercer looks into your soul with his blood shot eyes.
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c131d40" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c131d40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+You are safe from Madman Mercer for now.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b294a30" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b294a30">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cdac520" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cdac520">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc85c90" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc85c90">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+
+You can see Reflector and a chinese fisherman here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3967">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cdeb510" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cdeb510">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3966">YES</temporary>
+  </item>
+  <item nodeId="node-0x1c7536e0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cc2a8b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cc2a8b0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc0db20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc0db20">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
+
+You hear the speedy swings of the machete cutting the air.
+You can hear the loud heavy footsteps from the Madman Mercer.  I would recommend not staying too long in this room.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1921a040" />
+    </children>
+  </item>
+  <item nodeId="node-0x1921a040">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1715ce20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1715ce20">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fb33bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fb33bb0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2daa0ee0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2daa0ee0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc1a6f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc1a6f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2da03e00" />
+    </children>
+  </item>
+  <item nodeId="node-0x2da03e00">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+
+You can see Reflector and a chinese fisherman here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e767690" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e767690">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c115240" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c115240">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e7066f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e7066f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You hear the speedy swings of the machete cutting the air.
+You can hear the loud heavy footsteps from the Madman Mercer.  I would recommend not staying too long in this room.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fcb3250" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fcb3250">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2daec5a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2daec5a0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc0fcb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc0fcb0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1734f290" />
+    </children>
+  </item>
+  <item nodeId="node-0x1734f290">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+
+You can see Reflector and a chinese fisherman here.
+
+You hear the speedy swings of the machete cutting the air.
+You can hear the loud heavy footsteps from the Madman Mercer.  I would recommend not staying too long in this room.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x171bc1c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x171bc1c0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1734e270" />
+    </children>
+  </item>
+  <item nodeId="node-0x1734e270">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1976f080" />
+    </children>
+  </item>
+  <item nodeId="node-0x1976f080">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x19266070" />
+    </children>
+  </item>
+  <item nodeId="node-0x19266070">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fb6bf80" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fb6bf80">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+
+You can see Reflector and a chinese fisherman here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e763140" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e763140">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c1ebd10" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c1ebd10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c1bb7b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c1bb7b0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc9a0a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc9a0a0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+
+You can see Reflector and a chinese fisherman here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2da66600" />
+    </children>
+  </item>
+  <item nodeId="node-0x2da66600">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e717570" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e717570">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e7c9480" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e7c9480">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Fish Market
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x171eeb20" />
+    </children>
+  </item>
+  <item nodeId="node-0x171eeb20">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Fish Market
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2da31ac0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2da31ac0">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Cultural Plaza
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fb3e020" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fb3e020">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Fruit store
+Many different baskets of fruit fill the store.  The exit to Cultural Plaza is to the east.
+
+You can see Madman Mercer, green basket (in which is pears), pink basket (in which is peaches), and a red basket (in which is Apples) here.
+
+The red basket catches your attention.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x11fc7ab0" />
+    </children>
+  </item>
+  <item nodeId="node-0x11fc7ab0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fce1230" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fce1230">
+    <command xml:space="preserve">ne</command>
+    <result xml:space="preserve">
+Furniture Store
+Lots of furniture clutter the store.  The exit to Cultural Plaza is to the southwest.
+
+You can see a couch and shutter here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e7ca9b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e7ca9b0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You hear the speedy swings of the machete cutting the air.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x171274b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x171274b0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c1d4ef0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c1d4ef0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fb51b10" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fb51b10">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e78a8d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e78a8d0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You hear the speedy swings of the machete cutting the air.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x19753570" />
+    </children>
+  </item>
+  <item nodeId="node-0x19753570">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You hear the speedy swings of the machete cutting the air.
+You can hear the loud heavy footsteps from the Madman Mercer.  I would recommend not staying too long in this room.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e7bc2c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e7bc2c0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1973a1e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1973a1e0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cde1dc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cde1dc0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c10e9c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c10e9c0">
+    <command xml:space="preserve">nnn</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2da6f150" />
+    </children>
+  </item>
+  <item nodeId="node-0x2da6f150">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e7700a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e7700a0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x10d1dc80" />
+    </children>
+  </item>
+  <item nodeId="node-0x10d1dc80">
+    <command xml:space="preserve">sw</command>
+    <result xml:space="preserve">try find a flashlight first.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c1506c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c1506c0">
+    <command xml:space="preserve">sw</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c17a230" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c17a230">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2f28e750" />
+    </children>
+  </item>
+  <item nodeId="node-0x2f28e750">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e76afb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e76afb0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cc7cca0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cc7cca0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+
+You can see Reflector and a chinese fisherman here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ccb4bc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ccb4bc0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e7ac720" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e7ac720">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You hear the speedy swings of the machete cutting the air.
+You can hear the loud heavy footsteps from the Madman Mercer.  I would recommend not staying too long in this room.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fbbcda0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fbbcda0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc222e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc222e0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c15d800" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c15d800">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e745f70" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e745f70">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e753860" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e753860">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c11cab0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c11cab0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x19799640" />
+    </children>
+  </item>
+  <item nodeId="node-0x19799640">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+
+You can see Reflector and a chinese fisherman here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fb88e70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fb88e70">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e783010" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e783010">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+You hear the speedy swings of the machete cutting the air.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e7c2f70" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e7c2f70">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x197be7c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x197be7c0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c141ab0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c141ab0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e749e60" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e749e60">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x19749050" />
+    </children>
+  </item>
+  <item nodeId="node-0x19749050">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x173cfdd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x173cfdd0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c11ac50" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c11ac50">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3948">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c73ad70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c73ad70">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3947">YES</temporary>
+  </item>
+  <item nodeId="node-0x1fcc9cc0">
+    <command xml:space="preserve">go s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see Madman Mercer, a worn out book, and an Instruction Manual here.
+
+You hear the speedy swings of the machete cutting the air.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1926abe0" />
     </children>
@@ -88,8 +2244,8 @@ You are safe from Madman Mercer for now.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2dad7180" />
     </children>
@@ -103,7 +2259,7 @@ You are safe from Madman Mercer for now.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1ccac740" />
     </children>
@@ -122,8 +2278,8 @@ You are safe from Madman Mercer for now.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x17365710" />
     </children>
@@ -136,12 +2292,15 @@ A large stage used for lion dance shows, Kung Fu performance, and many other per
 
 You can see a red door and fancy key here.
 
-You are safe from Madman Mercer for now.
+You hear the speedy swings of the machete cutting the air.
+You can hear the loud heavy footsteps from the Madman Mercer as he walks into the room,  I would recommend not staying too long in this room.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1cd45c40" />
     </children>
@@ -156,12 +2315,12 @@ There is a nice little directory here too, showing all the stores.
 
 You can see a worn out book and an Instruction Manual here.
 
-You are safe from Madman Mercer for now.
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x19254b40" />
     </children>
@@ -170,12 +2329,12 @@ You are safe from Madman Mercer for now.
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">Taken.
 
-You are safe from Madman Mercer for now.
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c1dee80" />
     </children>
@@ -184,12 +2343,12 @@ You are safe from Madman Mercer for now.
     <command xml:space="preserve">take manual</command>
     <result xml:space="preserve">Taken.
 
-You are safe from Madman Mercer for now.
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fb402f0" />
     </children>
@@ -202,14 +2361,13 @@ Lots of furniture clutter the store.  The exit to Cultural Plaza is to the south
 
 You can see a couch and shutter here.
 
-You are safe from Madman Mercer for now.
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
-      <child nodeId="node-0x1cdf2060" />
       <child nodeId="node-0x1fbcfa30" />
     </children>
   </item>
@@ -218,99 +2376,87 @@ You are safe from Madman Mercer for now.
     <result xml:space="preserve">You are carrying:
   an Instruction Manual
   a worn out book
+  Madman Mercer
 
-You are safe from Madman Mercer for now.
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
 
-&gt;</result>
+
+
+    *** You have died ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2da92880" />
     </children>
   </item>
   <item nodeId="node-0x2da92880">
     <command xml:space="preserve">sw</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c167be0" />
     </children>
   </item>
   <item nodeId="node-0x2c167be0">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Fish Market
-Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see Reflector and a chinese fisherman here.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fb92720" />
     </children>
   </item>
   <item nodeId="node-0x1fb92720">
     <command xml:space="preserve">take reflector</command>
-    <result xml:space="preserve">Taken.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1c78aff0" />
     </children>
   </item>
   <item nodeId="node-0x1c78aff0">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x11f04a50" />
     </children>
   </item>
   <item nodeId="node-0x11f04a50">
     <command xml:space="preserve">nw</command>
-    <result xml:space="preserve">
-Hair Salon
-A hair salon with little pieces of hair on the floor everywhere.  You see a beautiful safe.  The exit to Cultural Plaza is to the southeast.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see a pair of scissors here.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2da63950" />
       <child nodeId="node-0x1b2f7070" />
@@ -318,374 +2464,286 @@ You are safe from Madman Mercer for now.
   </item>
   <item nodeId="node-0x1b2f7070">
     <command xml:space="preserve">take scissors</command>
-    <result xml:space="preserve">Taken.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1cda0b70" />
     </children>
   </item>
   <item nodeId="node-0x1cda0b70">
     <command xml:space="preserve">se</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c135a30" />
     </children>
   </item>
   <item nodeId="node-0x2c135a30">
     <command xml:space="preserve">sw</command>
-    <result xml:space="preserve">
-Darkness
-It is pitch dark, and you can&apos;t see a thing.
+    <result xml:space="preserve">Please give one of the answers above.
 
-try find a flashlight first.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c19b910" />
     </children>
   </item>
   <item nodeId="node-0x2c19b910">
     <command xml:space="preserve">se</command>
-    <result xml:space="preserve">You can&apos;t go that way.
+    <result xml:space="preserve">Please give one of the answers above.
 
-try find a flashlight first.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1cc42eb0" />
     </children>
   </item>
   <item nodeId="node-0x1cc42eb0">
     <command xml:space="preserve">ne</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1972ea00" />
     </children>
   </item>
   <item nodeId="node-0x1972ea00">
     <command xml:space="preserve">sw</command>
-    <result xml:space="preserve">
-Darkness
-It is pitch dark, and you can&apos;t see a thing.
+    <result xml:space="preserve">Please give one of the answers above.
 
-try find a flashlight first.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1b282020" />
     </children>
   </item>
   <item nodeId="node-0x1b282020">
     <command xml:space="preserve">ne</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1b288030" />
     </children>
   </item>
   <item nodeId="node-0x1b288030">
     <command xml:space="preserve">se</command>
-    <result xml:space="preserve">Bathroom
-A stinky smelling bathroom.  Urinals lining the wall and unflushed toilets fill the bathroom.  The exit to Cultural Plaza is to the northwest.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see Imaging Lens, beautiful key, and a toilet (in which is poop) here.
-
-you have the urge to POOP
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fc84600" />
     </children>
   </item>
   <item nodeId="node-0x1fc84600">
     <command xml:space="preserve">take lens</command>
-    <result xml:space="preserve">Taken.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c1f4c20" />
     </children>
   </item>
   <item nodeId="node-0x2c1f4c20">
     <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">Taken.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2dab90a0" />
     </children>
   </item>
   <item nodeId="node-0x2dab90a0">
     <command xml:space="preserve">x toilet</command>
-    <result xml:space="preserve">A dirty looking toilet which people do not flush after using.
+    <result xml:space="preserve">Please give one of the answers above.
 
-In the toilet is poop.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c1d6a80" />
     </children>
   </item>
   <item nodeId="node-0x2c1d6a80">
     <command xml:space="preserve">flush toilet</command>
-    <result xml:space="preserve">the toilet clogs and a soggy paper appears!
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fcf5d70" />
     </children>
   </item>
   <item nodeId="node-0x1fcf5d70">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  beautiful key
-  Imaging Lens
-  a pair of scissors
-  Reflector
-  an Instruction Manual
-  a worn out book
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-Madman Mercer looks into your soul with his blood shot eyes.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x197ce160" />
     </children>
   </item>
   <item nodeId="node-0x197ce160">
     <command xml:space="preserve">take soggy paper</command>
-    <result xml:space="preserve">Taken.
+    <result xml:space="preserve">Please give one of the answers above.
 
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1970bec0" />
     </children>
   </item>
   <item nodeId="node-0x1970bec0">
     <command xml:space="preserve">nw</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You hear the speedy swings of the machete cutting the air.
-
-You are safe from Madman Mercer for now.
-
-Madman Mercer looks into your soul with his blood shot eyes.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fb71990" />
     </children>
   </item>
   <item nodeId="node-0x1fb71990">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Fruit store
-Many different baskets of fruit fill the store.  The exit to Cultural Plaza is to the east.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see green basket (in which is pears), pink basket (in which is peaches), and a red basket (in which is Apples) here.
-
-The red basket catches your attention.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2dae6380" />
     </children>
   </item>
   <item nodeId="node-0x2dae6380">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see Madman Mercer here.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fb7ff00" />
     </children>
   </item>
   <item nodeId="node-0x1fb7ff00">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-video store
-A rental video shop, with stands and stands of videos.  The exit to Cultural Plaza is to the west.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see a red key and Viewing Screen here.
-
-You hear the speedy swings of the machete cutting the air.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x197c6690" />
     </children>
   </item>
   <item nodeId="node-0x197c6690">
     <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">(the red key)
-Taken.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c1be4d0" />
     </children>
   </item>
   <item nodeId="node-0x2c1be4d0">
     <command xml:space="preserve">take screen</command>
-    <result xml:space="preserve">Taken.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fcbed10" />
     </children>
   </item>
   <item nodeId="node-0x1fcbed10">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2e793030" />
     </children>
   </item>
   <item nodeId="node-0x2e793030">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Fruit store
-Many different baskets of fruit fill the store.  The exit to Cultural Plaza is to the east.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see green basket (in which is pears), pink basket (in which is peaches), and a red basket (in which is Apples) here.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c1e88d0" />
       <child nodeId="node-0x2dadb910" />
@@ -820,693 +2878,503 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
   </item>
   <item nodeId="node-0x2c1e88d0">
     <command xml:space="preserve">take apples</command>
-    <result xml:space="preserve">you take the apples and revealed a flashlight.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c18a1c0" />
     </children>
   </item>
   <item nodeId="node-0x2c18a1c0">
     <command xml:space="preserve">take flashlight</command>
-    <result xml:space="preserve">taken
-You are safe from Madman Mercer for now.
+    <result xml:space="preserve">Please give one of the answers above.
 
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c126730" />
     </children>
   </item>
   <item nodeId="node-0x2c126730">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-Madman Mercer looks into your soul with his blood shot eyes.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x173151a0" />
     </children>
   </item>
   <item nodeId="node-0x173151a0">
     <command xml:space="preserve">sw</command>
-    <result xml:space="preserve">
-Convenience Store
-A small family run convenience store filled with racks of snack, and a fridge of drinks.  The exit to Cultural Plaza is to the northeast.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see racks of snacks, Condenser Lens, and a Store Clerk here.
-
-try find a flashlight first.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x197016e0" />
     </children>
   </item>
   <item nodeId="node-0x197016e0">
     <command xml:space="preserve">take lens</command>
-    <result xml:space="preserve">(Condenser Lens)
-Taken.
+    <result xml:space="preserve">Please give one of the answers above.
 
-try find a flashlight first.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2da74ce0" />
     </children>
   </item>
   <item nodeId="node-0x2da74ce0">
     <command xml:space="preserve">x snacks</command>
-    <result xml:space="preserve">chips on one level, candy on another, so many awesome snacks.
+    <result xml:space="preserve">Please give one of the answers above.
 
-try find a flashlight first.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1977d560" />
     </children>
   </item>
   <item nodeId="node-0x1977d560">
     <command xml:space="preserve">talk to clerk</command>
-    <result xml:space="preserve">Man I&apos;m tired, and could really use some lihing mui apples right now, but this convenience store doesn&apos;t have any fresh apples.
+    <result xml:space="preserve">Please give one of the answers above.
 
-try find a flashlight first.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x173538f0" />
     </children>
   </item>
   <item nodeId="node-0x173538f0">
     <command xml:space="preserve">give apples</command>
-    <result xml:space="preserve">(to the Store Clerk)
-Thanks man you are a life saver.  Here is something as a reward.
-You receive a scrap of paper
-try find a flashlight first.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fb31ce0" />
     </children>
   </item>
   <item nodeId="node-0x1fb31ce0">
     <command xml:space="preserve">ne</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You hear the speedy swings of the machete cutting the air.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1734b430" />
     </children>
   </item>
   <item nodeId="node-0x1734b430">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  scrap of paper
-  Condenser Lens
-  Flashlight (providing light)
-  Apples
-  Viewing Screen
-  a red key
-  soggy paper
-  beautiful key
-  Imaging Lens
-  a pair of scissors
-  Reflector
-  an Instruction Manual
-  a worn out book
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c11d770" />
     </children>
   </item>
   <item nodeId="node-0x2c11d770">
     <command xml:space="preserve">x manual</command>
-    <result xml:space="preserve">How to Build a Film Projector for Dummies:
+    <result xml:space="preserve">Please give one of the answers above.
 
-Steps:
-
-*note: must combine in this order
-
-1. Combine flashlight with Reflector
-
-2. Combine flashlight Reflector Thing with Condenser Lens
-
-3. Combine flashlight Reflector Condenser Lens Thing with Imaging Lens
-
-4. Combine flashlight Reflector Condenser Lens Imaging Lens Thing with Shutter
-
-5. Combine flashlight Reflector Condenser Lens Imaging Lens Shutter Thing with Viewing Screen
-
-6. After combining you should have a Film Projector
-
-7. Find Film
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1970b360" />
     </children>
   </item>
   <item nodeId="node-0x1970b360">
     <command xml:space="preserve">ne</command>
-    <result xml:space="preserve">
-Furniture Store
-Lots of furniture clutter the store.  The exit to Cultural Plaza is to the southwest.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see Madman Mercer, a couch, and shutter here.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x19769c40" />
     </children>
   </item>
   <item nodeId="node-0x19769c40">
     <command xml:space="preserve">sw</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c185340" />
     </children>
   </item>
   <item nodeId="node-0x2c185340">
     <command xml:space="preserve">ne</command>
-    <result xml:space="preserve">
-Furniture Store
-Lots of furniture clutter the store.  The exit to Cultural Plaza is to the southwest.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see a couch and shutter here.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fc3a230" />
     </children>
   </item>
   <item nodeId="node-0x1fc3a230">
     <command xml:space="preserve">take shutter</command>
-    <result xml:space="preserve">Taken.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1975d630" />
     </children>
   </item>
   <item nodeId="node-0x1975d630">
     <command xml:space="preserve">x couch</command>
-    <result xml:space="preserve">A nice big light brown leather couch.  Lots of people come and sit on it everday, and maybe you can search the couch to see if anything fell out of their pockets in between the couch cushions
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x197aaa40" />
     </children>
   </item>
   <item nodeId="node-0x197aaa40">
     <command xml:space="preserve">search couch</command>
-    <result xml:space="preserve">You search the gaps in the couch cushions. 
-You find a wrinkled paper.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2da8ae80" />
     </children>
   </item>
   <item nodeId="node-0x2da8ae80">
     <command xml:space="preserve">take paper</command>
-    <result xml:space="preserve">Which do you mean, wrinkled paper, scrap of paper, or soggy paper?
+    <result xml:space="preserve">Please give one of the answers above.
 
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c131db0" />
     </children>
   </item>
   <item nodeId="node-0x2c131db0">
     <command xml:space="preserve">wrinkled paper</command>
-    <result xml:space="preserve">You already have that.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1974d010" />
     </children>
   </item>
   <item nodeId="node-0x1974d010">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  wrinkled paper
-  shutter
-  scrap of paper
-  Condenser Lens
-  Flashlight (providing light)
-  Apples
-  Viewing Screen
-  a red key
-  soggy paper
-  beautiful key
-  Imaging Lens
-  a pair of scissors
-  Reflector
-  an Instruction Manual
-  a worn out book
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fcb6100" />
     </children>
   </item>
   <item nodeId="node-0x1fcb6100">
     <command xml:space="preserve">sw</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fbb72f0" />
     </children>
   </item>
   <item nodeId="node-0x1fbb72f0">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Stage
-A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see a red door and fancy key here.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fb52b00" />
     </children>
   </item>
   <item nodeId="node-0x1fb52b00">
     <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">(fancy key)
-Taken.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You hear the speedy swings of the machete cutting the air.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fb758c0" />
     </children>
   </item>
   <item nodeId="node-0x1fb758c0">
     <command xml:space="preserve">unlock red door</command>
-    <result xml:space="preserve">What do you want to unlock the red door with?
+    <result xml:space="preserve">Please give one of the answers above.
 
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1c7f2e90" />
     </children>
   </item>
   <item nodeId="node-0x1c7f2e90">
     <command xml:space="preserve">red key</command>
-    <result xml:space="preserve">You unlock the red door.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1cd3f480" />
     </children>
   </item>
   <item nodeId="node-0x1cd3f480">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">(first opening the red door)
+    <result xml:space="preserve">Please give one of the answers above.
 
-Backstage
-A strange room that you wouldn&apos;t have guessed to be behind the stage of Cultual Plaza.  The room surrounds you with metal walls and a very bright light, like the ones they use in surgeries hanging from the ceiling.
-
-A metal box the size of and Xbox 360, that has a dial which can spin to number.  It looks very solid, so I wouldn&apos;t waste your energy on trying force it open.
-
-You can also see a red door here.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c1a2e20" />
     </children>
   </item>
   <item nodeId="node-0x2c1a2e20">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Stage
-A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see a red door here.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x17337b70" />
     </children>
   </item>
   <item nodeId="node-0x17337b70">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2da9e980" />
     </children>
   </item>
   <item nodeId="node-0x2da9e980">
     <command xml:space="preserve">sw</command>
-    <result xml:space="preserve">
-Convenience Store
-A small family run convenience store filled with racks of snack, and a fridge of drinks.  The exit to Cultural Plaza is to the northeast.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see racks of snacks and a Store Clerk here.
-
-try find a flashlight first.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c18a250" />
     </children>
   </item>
   <item nodeId="node-0x2c18a250">
     <command xml:space="preserve">ne</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x11f163d0" />
     </children>
   </item>
   <item nodeId="node-0x11f163d0">
     <command xml:space="preserve">se</command>
-    <result xml:space="preserve">
-Bathroom
-A stinky smelling bathroom.  Urinals lining the wall and unflushed toilets fill the bathroom.  The exit to Cultural Plaza is to the northwest.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see a toilet (in which is poop) here.
-
-You are safe from Madman Mercer for now.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fbe28d0" />
     </children>
   </item>
   <item nodeId="node-0x1fbe28d0">
     <command xml:space="preserve">flush toilet</command>
-    <result xml:space="preserve">You are safe from Madman Mercer for now.
+    <result xml:space="preserve">Please give one of the answers above.
 
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2e7631a0" />
     </children>
   </item>
   <item nodeId="node-0x2e7631a0">
     <command xml:space="preserve">x toilet</command>
-    <result xml:space="preserve">A dirty looking toilet which people do not flush after using.
+    <result xml:space="preserve">Please give one of the answers above.
 
-In the toilet is poop.
-
-You hear the speedy swings of the machete cutting the air.
-You can hear the loud heavy footsteps from the Madman Mercer as he walks into the room,  I would recommend not staying too long in this room.
-
-Madman Mercer looks into your soul with his blood shot eyes.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2da878c0" />
     </children>
   </item>
   <item nodeId="node-0x2da878c0">
     <command xml:space="preserve">nw</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">Please give one of the answers above.
 
-Madman Mercer looks into your soul with his blood shot eyes.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x19748de0" />
     </children>
   </item>
   <item nodeId="node-0x19748de0">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Stage
-A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+    <result xml:space="preserve">Please give one of the answers above.
 
-You can see a red door here.
-
-Madman Mercer looks into your soul with his blood shot eyes.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x17345850" />
     </children>
   </item>
   <item nodeId="node-0x17345850">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Backstage
-A strange room that you wouldn&apos;t have guessed to be behind the stage of Cultual Plaza.  The room surrounds you with metal walls and a very bright light, like the ones they use in surgeries hanging from the ceiling.
+    <result xml:space="preserve">Please give one of the answers above.
 
-A metal box the size of and Xbox 360, that has a dial which can spin to number.  It looks very solid, so I wouldn&apos;t waste your energy on trying force it open.
-
-You can also see a red door here.
-
-Madman Mercer looks into your soul with his blood shot eyes.
-
-&gt;</result>
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x17319a20" />
     </children>
   </item>
   <item nodeId="node-0x17319a20">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Stage
-A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
-
-You can see a red door here.
-
-Madman Mercer looks into your soul with his blood shot eyes.
-
-
-
-    *** You have died ***
-
-
-
+    <result xml:space="preserve">Please give one of the answers above.
 
 Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 &gt; </result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1b2708c0" />
     </children>
   </item>
   <item nodeId="node-0x1b2708c0">
     <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Backstage
+    <result xml:space="preserve">Furniture Store
 [Previous turn undone.]
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2e7162a0" />
     </children>
   </item>
   <item nodeId="node-0x2e7162a0">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Stage
-A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+    <result xml:space="preserve">You can&apos;t go that way.
 
-You can see a red door here.
-
-Madman Mercer looks into your soul with his blood shot eyes.
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
 
 
 
@@ -1519,33 +3387,33 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 &gt; </result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2dae9ed0" />
     </children>
   </item>
   <item nodeId="node-0x2dae9ed0">
     <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Backstage
+    <result xml:space="preserve">Furniture Store
 [Previous turn undone.]
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1cdc77f0" />
     </children>
   </item>
   <item nodeId="node-0x1cdc77f0">
     <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Stage
+    <result xml:space="preserve">Cultural Plaza
 [Previous turn undone.]
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fcc38e0" />
     </children>
@@ -1557,34 +3425,34 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c1617c0" />
     </children>
   </item>
   <item nodeId="node-0x2c1617c0">
     <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Bathroom
+    <result xml:space="preserve">Cultural Plaza
 [Previous turn undone.]
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1cd73f70" />
     </children>
   </item>
   <item nodeId="node-0x1cd73f70">
     <command xml:space="preserve">undo</command>
-    <result xml:space="preserve">Bathroom
+    <result xml:space="preserve">Stage
 [Previous turn undone.]
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c1d1f70" />
     </children>
@@ -1595,8 +3463,8 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x173b5320" />
     </children>
@@ -1607,158 +3475,112 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2e7a5ca0" />
     </children>
   </item>
   <item nodeId="node-0x2e7a5ca0">
     <command xml:space="preserve">nw</command>
-    <result xml:space="preserve">
-Cultural Plaza
-The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
-  
-There is a nice little directory here too, showing all the stores.
+    <result xml:space="preserve">You can&apos;t go that way.
 
-You are safe from Madman Mercer for now.
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fcb4c80" />
     </children>
   </item>
   <item nodeId="node-0x1fcb4c80">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Stage
-A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
 
-You can see a red door here.
-
-You are safe from Madman Mercer for now.
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2e7c9dc0" />
     </children>
   </item>
   <item nodeId="node-0x2e7c9dc0">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Backstage
-A strange room that you wouldn&apos;t have guessed to be behind the stage of Cultual Plaza.  The room surrounds you with metal walls and a very bright light, like the ones they use in surgeries hanging from the ceiling.
+    <result xml:space="preserve">(first opening the red door)
+It seems to be locked.
 
-A metal box the size of and Xbox 360, that has a dial which can spin to number.  It looks very solid, so I wouldn&apos;t waste your energy on trying force it open.
-
-You can also see a red door here.
-
-You are safe from Madman Mercer for now.
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2e793230" />
     </children>
   </item>
   <item nodeId="node-0x2e793230">
     <command xml:space="preserve">spin dial to 1384</command>
-    <result xml:space="preserve">Clonk! and the metal door swings slowly open, revealing Film Footage.
-
-You are safe from Madman Mercer for now.
+    <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1cdbc760" />
     </children>
   </item>
   <item nodeId="node-0x1cdbc760">
     <command xml:space="preserve">take film footage</command>
-    <result xml:space="preserve">Taken.
-
-You are safe from Madman Mercer for now.
+    <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fc88d80" />
     </children>
   </item>
   <item nodeId="node-0x1fc88d80">
     <command xml:space="preserve">x manual</command>
-    <result xml:space="preserve">How to Build a Film Projector for Dummies:
-
-Steps:
-
-*note: must combine in this order
-
-1. Combine flashlight with Reflector
-
-2. Combine flashlight Reflector Thing with Condenser Lens
-
-3. Combine flashlight Reflector Condenser Lens Thing with Imaging Lens
-
-4. Combine flashlight Reflector Condenser Lens Imaging Lens Thing with Shutter
-
-5. Combine flashlight Reflector Condenser Lens Imaging Lens Shutter Thing with Viewing Screen
-
-6. After combining you should have a Film Projector
-
-7. Find Film
-
-You are safe from Madman Mercer for now.
+    <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2da85950" />
     </children>
   </item>
   <item nodeId="node-0x2da85950">
     <command xml:space="preserve">combine flashlight with reflector</command>
-    <result xml:space="preserve">You fuse together Flashlight and Reflector.
-
-You now have a flashlight Reflector Thing.
-
-You are safe from Madman Mercer for now.
+    <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fb664e0" />
     </children>
   </item>
   <item nodeId="node-0x1fb664e0">
     <command xml:space="preserve">Combine flashlight Reflector Thing with Condenser Lens</command>
-    <result xml:space="preserve">You fuse together flashlight Reflector Thing and Condenser Lens.
-
-You now have a flashlight Reflector Condenser Lens Thing.
-
-You are safe from Madman Mercer for now.
-
-Madman Mercer looks into your soul with his blood shot eyes.
+    <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2e70d0b0" />
     </children>
@@ -1766,113 +3588,110 @@ Madman Mercer looks into your soul with his blood shot eyes.
   <item nodeId="node-0x2e70d0b0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
-Stage
-A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
 
-You can see a red door here.
+You can see a worn out book and an Instruction Manual here.
 
-You are safe from Madman Mercer for now.
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2c1f3cd0" />
     </children>
   </item>
   <item nodeId="node-0x2c1f3cd0">
     <command xml:space="preserve">Combine flashlight Reflector Condenser Lens Thing with Imaging Lens</command>
-    <result xml:space="preserve">You fuse together flashlight Reflector Condenser Lens Thing and Imaging Lens.
-
-You now have a flashlight Reflector Condenser Lens Imaging Lens Thing.
-
-You are safe from Madman Mercer for now.
+    <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x17375f10" />
     </children>
   </item>
   <item nodeId="node-0x17375f10">
     <command xml:space="preserve"> Combine flashlight Reflector Condenser Lens Imaging Lens Thing with Shutter</command>
-    <result xml:space="preserve">You fuse together flashlight Reflector Condenser Lens Imaging Lens Thing and shutter.
-
-You now have a flashlight Reflector Condenser Lens Imaging Lens Shutter Thing.
-
-You are safe from Madman Mercer for now.
+    <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1fc42a60" />
     </children>
   </item>
   <item nodeId="node-0x1fc42a60">
     <command xml:space="preserve">Combine flashlight Reflector Condenser Lens Imaging Lens Shutter Thing with Viewing Screen</command>
-    <result xml:space="preserve">You fuse together flashlight Reflector Condenser Lens Imaging Lens Shutter Thing and Viewing Screen.
-
-You now have a Film Projector.
-
-You hear the speedy swings of the machete cutting the air.
-
-You are safe from Madman Mercer for now.
+    <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x1cca0860" />
     </children>
   </item>
   <item nodeId="node-0x1cca0860">
     <command xml:space="preserve">x projector</command>
-    <result xml:space="preserve">a make-shift Film Projector that you made hastily.  Hopefully it can still play film though.
-
-You are safe from Madman Mercer for now.
+    <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2da71ac0" />
     </children>
   </item>
   <item nodeId="node-0x2da71ac0">
     <command xml:space="preserve">play film</command>
-    <result xml:space="preserve">Which do you mean, Film Projector or Film Footage?
+    <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="3303">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
     <children>
       <child nodeId="node-0x2e7a5b50" />
     </children>
   </item>
   <item nodeId="node-0x2e7a5b50">
     <command xml:space="preserve">footage</command>
-    <result xml:space="preserve">you put the film into the projector and you start the projector up.  It starts playing a movie of the movie theater that your friends are at.  You start feeling drowsy and you fall unconcious.  You wake up at the movie theater next to your friends.  You ask them about your absence.  They tell you that you were sleeping the whole time.  Maybe it was all a dream?
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
 
-
-
-    *** You have won ***
-
-
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3503">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc93980" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc93980">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">Are you sure you want to restart? </result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="3302">YES</temporary>
+    <temporary score="3503">YES</temporary>
+    <children>
+      <child nodeId="node-0x1731c9f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1731c9f0">
+    <command xml:space="preserve">yes</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3502">YES</temporary>
   </item>
   <item nodeId="node-0x2da63950">
     <command xml:space="preserve">se</command>
@@ -1883,648 +3702,6 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="3054">YES</temporary>
-    <children>
-      <child nodeId="node-0x197d5c80" />
-    </children>
-  </item>
-  <item nodeId="node-0x197d5c80">
-    <command xml:space="preserve">nw</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="3053">YES</temporary>
-  </item>
-  <item nodeId="node-0x1cdf2060">
-    <command xml:space="preserve">take shutter</command>
-    <result xml:space="preserve">Taken.
-
-Madman Mercer looks into your soul with his blood shot eyes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2944">YES</temporary>
-    <children>
-      <child nodeId="node-0x1cd625e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1cd625e0">
-    <command xml:space="preserve">x couch</command>
-    <result xml:space="preserve">A nice big light brown leather couch.  Lots of people come and sit on it everday, and maybe you can search the couch to see if anything fell out of their pockets in between the couch cushions
-
-Madman Mercer looks into your soul with his blood shot eyes.
-
-
-
-    *** You have died ***
-
-
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2944">YES</temporary>
-    <children>
-      <child nodeId="node-0x1927f7f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1927f7f0">
-    <command xml:space="preserve">search couch</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="2944">YES</temporary>
-    <children>
-      <child nodeId="node-0x1c7f61f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1c7f61f0">
-    <command xml:space="preserve">take paper</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="2944">YES</temporary>
-    <children>
-      <child nodeId="node-0x1c790340" />
-    </children>
-  </item>
-  <item nodeId="node-0x1c790340">
-    <command xml:space="preserve">sw</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="2943">YES</temporary>
-    <children>
-      <child nodeId="node-0x1cc68db0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1cc68db0">
-    <command xml:space="preserve">se</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x1730d550" />
-    </children>
-  </item>
-  <item nodeId="node-0x1730d550">
-    <command xml:space="preserve">take lens</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x2c162550" />
-    </children>
-  </item>
-  <item nodeId="node-0x2c162550">
-    <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x2c15f460" />
-    </children>
-  </item>
-  <item nodeId="node-0x2c15f460">
-    <command xml:space="preserve">x toilet</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x1fc10c80" />
-    </children>
-  </item>
-  <item nodeId="node-0x1fc10c80">
-    <command xml:space="preserve">flush toilet</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x1fbc7760" />
-      <child nodeId="node-0x17129db0" />
-    </children>
-  </item>
-  <item nodeId="node-0x17129db0">
-    <command xml:space="preserve">take soggy paper</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2818">YES</temporary>
-    <children>
-      <child nodeId="node-0x1fcb8f90" />
-    </children>
-  </item>
-  <item nodeId="node-0x1fcb8f90">
-    <command xml:space="preserve">nw</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="2818">YES</temporary>
-    <children>
-      <child nodeId="node-0x1cd792d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1cd792d0">
-    <command xml:space="preserve">ned</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="2818">YES</temporary>
-    <children>
-      <child nodeId="node-0x192daae0" />
-    </children>
-  </item>
-  <item nodeId="node-0x192daae0">
-    <command xml:space="preserve">ne</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="2818">YES</temporary>
-    <children>
-      <child nodeId="node-0x1fc34d40" />
-    </children>
-  </item>
-  <item nodeId="node-0x1fc34d40">
-    <command xml:space="preserve">x couch</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="2818">YES</temporary>
-    <children>
-      <child nodeId="node-0x1ccabf60" />
-    </children>
-  </item>
-  <item nodeId="node-0x1ccabf60">
-    <command xml:space="preserve">sw</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="2818">YES</temporary>
-    <children>
-      <child nodeId="node-0x19275320" />
-    </children>
-  </item>
-  <item nodeId="node-0x19275320">
-    <command xml:space="preserve">nw</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="2818">YES</temporary>
-    <children>
-      <child nodeId="node-0x1734d390" />
-    </children>
-  </item>
-  <item nodeId="node-0x1734d390">
-    <command xml:space="preserve">take scissors</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2817">YES</temporary>
-    <children>
-      <child nodeId="node-0x1733d520" />
-    </children>
-  </item>
-  <item nodeId="node-0x1733d520">
-    <command xml:space="preserve">take hair</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2790">YES</temporary>
-    <children>
-      <child nodeId="node-0x1922f730" />
-    </children>
-  </item>
-  <item nodeId="node-0x1922f730">
-    <command xml:space="preserve">cut hair</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2790">YES</temporary>
-    <children>
-      <child nodeId="node-0x1fc429d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1fc429d0">
-    <command xml:space="preserve">open hair</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2790">YES</temporary>
-    <children>
-      <child nodeId="node-0x2c1ed3d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2c1ed3d0">
-    <command xml:space="preserve">unlock hair</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2790">YES</temporary>
-    <children>
-      <child nodeId="node-0x15e0f4d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x15e0f4d0">
-    <command xml:space="preserve">scissors</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2790">YES</temporary>
-    <children>
-      <child nodeId="node-0x1fb52d50" />
-    </children>
-  </item>
-  <item nodeId="node-0x1fb52d50">
-    <command xml:space="preserve">open hair</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2790">YES</temporary>
-    <children>
-      <child nodeId="node-0x1fbdbb80" />
-    </children>
-  </item>
-  <item nodeId="node-0x1fbdbb80">
-    <command xml:space="preserve">x hair</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2790">YES</temporary>
-    <children>
-      <child nodeId="node-0x2c1969a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2c1969a0">
-    <command xml:space="preserve">take x manual</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2790">YES</temporary>
-    <children>
-      <child nodeId="node-0x1cc4fc00" />
-    </children>
-  </item>
-  <item nodeId="node-0x1cc4fc00">
-    <command xml:space="preserve">x manual</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2790">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da6b530" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da6b530">
-    <command xml:space="preserve">x book</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2790">YES</temporary>
-    <children>
-      <child nodeId="node-0x1fb3e720" />
-    </children>
-  </item>
-  <item nodeId="node-0x1fb3e720">
-    <command xml:space="preserve">open book</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2790">YES</temporary>
-    <children>
-      <child nodeId="node-0x1116f7e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1116f7e0">
-    <command xml:space="preserve">take smelly key</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2790">YES</temporary>
-  </item>
-  <item nodeId="node-0x1fbc7760">
-    <command xml:space="preserve">nw</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x15ed4bc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x15ed4bc0">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x17330c60" />
-    </children>
-  </item>
-  <item nodeId="node-0x17330c60">
-    <command xml:space="preserve">take reflector</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x2c1f5430" />
-    </children>
-  </item>
-  <item nodeId="node-0x2c1f5430">
-    <command xml:space="preserve">talk to fisherman</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x1cd24040" />
-    </children>
-  </item>
-  <item nodeId="node-0x1cd24040">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x2daa07b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2daa07b0">
-    <command xml:space="preserve">sw</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x2c1a98b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2c1a98b0">
-    <command xml:space="preserve">ne</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x173b6c50" />
-    </children>
-  </item>
-  <item nodeId="node-0x173b6c50">
-    <command xml:space="preserve">sw</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x1fcd8650" />
-    </children>
-  </item>
-  <item nodeId="node-0x1fcd8650">
-    <command xml:space="preserve">ne</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x173c9b10" />
-    </children>
-  </item>
-  <item nodeId="node-0x173c9b10">
-    <command xml:space="preserve">se</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x1fc63590" />
-    </children>
-  </item>
-  <item nodeId="node-0x1fc63590">
-    <command xml:space="preserve">x soggy paper</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b2ed2e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b2ed2e0">
-    <command xml:space="preserve">nw</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x1734ae40" />
-    </children>
-  </item>
-  <item nodeId="node-0x1734ae40">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x17385bd0" />
-    </children>
-  </item>
-  <item nodeId="node-0x17385bd0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x1cc88e80" />
-    </children>
-  </item>
-  <item nodeId="node-0x1cc88e80">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x1fcbf270" />
-    </children>
-  </item>
-  <item nodeId="node-0x1fcbf270">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x1fb800d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1fb800d0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2914">YES</temporary>
-    <children>
-      <child nodeId="node-0x2c167c30" />
-    </children>
-  </item>
-  <item nodeId="node-0x2c167c30">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
-&gt; </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="2913">YES</temporary>
   </item>
   <item nodeId="node-0x1b21afc0">
     <command xml:space="preserve">go w</command>
@@ -6833,6 +8010,446 @@ A hair salon with little pieces of hair on the floor everywhere.  You see a beau
     <changed>YES</changed>
     <temporary score="3579">YES</temporary>
   </item>
+  <item nodeId="node-0x11fd70a0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+
+You can see Reflector and a chinese fisherman here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x2da89ae0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2da89ae0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fced120" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fced120">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e7c7290" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e7c7290">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x17331250" />
+    </children>
+  </item>
+  <item nodeId="node-0x17331250">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x2da8b670" />
+    </children>
+  </item>
+  <item nodeId="node-0x2da8b670">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+
+You can see Reflector and a chinese fisherman here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x2f267660" />
+    </children>
+  </item>
+  <item nodeId="node-0x2f267660">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cdaef10" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cdaef10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x173c0030" />
+    </children>
+  </item>
+  <item nodeId="node-0x173c0030">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fbbcc80" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fbbcc80">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Fish Market
+Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent &quot;Come get yo ninety nine sense fish.  Veeery cheap fish.&quot;.  The exit to Cultural Plaza is to the north.
+
+You can see Reflector and a chinese fisherman here.
+
+You hear the speedy swings of the machete cutting the air.
+You can hear the loud heavy footsteps from the Madman Mercer as he walks into the room,  I would recommend not staying too long in this room.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c1f1d60" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c1f1d60">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x2f28f6a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2f28f6a0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc31720" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc31720">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x2da4f400" />
+    </children>
+  </item>
+  <item nodeId="node-0x2da4f400">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c797820" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c797820">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+
+
+    *** You have died ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x2da01f60" />
+    </children>
+  </item>
+  <item nodeId="node-0x2da01f60">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x2dab1920" />
+    </children>
+  </item>
+  <item nodeId="node-0x2dab1920">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x192ce900" />
+    </children>
+  </item>
+  <item nodeId="node-0x192ce900">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cd88710" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cd88710">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc55cf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc55cf0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fbb37a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fbb37a0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fca6750" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fca6750">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x1735ad10" />
+    </children>
+  </item>
+  <item nodeId="node-0x1735ad10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x1976f2d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1976f2d0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c1dbbf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c1dbbf0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc4c090" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc4c090">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3722">YES</temporary>
+    <children>
+      <child nodeId="node-0x2da1b280" />
+    </children>
+  </item>
+  <item nodeId="node-0x2da1b280">
+    <command xml:space="preserve">restart</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3721">YES</temporary>
+  </item>
   <item nodeId="node-0x1b21c430">
     <command xml:space="preserve">talk to madman mercer</command>
     <result xml:space="preserve">Madman Mercer doesn&apos;t reply.
@@ -6859,6 +8476,180 @@ You can see a red door and fancy key here.
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="3324">YES</temporary>
+  </item>
+  <item nodeId="node-0x2da93960">
+    <command xml:space="preserve">x book</command>
+    <result xml:space="preserve">It seems like Madman Mercer dropped this book.  The cover says DO NOT READ: Property of Madman Mercer.
+Maybe you should try opening the book and reading it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3523">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fb927b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fb927b0">
+    <command xml:space="preserve">open book</command>
+    <result xml:space="preserve">You open the book. 
+ 
+The first page says:
+ My Plan:
+ -Find the magical Film that opens up a dimensional gate to reality
+ -Escape the horror movie
+ -Proceed to kill everyone in the real world
+ -Build Film Projector to play film 
+ -Find the papers that contain the combination of numbers to get the film 
+ 
+ The rest of the pages are Madman Mercer writing about how his life sucks.
+
+Maybe you should find the pages and build to projector to escape back to your world
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3523">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e73f300" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e73f300">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Cultural Plaza
+[Previous turn undone.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3523">YES</temporary>
+    <children>
+      <child nodeId="node-0x2e76ed70" />
+    </children>
+  </item>
+  <item nodeId="node-0x2e76ed70">
+    <command xml:space="preserve">read book</command>
+    <result xml:space="preserve">It seems like Madman Mercer dropped this book.  The cover says DO NOT READ: Property of Madman Mercer.
+Maybe you should try opening the book and reading it.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3523">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc0f1f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc0f1f0">
+    <command xml:space="preserve">read book</command>
+    <result xml:space="preserve">It seems like Madman Mercer dropped this book.  The cover says DO NOT READ: Property of Madman Mercer.
+Maybe you should try opening the book and reading it.
+
+You are safe from Madman Mercer for now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3523">YES</temporary>
+    <children>
+      <child nodeId="node-0x2da2d170" />
+    </children>
+  </item>
+  <item nodeId="node-0x2da2d170">
+    <command xml:space="preserve">open book</command>
+    <result xml:space="preserve">You open the book. 
+ 
+The first page says:
+ My Plan:
+ -Find the magical Film that opens up a dimensional gate to reality
+ -Escape the horror movie
+ -Proceed to kill everyone in the real world
+ -Build Film Projector to play film 
+ -Find the papers that contain the combination of numbers to get the film 
+ 
+ The rest of the pages are Madman Mercer writing about how his life sucks.
+
+Maybe you should find the pages and build to projector to escape back to your world
+You hear the speedy swings of the machete cutting the air.
+You can hear the loud heavy footsteps from the Madman Mercer as he walks into the room,  I would recommend not staying too long in this room.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3523">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fc243f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fc243f0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Stage
+A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.
+
+You can see a red door and fancy key here.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3523">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fbd03a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fbd03a0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Cultural Plaza
+The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.
+  
+There is a nice little directory here too, showing all the stores.
+
+You can see a worn out book and an Instruction Manual here.
+
+You hear the speedy swings of the machete cutting the air.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3523">YES</temporary>
+    <children>
+      <child nodeId="node-0x19741370" />
+    </children>
+  </item>
+  <item nodeId="node-0x19741370">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">
+Hair Salon
+A hair salon with little pieces of hair on the floor everywhere.  You see a beautiful safe.  The exit to Cultural Plaza is to the southeast.
+
+Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn&apos;t be in his line of sight for too long if i were you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3523">YES</temporary>
+    <children>
+      <child nodeId="node-0x2c1748f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2c1748f0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="3522">YES</temporary>
   </item>
   <item nodeId="node-0x1b215430">
     <command xml:space="preserve"></command>

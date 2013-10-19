@@ -1,0 +1,37 @@
+! Blurb file created by Inform build 6G60
+
+status "/Users/dzhang16/Desktop/Inform.app/Contents/Resources/Inform7/Extensions/Reserved/CblorbModel.html" "/Users/dzhang16/Desktop/intro to computer science/Final IF game Materials/Final IF game.inform/Build/StatusCblorb.html"
+
+
+! Identification
+
+project folder "/Users/dzhang16/Desktop/intro to computer science/Final IF game Materials/Final IF game.inform"
+release to "/Users/dzhang16/Desktop/intro to computer science/Final IF game Materials/Final IF game Materials/Release"
+
+! Blorb instructions
+
+storyfile leafname "Escape the Movie.zblorb"
+storyfile "/Users/dzhang16/Desktop/intro to computer science/Final IF game Materials/Final IF game.inform/Build/output.z8" include
+ifiction "/Users/dzhang16/Desktop/intro to computer science/Final IF game Materials/Final IF game.inform/Metadata.iFiction" include
+cover "/Users/dzhang16/Desktop/Inform.app/Contents/Resources/Inform7/Extensions/Reserved/DefaultCover.jpg"
+picture 1 "/Users/dzhang16/Desktop/Inform.app/Contents/Resources/Inform7/Extensions/Reserved/DefaultCover.jpg"
+
+! Placeholder variables
+
+placeholder [IFID] = "47A45AD4-0344-476F-A247-827011B588AE"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2013"
+placeholder [TITLE] = "Escape the Movie"
+placeholder [AUTHOR] = "Dylan Zhang"
+placeholder [BLURB] = "A work of interactive fiction."
+
+! Other material to release
+
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc391.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc393.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc394.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the "Such-and-Such" file called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc389.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc398.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc392.html><img border=0 src=inform:/help.png></a>||

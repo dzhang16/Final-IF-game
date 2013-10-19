@@ -69,7 +69,9 @@ Video Store is a room.  It is east of the Cultural Plaza.  The description is "A
 [scenery]
 
 
-Hair Salon is a room.  It is northwest of the Cultural Plaza.  The description is "A hair salon with little pieces of hair on the floor everywhere.  You see a beautiful safe.  The exit to Cultural Plaza is to the southeast."
+Hair Salon is a room.  It is northwest of the Cultural Plaza.  The description is "A hair salon with little pieces of hair on the floor everywhere.  You see a beautiful safe.  The exit to Cultural Plaza is to the southeast.".
+[scenery]
+pieces of hair is scenery in the hair salon.  The description of the pieces of hair is "many different colors of cut hair litter the floor.".
 
 Furniture Store is a room.  It is northeast of the Cultural Plaza.  The description is "Lots of furniture clutter the store.  The exit to Cultural Plaza is to the southwest.".
 [items in the store]
@@ -143,8 +145,8 @@ My Plan:[line break]
 
 [ripped papers]
 small paper is a thing.  The description of the small ripped paper is "You see the number 1, and 3 other illegible numbers".
-scrap of paper is a thing.  The description of the scrap of paper is "いちいYou see the numberい 3, and 3 other illegible numbers".
-wrinkled paper is a thing.  The description of the wrinkled paper is "You see the number 8, and 3 other illegible numbers" .
+scrap of paper is a thing.  The description of the scrap of paper is "いちいYou see the numberいs 1 and 3, and 2 other illegible numbers next to it".
+wrinkled paper is a thing.  The description of the wrinkled paper is "You see the numbers 8 and 4, and 2 other illegible numbers" .
 beat up paper is a thing.  The description of the beat up paper is "You see the number 4, and 3 other illegible numbers".
 dirty paper is a thing.  The description of the dirty ripped paper is "There are numbers on other pieces of paper that represent the correct number to spin a dial to, to unlock something, but you also need to know the order.".
 soggy paper is a thing.  The description of the soggy paper is "The order of the number combination is A  C  H  D, you think about the alphabet.".
@@ -212,7 +214,7 @@ Instead of opening beautiful safe:
 	move paint splattered ripped paper to green safe.]
 	
 Instead of opening fancy safe:
-	say "you see a perfume scented ripped paper.";
+	say "you see a beat up paper.";
 	move beat up paper to fancy safe.
 	
 [Instead of opening wooden safe:
@@ -264,8 +266,8 @@ Instead of going west for the first time:
 	move player to the fruit store;
 	say "The red basket catches your attention.".
 
-every turn rule:
-	If player is in a unlit room, say "try find a flashlight first.".
+Instead of going southwest for the first time:
+	say "try find a flashlight first.".
 
 [Instead of opening wad of hair:
 	say "you cut the wad of hair open";
@@ -297,7 +299,7 @@ after taking flashlight:
 
 [safes]
 
-the beautiful safe is scenery in the Hair Salon.  It is a closed openable container.  It is locked and lockable.  beautiful key unlocks the beautiful safe.  The description of the beautiful safe is "A beautiful safe that has a keyhole that look like a beautiful key goes in."
+the beautiful safe is scenery in the Hair Salon.  It is a closed openable container.  It is locked and lockable.  stinky key unlocks the beautiful safe.  The description of the beautiful safe is "A beautiful safe that has a keyhole that look like a beautifully crafted key goes in."
 
 [the green safe is scenery in the convenience store.  It is a closed openable container.  It is locked and lockable.  green key unlocks the green safe.  The description of the green safe is "A green safe that is very green."]
 
@@ -308,7 +310,7 @@ the fancy safe is scenery in the stage.  It is a closed openable container.  It 
 
 [keys]
 
-the beautiful key is a thing in the bathroom.  beautiful key unlocks the beautiful safe.  The description of the beautiful key is "a beautiful key that unlocks beautiful things."
+the stinky key is a thing in the bathroom.  stinky key unlocks the beautiful safe.  The description of the stinky key is "a stinky key that is stinky beacuse of the poop, but is a beautifully crafted key that unlocks beautiful things."
 
 [the green key is a thing in the furniture store.  green key unlocks the green safe.  The description of the green key is "a green key that looks like it unlocks green things."]
 
@@ -317,7 +319,7 @@ the fancy key is a thing in the stage.  fancy key unlocks the fancy safe.  The d
 
 [other keys]
 
-the pair of scissors is a thing.  The Pair of Scissors is in the hair salon.  The pair of scissors unlocks the wad of hair.  the description of the pair of scissors is "very sharp scissors able to cut through even the strongest hairs."
+[the pair of scissors is a thing.  The Pair of Scissors is in the hair salon.  The pair of scissors unlocks the wad of hair.  the description of the pair of scissors is "very sharp scissors able to cut through even the strongest hairs."]
 
 
 [hiding places for the key]
@@ -342,13 +344,14 @@ After pooping toilet for the first time:
 	now description of the toilet is "A toilet filled with an explosion of poop."
 	
 After flushing toilet for the first time:
-	say "the toilet clogs and a soggy paper appears!";
-	move soggy paper to toilet.
+	say "the toilet clogs and a soggy paper and stinky key appears!";
+	move soggy paper to toilet.;
+	move stinky key to toilet.
 	
 	
 
 [Madman Mercer]
-Madman Mercer is a male man.  Madman Mercer is in the Cultural Plaza.  The description of Madman Mercer is "A white guy about 5 foot 7 inches with curly brown hair wearing a hockey mask.  He is holding a machete."
+Madman Mercer is a male man.  Madman mercer is in the hair salon .  The description of Madman Mercer is "A white guy about 5 foot 7 inches with curly brown hair wearing a hockey mask.  He is holding a machete."
 
 [Mr.Kiang's get the cat code: Madman Mercer]
 [Every turn:
@@ -359,17 +362,19 @@ Madman Mercer is a male man.  Madman Mercer is in the Cultural Plaza.  The descr
 	
 Every turn: if Madman Mercer is in a room (called the current space) begin;
 let next space be a random room;
-[if Madman Mercer is visible for 3 turns, say "Madman mercer knocks you out, and everything goes black.";]
-if Madman Mercer is not visible, say "You are safe from Madman Mercer for now.";
-move Madman Mercer to next space [try to make Madman move after 3 turns];
+if Madman Mercer is visible, say "Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn't be in his line of sight for too long if i were you.".;
+move Madman Mercer to next space; 
 end if.
 
 every turn rule:
-	if madman mercer is visible, say "Madman Mercer looks into your soul with his blood shot eyes."
+	if Madman Mercer is not visible, say "You are safe from Madman Mercer for now.".
+	
+every turn rule:
+	if Madman Mercer is visible, say "Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn't be in his line of sight for too long if i were you.".
 
 
 Every turn:
-	if Madman Mercer is visible for 5 turns, end the game in death [make it so that it is 3 turns in a row]
+	if Madman Mercer is visible for 7 turns, end the game in death [make it so that it is 3 turns in a row]
 	
 
 [Every turn:
@@ -529,6 +534,7 @@ Understand "look in [something]" as searching.
 Playing is an action applying to one thing.  Understand "play [something]" as playing.
 Understand "cut [something]" as cutting.
 Check talking to: say "[The noun] doesn't reply."
+Understand "apple" as apples.
 
 [NPC]
 The Store Clerk is a man in the convenience store.  The description is "A a very scruffy, sleepy looking man wearing a green sweater vest with jeans on."
@@ -540,8 +546,7 @@ The chinese fisherman is a man in the fish market.  The description is "A fishy 
 Every turn when a random chance of 1 in 9 succeeds:
 	Say "You hear the speedy swings of the machete cutting the air.";
 	if a random chance of 1 in 2 succeeds:
-		say "You can hear the loud heavy footsteps from the Madman Mercer as he walks into the room,  I would recommend not staying too long in this room.";
-		move Madman Mercer to player.
+		say "You can hear the loud heavy footsteps from the Madman Mercer.  I would recommend not staying too long in this room."
 
 
 
