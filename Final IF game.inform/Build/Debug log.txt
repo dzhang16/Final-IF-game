@@ -6,7 +6,7 @@ Inform called as: /Users/dzhang16/Desktop/Inform.app/Contents/Resources/Compiler
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 3688 words long.
+I've now read your source text, which is 3728 words long.
 
 
 -----------------------------------------------------

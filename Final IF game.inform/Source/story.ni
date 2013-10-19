@@ -206,8 +206,9 @@ Instead of attacking Madman Mercer:
 	end the game in death.
 	
 Instead of opening beautiful safe:
-	say "you see a small ripped paper.";
-	move small paper to beautiful safe.
+	say "you see a small paper.";
+	move small paper to hair salon.;
+	move dirty paper to hair salon.
 	
 [Instead of opening green safe:
 	say "you see a paint splattered ripped paper.";
@@ -227,7 +228,8 @@ Instead of talking to the Store Clerk for the first time:
 	
 Instead of giving apples to the Store Clerk:
 	say "Thanks man you are a life saver.  Here is something as a reward.[line break]You receive a scrap of paper";
-	move scrap of paper to player.
+	move scrap of paper to player.;
+	remove apples from play.
 	
 [Instead of opening curtain:
 	say "The curtains are too big and made out of a heavy material.  You can even budge it without the help of the motors to pull it back, but you need to turn the motors on somehow."]
@@ -310,7 +312,7 @@ the fancy safe is scenery in the stage.  It is a closed openable container.  It 
 
 [keys]
 
-the stinky key is a thing in the bathroom.  stinky key unlocks the beautiful safe.  The description of the stinky key is "a stinky key that is stinky beacuse of the poop, but is a beautifully crafted key that unlocks beautiful things."
+the stinky key is a thing.  stinky key unlocks the beautiful safe.  The description of the stinky key is "a stinky key that is stinky beacuse of the poop, but is a beautifully crafted key that unlocks beautiful things."
 
 [the green key is a thing in the furniture store.  green key unlocks the green safe.  The description of the green key is "a green key that looks like it unlocks green things."]
 
@@ -480,13 +482,13 @@ Light Condenser + Viewing Screen Thing]
 
 [combined objects]
 
-[1]flashlight Reflector Thing is an object.  The description of the flashlight reflector thing is "A Flashlight + a Reflector."
+[1]flashlight Reflector Thing is an object.  flashlight Reflector Thing is lit.  The description of the flashlight reflector thing is "A Flashlight + a Reflector."
 
-[2]flashlight Reflector Condenser Lens Thing is an object.  The description of the flashlight reflector condenser lens thing is "A Flashlight + a Reflector + a Condenser lens."
+[2]flashlight Reflector Condenser Lens Thing is an object.  flashlight Reflector Condenser Lens Thing is lit.  The description of the flashlight reflector condenser lens thing is "A Flashlight + a Reflector + a Condenser lens."
 
-[3]flashlight Reflector Condenser Lens Imaging Lens Thing is an object.  flashlight Reflector Condenser Lens Imaging Lens Thing is lit.  The description of the flashlight reflector condenser lens imaging lens thing is "A Flashlight + a Reflector + a Condenser Lens + a Imaging lens.".
+[3]flashlight Reflector Condenser Lens Imaging Lens Thing is an object.  flashlight Reflector Condenser Lens Imaging Lens Thing is lit.  flashlight Reflector Condenser Lens Imaging Lens Thing is lit.  The description of the flashlight reflector condenser lens imaging lens thing is "A Flashlight + a Reflector + a Condenser Lens + a Imaging lens.".
 
-[4]flashlight Reflector Condenser Lens Imaging Lens Shutter Thing is an object.  The description of the flashlight reflector condenser lens imaging lens shutter thing is "A Flashlight + a Reflector + a Condenser Lens + a Imaging Lens + a Shutter."
+[4]flashlight Reflector Condenser Lens Imaging Lens Shutter Thing is an object.  flashlight Reflector Condenser Lens Imaging Lens Shutter Thing is lit.  The description of the flashlight reflector condenser lens imaging lens shutter thing is "A Flashlight + a Reflector + a Condenser Lens + a Imaging Lens + a Shutter."
 
 [5]Film Projector is an object.  The description of the Film Projector is "a make-shift Film Projector that you made hastily.  Hopefully it can still play film though."
 
@@ -511,7 +513,7 @@ say "One of the panels has an unusually wide seam around it. On closer inspectio
 
 
 [code for a combo lock]
-The Backstage is a room.  It is north of the red door.  The description of the backstage is "A strange room that you wouldn't have guessed to be behind the stage of Cultual Plaza.  The room surrounds you with metal walls and a very bright light, like the ones they use in surgeries hanging from the ceiling.".  The metal box is here. "A metal box the size of an Xbox 360, that has a dial which can spin to number.  It looks very solid, so I wouldn't waste your energy on trying force it open." 
+The Backstage is a room.  It is north of the red door.  The description of the backstage is "A strange room that you wouldn't have guessed to be behind the stage of Cultual Plaza.  The room surrounds you with metal walls and a very bright light, like the ones they use in surgeries hanging from the ceiling.".  The metal box is here. "A metal box the size of an Xbox 360, that has a dial which can spin to any combination of numbers.  It looks very solid, so I wouldn't waste your energy on trying force it open." 
 
 Instead of opening the metal box, say "The box opens only when dial is spinned to the correct number."
 

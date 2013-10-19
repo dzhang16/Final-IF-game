@@ -10258,32 +10258,16 @@ Object -> I130_imaging_lens ""
     with cap_short_name "Imaging Lens"
     has mark_as_thing
     with IK2_Count 33
-    with IK2_Link I135_stinky_key
-    with KD_Count 2
-    with name 'imaging' 'lens' 
-    with action_bitmap 0 0 0 0 0 0 
-;
-
-Object -> I135_stinky_key ""
-    class K2_thing
-    with short_name "stinky key"
-    with description SC_35
-    has proper
-    with vector 0
-    with list_together 0
-    with cap_short_name "Stinky key"
-    has mark_as_thing
-    with IK2_Count 38
     with IK2_Link I138_toilet
     with KD_Count 2
-    with name 'stinky' 'key' 
+    with name 'imaging' 'lens' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
 Object -> I138_toilet ""
     class K5_container
     with short_name "toilet"
-    with description SC_36
+    with description SC_35
     has static
     has open
     has openable
@@ -10302,7 +10286,7 @@ Object -> I138_toilet ""
 Object -> -> I139_poop ""
     class K2_thing
     with short_name "poop"
-    with description SC_37
+    with description SC_36
     has proper
     with vector 0
     with list_together 0
@@ -10318,7 +10302,7 @@ Object -> -> I139_poop ""
 Object I108_fish_market ""
     class K1_room
     with short_name "Fish Market"
-    with description SC_38
+    with description SC_37
     has proper
     with vector 0
     with room_index -1
@@ -10334,7 +10318,7 @@ Object I108_fish_market ""
 Object -> I109_cheap_fish ""
     class K2_thing
     with short_name "cheap fish"
-    with description SC_39
+    with description SC_38
     has proper
     has static
     has scenery
@@ -10352,7 +10336,7 @@ Object -> I109_cheap_fish ""
 Object -> I128_reflector ""
     class K2_thing
     with short_name "Reflector"
-    with description SC_40
+    with description SC_39
     has proper
     with vector 0
     with list_together 0
@@ -10368,7 +10352,7 @@ Object -> I128_reflector ""
 Object -> I148_chinese_fisherman ""
     class K10_man
     with short_name "chinese fisherman"
-    with description SC_41
+    with description SC_40
     with vector 0
     with list_together 0
     has mark_as_thing
@@ -10386,7 +10370,7 @@ Object -> I148_chinese_fisherman ""
 Object I110_fruit_store ""
     class K1_room
     with short_name "Fruit store"
-    with description SC_42
+    with description SC_41
     has proper
     with vector 0
     with room_index -1
@@ -10402,7 +10386,7 @@ Object I110_fruit_store ""
 Object -> I111_green_basket ""
     class K5_container
     with short_name "green basket"
-    with description SC_43
+    with description SC_42
     has proper
     has static
     has open
@@ -10423,7 +10407,7 @@ Object -> I111_green_basket ""
 Object -> -> I112_pears ""
     class K2_thing
     with short_name "pears"
-    with description SC_44
+    with description SC_43
     has proper
     with vector 0
     with list_together 0
@@ -10439,7 +10423,7 @@ Object -> -> I112_pears ""
 Object -> I113_pink_basket ""
     class K5_container
     with short_name "pink basket"
-    with description SC_45
+    with description SC_44
     has proper
     has static
     has open
@@ -10460,7 +10444,7 @@ Object -> I113_pink_basket ""
 Object -> -> I114_peaches ""
     class K2_thing
     with short_name "peaches"
-    with description SC_46
+    with description SC_45
     has proper
     with vector 0
     with list_together 0
@@ -10476,7 +10460,7 @@ Object -> -> I114_peaches ""
 Object -> I117_red_basket ""
     class K5_container
     with short_name "red basket"
-    with description SC_47
+    with description SC_46
     has static
     has open
     has openable
@@ -10495,7 +10479,7 @@ Object -> I117_red_basket ""
 Object -> -> I116_apples ""
     class K2_thing
     with short_name "Apples"
-    with description SC_48
+    with description SC_47
     has proper
     with vector 0
     with list_together 0
@@ -10512,7 +10496,7 @@ Object -> -> I116_apples ""
 Object I115_flashlight ""
     class K2_thing
     with short_name "Flashlight"
-    with description SC_49
+    with description SC_48
     has proper
     has light
     with vector 0
@@ -10544,7 +10528,7 @@ Object I120_small_paper ""
 Object I121_small_ripped_paper ""
     class K2_thing
     with short_name "small ripped paper"
-    with description SC_50
+    with description SC_49
     with vector 0
     with list_together 0
     has mark_as_thing
@@ -10574,7 +10558,7 @@ Object I122_scrap_of_paper ""
 Object I123_wrinkled_paper ""
     class K2_thing
     with short_name "wrinkled paper"
-    with description SC_51
+    with description SC_50
     has proper
     with vector 0
     with list_together 0
@@ -10590,7 +10574,7 @@ Object I123_wrinkled_paper ""
 Object I124_beat_up_paper ""
     class K2_thing
     with short_name "beat up paper"
-    with description SC_52
+    with description SC_51
     has proper
     with vector 0
     with list_together 0
@@ -10621,7 +10605,7 @@ Object I125_dirty_paper ""
 Object I126_dirty_ripped_paper ""
     class K2_thing
     with short_name "dirty ripped paper"
-    with description SC_53
+    with description SC_52
     with vector 0
     with list_together 0
     has mark_as_thing
@@ -10635,16 +10619,32 @@ Object I126_dirty_ripped_paper ""
 Object I127_soggy_paper ""
     class K2_thing
     with short_name "soggy paper"
-    with description SC_54
+    with description SC_53
     has proper
     with vector 0
     with list_together 0
     with cap_short_name "Soggy paper"
     has mark_as_thing
     with IK2_Count 30
-    with IK2_Link I141_flashlight_reflector_th
+    with IK2_Link I135_stinky_key
     with KD_Count 2
     with name 'soggy' 'paper' 
+    with action_bitmap 0 0 0 0 0 0 
+;
+
+Object I135_stinky_key ""
+    class K2_thing
+    with short_name "stinky key"
+    with description SC_54
+    has proper
+    with vector 0
+    with list_together 0
+    with cap_short_name "Stinky key"
+    has mark_as_thing
+    with IK2_Count 38
+    with IK2_Link I141_flashlight_reflector_th
+    with KD_Count 2
+    with name 'stinky' 'key' 
     with action_bitmap 0 0 0 0 0 0 
 ;
 
@@ -10653,6 +10653,7 @@ Object I141_flashlight_reflector_th ""
     with short_name "flashlight Reflector Thing"
     with description SC_55
     has proper
+    has light
     with vector 0
     with list_together 0
     with cap_short_name "Flashlight Reflector Thing"
@@ -10669,6 +10670,7 @@ Object I142_flashlight_reflector_co ""
     with short_name "flashlight Reflector Condenser Lens Thing"
     with description SC_56
     has proper
+    has light
     with vector 0
     with list_together 0
     with cap_short_name "Flashlight Reflector Condenser Lens Thing"
@@ -10702,6 +10704,7 @@ Object I144_flashlight_reflector_co ""
     with short_name "flashlight Reflector Condenser Lens Imaging Lens Shutter Thing"
     with description SC_58
     has proper
+    has light
     with vector 0
     with list_together 0
     with cap_short_name "Flashlight Reflector Condenser Lens Imaging Lens Shutter Thing"
@@ -10775,7 +10778,7 @@ Array T1_locale_priorities table  tab_1_0 tab_1_1;
 Array tab_1_0 table $0869 NULL  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array tab_1_1 table $446a 5  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array T2_projector_parts table  tab_2_0 tab_2_1;
-Array tab_2_0 table $066b 12  (LIST_CONST_1894)  (LIST_CONST_1902)  (LIST_CONST_1915)  (LIST_CONST_1932)  (LIST_CONST_1951) ;
+Array tab_2_0 table $066b 12  (LIST_CONST_1905)  (LIST_CONST_1913)  (LIST_CONST_1926)  (LIST_CONST_1943)  (LIST_CONST_1962) ;
 Array tab_2_1 table $086c NULL  (I141_flashlight_reflector_th)  (I142_flashlight_reflector_co)  (I143_flashlight_reflector_co)  (I144_flashlight_reflector_co)  (I145_film_projector) ;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
@@ -12054,6 +12057,9 @@ self = noun;
       ! phrase 2
       ! [2: move scrap of paper to player]
        MoveObject(I122_scrap_of_paper, player, 0, false); 
+      ! phrase 3
+      ! [3: remove apples from play]
+       RemoveFromPlay(I116_apples); 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_755, 755, true);
@@ -12159,11 +12165,14 @@ self = noun;
 self = noun;
    if (debug_rules) DB_Rule(R_752, 752);
       ! phrase 1
-      ! [1: say ~you see a small ripped paper.~]
+      ! [1: say ~you see a small paper.~]
       say__p=1;ParaContent();  print (PrintText) SC_97;  new_line; .L_Say22; .L_SayX22;
       ! phrase 2
-      ! [2: move small paper to beautiful safe]
-       MoveObject(I120_small_paper, I134_beautiful_safe, 0, false); 
+      ! [2: move small paper to hair salon]
+       MoveObject(I120_small_paper, I98_hair_salon, 0, false); 
+      ! phrase 3
+      ! [3: move dirty paper to hair salon]
+       MoveObject(I125_dirty_paper, I98_hair_salon, 0, false); 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_752, 752, true);
@@ -27528,11 +27537,11 @@ Verb meta 'tree'
 
 [ LITTLE_USED_DO_NOTHING_R; rfalse; ];
 
-Array LIST_CONST_1894 --> 0 9 2 (I115_flashlight) (I128_reflector) ;
-Array LIST_CONST_1902 --> 0 9 2 (I141_flashlight_reflector_th) (I129_condenser_lens) ;
-Array LIST_CONST_1915 --> 0 9 2 (I142_flashlight_reflector_co) (I130_imaging_lens) ;
-Array LIST_CONST_1932 --> 0 9 2 (I143_flashlight_reflector_co) (I131_shutter) ;
-Array LIST_CONST_1951 --> 0 9 2 (I144_flashlight_reflector_co) (I132_viewing_screen) ;
+Array LIST_CONST_1905 --> 0 9 2 (I115_flashlight) (I128_reflector) ;
+Array LIST_CONST_1913 --> 0 9 2 (I141_flashlight_reflector_th) (I129_condenser_lens) ;
+Array LIST_CONST_1926 --> 0 9 2 (I142_flashlight_reflector_co) (I130_imaging_lens) ;
+Array LIST_CONST_1943 --> 0 9 2 (I143_flashlight_reflector_co) (I131_shutter) ;
+Array LIST_CONST_1962 --> 0 9 2 (I144_flashlight_reflector_co) (I132_viewing_screen) ;
 
 
 
@@ -29603,7 +29612,7 @@ ArgumentTypeFailed(filename, line);
 
 
 Array ConstantListPointers --> 
-LIST_CONST_1894 LIST_CONST_1902 LIST_CONST_1915 LIST_CONST_1932 LIST_CONST_1951  0 0;
+LIST_CONST_1905 LIST_CONST_1913 LIST_CONST_1926 LIST_CONST_1943 LIST_CONST_1962  0 0;
 
 Constant SC_91 = "
 -Build Film Projector to play film ";
@@ -29656,18 +29665,18 @@ Constant SC_57 = "A Flashlight + a Reflector + a Condenser Lens + a Imaging lens
 Constant SC_56 = "A Flashlight + a Reflector + a Condenser lens.";
 Constant SC_55 = "A Flashlight + a Reflector.";
 Constant SC_30 = "A a very scruffy, sleepy looking man wearing a green sweater vest with jeans on.";
-Constant SC_47 = "A basket containing many apples, and you see a light emitting from under the apples, which are covering the strange object.";
+Constant SC_46 = "A basket containing many apples, and you see a light emitting from under the apples, which are covering the strange object.";
 Constant SC_113 = "A basket of apples.";
 Constant SC_21 = "A beautiful safe that has a keyhole that look like a beautifully crafted key goes in.";
 Constant SC_18 = "A big screen used to project movies on.";
 Constant SC_17 = "A brass key that was painted red, so that people knew what kind of door it unlocked.";
-Constant SC_49 = "A device used to light up dark rooms.";
-Constant SC_36 = "A dirty looking toilet which people do not flush after using.";
-Constant SC_41 = "A fishy smelling man with an apron on holding fishes in both hands.";
+Constant SC_48 = "A device used to light up dark rooms.";
+Constant SC_35 = "A dirty looking toilet which people do not flush after using.";
+Constant SC_40 = "A fishy smelling man with an apron on holding fishes in both hands.";
 Constant SC_19 = "A hair salon with little pieces of hair on the floor everywhere.  You see a beautiful safe.  The exit to Cultural Plaza is to the southeast.";
 Constant SC_9 = "A large stage used for lion dance shows, Kung Fu performance, and many other performances or events.  There is a red door leading to the backstage.  The exit to Cultural Plaza is to the south.";
-Constant SC_40 = "A light reflecting mirror.  It seems to be a part of some kind of machine.";
-Constant SC_14 = "A metal box the size of an Xbox 360, that has a dial which can spin to number.  It looks very solid, so I wouldn't waste your energy on trying force it open.";
+Constant SC_39 = "A light reflecting mirror.  It seems to be a part of some kind of machine.";
+Constant SC_14 = "A metal box the size of an Xbox 360, that has a dial which can spin to any combination of numbers.  It looks very solid, so I wouldn't waste your energy on trying force it open.";
 Constant SC_24 = "A nice big light brown leather couch.  Lots of people come and sit on it everday, and maybe you can search the couch to see if anything fell out of their pockets in between the couch cushions";
 Constant SC_107 = "A nice big light brown leather couch.";
 Constant SC_33 = "A place where men pee in.";
@@ -29677,18 +29686,18 @@ Constant SC_16 = "A rental video shop, with stands and stands of videos.  The ex
 Constant SC_26 = "A small family run convenience store filled with racks of snack, and a fridge of drinks.  The exit to Cultural Plaza is to the northeast.";
 Constant SC_31 = "A stinky smelling bathroom.  Urinals lining the wall and unflushed toilets fill the bathroom.  The exit to Cultural Plaza is to the northwest.";
 Constant SC_13 = "A strange room that you wouldn't have guessed to be behind the stage of Cultual Plaza.  The room surrounds you with metal walls and a very bright light, like the ones they use in surgeries hanging from the ceiling.";
-Constant SC_39 = "A tiny looking little things.  Grey in color, and you almost felt sorry for the fish.";
+Constant SC_38 = "A tiny looking little things.  Grey in color, and you almost felt sorry for the fish.";
 Constant SC_109 = "A toilet filled with an explosion of poop.";
 Constant SC_22 = "A white guy about 5 foot 7 inches with curly brown hair wearing a hockey mask.  He is holding a machete.";
 Constant SC_32 = "An unflushed urinal that has some pubic hair lining the edge.";
 Constant SC_4 = "As good-looking as ever.";
-Constant SC_48 = "Big, nice, juicy, red apples.";
+Constant SC_47 = "Big, nice, juicy, red apples.";
 Constant SC_137 = "Click! and nothing else happens.";
 Constant SC_111 = "Clonk! and the metal door swings slowly open, revealing ";
 Constant SC_2 = "Dylan Zhang";
 Constant SC_155 = "Exits: ";
 Constant SC_142 = "Exits:";
-Constant SC_38 = "Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent ~Come get yo ninety nine sense fish.  Veeery cheap fish.~.  The exit to Cultural Plaza is to the north.";
+Constant SC_37 = "Fishy smelling market where you can hear the clueless chinese fisherman who is unaware of Madman Mercer, yelling in his accent ~Come get yo ninety nine sense fish.  Veeery cheap fish.~.  The exit to Cultural Plaza is to the north.";
 Constant SC_8 = "How to Build a Film Projector for Dummies:^^Steps:^^*note: must combine in this order^^1. Combine flashlight with Reflector^^2. Combine flashlight Reflector Thing with Condenser Lens^^3. Combine flashlight Reflector Condenser Lens Thing with Imaging Lens^^4. Combine flashlight Reflector Condenser Lens Imaging Lens Thing with Shutter^^5. Combine flashlight Reflector Condenser Lens Imaging Lens Shutter Thing with Viewing Screen^^6. After combining you should have a Film Projector^^7. Find Film";
 Constant SC_74 = "I wouldn't do that if I were you, he might rage so hard on you and kill you.";
 Constant SC_122 = "In ";
@@ -29699,7 +29708,7 @@ Constant SC_96 = "Madman Mercer is unphased by your weak punch, and BOOM counter
 Constant SC_69 = "Madman Mercer looks into your soul with his blood shot eyes running at you.  I wouldn't be in his line of sight for too long if i were you.";
 Constant SC_100 = "Madman Mercer says, ~SHUT UP!~ and swings his machete at you, taking you out.~";
 Constant SC_72 = "Man I'm tired, and could really use some lihing mui apples right now, but this convenience store doesn't have any fresh apples.";
-Constant SC_42 = "Many different baskets of fruit fill the store.  The exit to Cultural Plaza is to the east.";
+Constant SC_41 = "Many different baskets of fruit fill the store.  The exit to Cultural Plaza is to the east.";
 Constant SC_94 = "Maybe you should find the pages and build to projector to escape back to your world";
 Constant SC_152 = "Maybe you should try opening the book and reading it.";
 Constant SC_6 = "Nicely cut rectangular, green bushes.";
@@ -29716,14 +29725,14 @@ Constant SC_78 = "Thanks man you are a life saver.  Here is something as a rewar
 Constant SC_104 = "The box opens only when dial is spinned to the correct number.";
 Constant SC_139 = "The center of this nice little mall with stores surrounding you, and bushes decorating the outside.  It is outdoors and deserted.  No one is sitting on the benches like they usually do.";
 Constant SC_86 = "The first page says:";
-Constant SC_54 = "The order of the number combination is A  C  H  D, you think about the alphabet.";
+Constant SC_53 = "The order of the number combination is A  C  H  D, you think about the alphabet.";
 Constant SC_76 = "The red basket catches your attention.";
-Constant SC_53 = "There are numbers on other pieces of paper that represent the correct number to spin a dial to, to unlock something, but you also need to know the order.";
+Constant SC_52 = "There are numbers on other pieces of paper that represent the correct number to spin a dial to, to unlock something, but you also need to know the order.";
 Constant SC_141 = "There is a nice little directory here too, showing all the stores.";
 Constant SC_114 = "Think again big boy.";
 Constant SC_133 = "Try another combination of things.";
 Constant SC_65 = "UNDO the last command";
-Constant SC_46 = "Very fuzzy, pinkish violet, spherical peaches.";
+Constant SC_45 = "Very fuzzy, pinkish violet, spherical peaches.";
 Constant SC_115 = "Would you like to ";
 Constant SC_121 = "You ";
 Constant SC_105 = "You are a boy named Dominuse, who is asian.  You are wearing shorts and a t-shirt.  You are a pretty tick guy.";
@@ -29743,12 +29752,12 @@ Constant SC_29 = "You recognize the lens as a part of a projector.";
 Constant SC_34 = "You recognize the lens as the part projector of a projector that produces images.";
 Constant SC_25 = "You recognize the shutter as a shutter from one of those projectors you saw at the movie theater.";
 Constant SC_81 = "You search the gaps in the couch cushions. ";
-Constant SC_50 = "You see the number 1, and 3 other illegible numbers";
-Constant SC_52 = "You see the number 4, and 3 other illegible numbers";
+Constant SC_49 = "You see the number 1, and 3 other illegible numbers";
+Constant SC_51 = "You see the number 4, and 3 other illegible numbers";
 Constant SC_153 = "You see the number";
-Constant SC_51 = "You see the numbers 8 and 4, and 2 other illegible numbers";
+Constant SC_50 = "You see the numbers 8 and 4, and 2 other illegible numbers";
 Constant SC_59 = "a make-shift Film Projector that you made hastily.  Hopefully it can still play film though.";
-Constant SC_35 = "a stinky key that is stinky beacuse of the poop, but is a beautifully crafted key that unlocks beautiful things.";
+Constant SC_54 = "a stinky key that is stinky beacuse of the poop, but is a beautifully crafted key that unlocks beautiful things.";
 Constant SC_10 = "a very fancy and expensive looking safe.  I would rather steal the safe than what's inside.";
 Constant SC_15 = "a wheel of film that is for film projectors that is titled ~Movie Theater.  Maybe you should play the film footage when you get the projector.~";
 Constant SC_126 = "also ";
@@ -29756,13 +29765,13 @@ Constant SC_11 = "an expensive looking key that looks like it unlocks expensive 
 Constant SC_125 = "can ";
 Constant SC_27 = "chips on one level, candy on another, so many awesome snacks.";
 Constant SC_20 = "many different colors of cut hair litter the floor.";
-Constant SC_45 = "many fuzzy peaches fill the basket.";
-Constant SC_43 = "many green pears fill the basket.";
-Constant SC_44 = "nice green, snowman shaped pears.";
+Constant SC_44 = "many fuzzy peaches fill the basket.";
+Constant SC_42 = "many green pears fill the basket.";
+Constant SC_43 = "nice green, snowman shaped pears.";
 Constant SC_154 = "s 1 and 3, and 2 other illegible numbers next to it";
 Constant SC_127 = "see ";
 Constant SC_63 = "see some suggestions for AMUSING things to do";
-Constant SC_37 = "smelly brown substance.  I wouldn't take that if I were you.";
+Constant SC_36 = "smelly brown substance.  I wouldn't take that if I were you.";
 Constant SC_95 = "taken";
 Constant SC_110 = "the toilet clogs and a soggy paper and stinky key appears!";
 Constant SC_3 = "the";
@@ -29771,7 +29780,7 @@ Constant SC_83 = "what are you doing in this movie?  You are not a character of 
 Constant SC_106 = "you have the urge to POOP";
 Constant SC_103 = "you put the film into the projector and you start the projector up.  It starts playing a movie of the movie theater that your friends are at.  You start feeling drowsy and you fall unconcious.  You wake up at the movie theater next to your friends.  You ask them about your absence.  They tell you that you were sleeping the whole time.  Maybe it was all a dream?";
 Constant SC_98 = "you see a beat up paper.";
-Constant SC_97 = "you see a small ripped paper.";
+Constant SC_97 = "you see a small paper.";
 Constant SC_73 = "you take the apples and revealed a flashlight.";
 
 #ifndef p0_specification; Constant p0_specification = 0; #endif;
